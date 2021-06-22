@@ -537,39 +537,7 @@
 				<element name="winged_nazgul"/>
 			</variable>
 			
-			<variable name="TERROR_2">
-				<element name="barrow_wight"/>
-				<element name="huorn"/>
-			</variable>
-			<variable name="TERROR_4">
-				<element name="oathbreaker"/>
-			</variable>
-			<variable name="TERROR_12">
-				<element name="balrog"/>
-			</variable>
-			<variable name="TERROR_16">
-				<element name="nazgul"/>
-				<element name="winged_nazgul"/>
-			</variable>
-			<variable name="LEAD_4">
-				<element name="black_numenorean"/>
-			</variable>
-			<variable name="LEAD_6">
-				<element name="swan_knight"/>
-			</variable>
-			<variable name="LEAD_8">
-				<element name="wainrider_chieftain"/>
-				<element name="kings_company"/>
-				<element name="ent"/>
-				<element name="nazgul"/>
-				<element name="winged_nazgul"/>
-			</variable>
-			<variable name="LEAD_12">
-				<element name="balrog"/>
-			</variable>
-			<variable name="LEAD_20">
-				<element name="wizard"/>
-			</variable>
+
 			
 			<variable name="BATTLEMENTS_I">
 				<element name="war_wagon"/>
@@ -581,6 +549,19 @@
 				<element name="ancient_wall"/>
 			</variable>
 			
+			<variable name="TERROR.UNIT">
+				<element name="barrow_wight"/><element name="huorn"/><element name="oathbreaker"/><element name="nazgul"/><element name="winged_nazgul"/><element name="balrog"/>
+			</variable>
+			<variable name="TERROR.VALUE">
+				<element name="2"/>           <element name="2"/>    <element name="4"/>          <element name="16"/>     <element name="16"/>            <element name="12"/>   
+			</variable>
+			
+			<variable name="LEAD.UNIT">
+				<element name="black_numenorean"/><element name="swan_knight"/><element name="wainrider_chieftain"/><element name="kings_company"/><element name="ent"/><element name="nazgul"/><element name="winged_nazgul"/><element name="balrog"/><element name="wizard"/><element name="werewolf"/>
+			</variable>
+			<variable name="LEAD.VALUE">
+				<element name="4"/>               <element name="6"/>          <element name="8"/>                  <element name="8"/>            <element name="8"/>  <element name="8"/>     <element name="8"/>            <element name="12"/>   <element name="20"/>     <element name="4"/>
+			</variable>
 			
 			<variable name="FORMATION.UNIT">
 				<element name="spearman"/><element name="halforc"/><element name="orc_marauder"/><element name="goblin_stabber"/><element name="riddermark_militia"/><element name="uruk_pikeman"/><element name="dunadan_guard"/><element name="barding_infantry"/><element name="elven_warden"/><element name="dwarven_pikeman"/>
@@ -4670,108 +4651,6 @@
 					
 					
 					
-					<attachment foreach="$LEAD_4$" name="supportAttachment_leadership_@LEAD_4@" attachTo="@LEAD_4@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="allied"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="4"/>
-						<option name="bonusType" value="leadership"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$LEAD_6$" name="supportAttachment_leadership_@LEAD_6@" attachTo="@LEAD_6@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="allied"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="6"/>
-						<option name="bonusType" value="leadership"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$LEAD_8$" name="supportAttachment_leadership_@LEAD_8@" attachTo="@LEAD_8@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="allied"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="8"/>
-						<option name="bonusType" value="leadership"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$LEAD_12$" name="supportAttachment_leadership_@LEAD_12@" attachTo="@LEAD_12@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="allied"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="12"/>
-						<option name="bonusType" value="leadership"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$LEAD_20$" name="supportAttachment_leadership_@LEAD_20@" attachTo="@LEAD_20@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="allied"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="20"/>
-						<option name="bonusType" value="leadership"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					
-					<attachment foreach="$TERROR_2$" name="supportAttachment_terror_@TERROR_2@" attachTo="@TERROR_2@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="-1"/>
-						<option name="number" value="2"/>
-						<option name="bonusType" value="terror"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$TERROR_4$" name="supportAttachment_terror_@TERROR_4@" attachTo="@TERROR_4@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="-1"/>
-						<option name="number" value="4"/>
-						<option name="bonusType" value="terror"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$TERROR_12$" name="supportAttachment_terror_@TERROR_12@" attachTo="@TERROR_12@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="-1"/>
-						<option name="number" value="12"/>
-						<option name="bonusType" value="terror"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					<attachment foreach="$TERROR_16$" name="supportAttachment_terror_@TERROR_16@" attachTo="@TERROR_16@" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$ANY_LEADABLE$"/>
-						<option name="faction" value="enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="strength"/>
-						<option name="bonus" value="-1"/>
-						<option name="number" value="16"/>
-						<option name="bonusType" value="terror"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
-					
-					
 					<attachment foreach="$RANGED_1$" name="supportAttachment_ranged_@RANGED_1@" attachTo="@RANGED_1@" javaClass="UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="$MELEE_INFANTRY$:$MELEE_CAVALRY$"/>
 						<option name="faction" value="allied"/>
@@ -4958,6 +4837,29 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					
+					
+					<attachment foreach="$TERROR.UNIT$:$TERROR.VALUE$" name="supportAttachment_terror_@TERROR.UNIT@" attachTo="@TERROR.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$ANY_LEADABLE$"/>
+						<option name="faction" value="enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="strength"/>
+						<option name="bonus" value="-1"/>
+						<option name="number" value="@TERROR.VALUE@"/>
+						<option name="bonusType" value="terror"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment foreach="$LEAD.UNIT$:$LEAD.VALUE$" name="supportAttachment_leadership_@LEAD.UNIT@" attachTo="@LEAD.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$ANY_LEADABLE$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="strength"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="@LEAD.VALUE@"/>
+						<option name="bonusType" value="leadership"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
 					
 					<attachment foreach="$FORMATION.UNIT$:$FORMATION.VALUE$" name="supportAttachment_formation_@FORMATION.UNIT@" attachTo="@FORMATION.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="$CHARGE$"/>
