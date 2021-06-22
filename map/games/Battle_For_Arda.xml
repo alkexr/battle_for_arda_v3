@@ -508,7 +508,7 @@
 				<element name="elven_cavalry"/>
 				<element name="easterling_cavalry"/>
 			</variable>
-			<variable name="CHARGE">
+			<variable name="CHARGE_PLAINS">
 				<element name="pony_rider"/>
 				<element name="eotheod_cavalry"/>
 				<element name="eorling_rider"/>
@@ -517,13 +517,19 @@
 				<element name="wainrider_chieftain"/>
 				<element name="swan_knight"/>
 				<element name="kings_company"/>
+				<element name="olog_hai"/>
+			</variable>
+			<variable name="CHARGE_HILL">
 				<element name="warg_rider"/>
 				<element name="werewolf"/>
+				<element name="bear"/>
+			</variable>
+			<variable name="CHARGE">
+				<element name="$CHARGE_PLAINS$"/>
+				<element name="$CHARGE_HILL$"/>
 			</variable>
 			<variable name="TRAMPLE">
-				<element name="olog_hai"/>
 				<element name="oliphaunt"/>
-				<element name="bear"/>
 			</variable>
 			<variable name="DUEL">
 				<element name="wizard"/>
@@ -793,7 +799,7 @@
 <territory name="Little Lhûn"/>
 <territory name="Loeg Ningloron"/>
 <territory name="Lond Daer"/>
-<territory name="sz Long Lake"/>
+<territory name="sz Long Lake" water="true"/>
 <territory name="Long Marshes"/>
 <territory name="Lossarnach"/>
 <territory name="Lower Carnen"/>
@@ -2612,6 +2618,13 @@
 			<unit name="cold_drake" />
 			
 			<unit name="settlement_terrain" />
+			<unit name="plains_terrain" />
+			<unit name="hill_terrain" />
+			<unit name="mountain_terrain" />
+			<unit name="forest_terrain" />
+			<unit name="marsh_terrain" />
+			<unit name="cave_terrain" />
+			<unit name="river_terrain" />
 		</unitList>
 		
 		<territoryEffectList>
@@ -3420,6 +3433,27 @@
 					<attachment name="unitAttachment" attachTo="settlement_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
                         <option name="isFactory" value="true"/>
                     </attachment>
+					<attachment name="unitAttachment" attachTo="plains_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="hill_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="mountain_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="forest_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="marsh_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="cave_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
+					<attachment name="unitAttachment" attachTo="river_terrain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+                        <option name="isInfrastructure" value="true"/>
+                    </attachment>
 					
 					
 					<attachment name="unitAttachment" attachTo="dunlending_wildman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4167,10 +4201,10 @@
 						<option name="attack" value="7"/>
 						<option name="defense" value="7"/>
 						
-						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$:$MELEE_CAVALRY$:$RANGED_CAVALRY$"/>
-						<option name="typeAA" value="trample"/>
+						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
+						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="6"/>
+						<option name="offensiveAttackAA" value="8"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4246,8 +4280,8 @@
 						<option name="attack" value="7"/>
 						<option name="defense" value="5"/>
 						
-						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$:$MELEE_CAVALRY$:$RANGED_CAVALRY$"/>
-						<option name="typeAA" value="trample"/>
+						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
+						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
 						<option name="offensiveAttackAA" value="6"/>
 						<option name="isAAforCombatOnly" value="true"/>
@@ -4937,6 +4971,87 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					
+					<!--Terrain Support-->
+					
+					<attachment name="supportAttachment_plains_terrain_charge" attachTo="plains_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="plains_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_hill_terrain_charge" attachTo="hill_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="hill_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_mountain_terrain_charge" attachTo="mountain_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-10"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="mountain_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_cave_terrain_charge" attachTo="cave_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-10"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="cave_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_forest_terrain_charge" attachTo="forest_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-10"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="forest_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_marsh_terrain_charge" attachTo="marsh_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-10"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="marsh_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_settlement_terrain_charge" attachTo="settlement_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="faction" value="allied:enemy"/>
+						<option name="side" value="offence:defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-10"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="settlement_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					
+					
 					
 					
 					
@@ -4944,6 +5059,7 @@
 					<attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
 						<option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
@@ -4978,6 +5094,8 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
 						
@@ -5012,6 +5130,7 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
@@ -5047,6 +5166,7 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
 					
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
@@ -5082,6 +5202,7 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
@@ -5116,6 +5237,8 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
+						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
 						
@@ -6030,7 +6153,7 @@
 						<option name="territoryEffect" value="plains"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Nan Curunír" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="3"/>
+                        <option name="production" value="4"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
 						<option name="territoryEffect" value="plains"/>
@@ -8489,11 +8612,13 @@
 		<initialize>
         <ownerInitialize>
 			<territoryOwner territory="Adorn" owner="Rohan"/>
-            <territoryOwner territory="Aldburg" owner="Rohan"/>
+			<territoryOwner territory="Aldburg" owner="Rohan"/>
             <territoryOwner territory="Amon Dîn" owner="Gondor"/>
+            <territoryOwner territory="Amon Hen" owner="Rohan"/>
             <territoryOwner territory="Amon Lanc" owner="DolGuldur"/>
+            <territoryOwner territory="Amon Lhaw" owner="Mordor"/>
             <territoryOwner territory="Amon Sûl" owner="Arnor"/>
-            <territoryOwner territory="Andrath" owner="Freefolk"/>
+            <territoryOwner territory="Andrath" owner="Arnor"/>
             <territoryOwner territory="Annúminas" owner="Arnor"/>
             <territoryOwner territory="Archet" owner="Freefolk"/>
             <territoryOwner territory="Arthedain" owner="Arnor"/>
@@ -8501,6 +8626,7 @@
             <territoryOwner territory="Azanulbizar" owner="Moria"/>
             <territoryOwner territory="Barad-dûr" owner="Mordor"/>
             <territoryOwner territory="Barrow Downs" owner="Angmar"/>
+			<territoryOwner territory="Battle Plain" owner="Mordor"/>
             <territoryOwner territory="Beorn's Hall" owner="Northmen"/>
             <territoryOwner territory="Blackroot Vale" owner="Gondor"/>
             <territoryOwner territory="Blue Mountains" owner="Dwarves"/>
@@ -8526,7 +8652,9 @@
             <territoryOwner territory="Coldfells" owner="OrcHolds"/>
             <territoryOwner territory="Crossings of Harnen" owner="Harad"/>
             <territoryOwner territory="Crossroads" owner="Gondor"/>
+            <territoryOwner territory="Dagorlad" owner="Mordor"/>
             <territoryOwner territory="Dale" owner="Northmen"/>
+            <territoryOwner territory="Dead Marshes" owner="Mordor"/>
             <territoryOwner territory="Deeping-coomb" owner="Rohan"/>
             <territoryOwner territory="Derndingle" owner="SilvanElves"/>
             <territoryOwner territory="Desolation of Smaug" owner="Northmen"/>
@@ -8549,6 +8677,7 @@
             <territoryOwner territory="East Arthedain" owner="Arnor"/>
             <territoryOwner territory="East Belfalas" owner="Gondor"/>
             <territoryOwner territory="East Bight" owner="DolGuldur"/>
+            <territoryOwner territory="East Cardolan" owner="Arnor"/>
             <territoryOwner territory="East Dale" owner="Northmen"/>
             <territoryOwner territory="East Ephel Dúath" owner="Mordor"/>
             <territoryOwner territory="East Ered Lithui" owner="Mordor"/>
@@ -8579,6 +8708,7 @@
             <territoryOwner territory="Emyn Arnen" owner="Gondor"/>
             <territoryOwner territory="Emyn Beraid" owner="HighElves"/>
             <territoryOwner territory="Emyn Duir" owner="SilvanElves"/>
+            <territoryOwner territory="Emyn Muil" owner="Mordor"/>
             <territoryOwner territory="Enchanted River" owner="SilvanElves"/>
             <territoryOwner territory="Enedwaith" owner="Saruman"/>
             <territoryOwner territory="Entwade" owner="Rohan"/>
@@ -8709,6 +8839,7 @@
             <territoryOwner territory="Near Harad" owner="Harad"/>
             <territoryOwner territory="Neldoreth" owner="Rhun"/>
             <territoryOwner territory="Nimrodel" owner="SilvanElves"/>
+            <territoryOwner territory="Nindalf" owner="Mordor"/>
             <territoryOwner territory="North Arnor" owner="Arnor"/>
             <territoryOwner territory="North Berennyr" owner="DolGuldur"/>
             <territoryOwner territory="North Bree-land" owner="Freefolk"/>
@@ -8737,6 +8868,7 @@
             <territoryOwner territory="North Rhudaur" owner="Angmar"/>
             <territoryOwner territory="North Rhûn" owner="Rhun"/>
             <territoryOwner territory="North Umbar" owner="Harad"/>
+            <territoryOwner territory="North Undeep" owner="DolGuldur"/>
             <territoryOwner territory="North Vales of Anduin" owner="OrcHolds"/>
             <territoryOwner territory="North Wilderland" owner="Northmen"/>
             <territoryOwner territory="North Woodland Realm" owner="SilvanElves"/>
@@ -8749,6 +8881,7 @@
             <territoryOwner territory="Onodló" owner="SilvanElves"/>
             <territoryOwner territory="Orodruin" owner="Mordor"/>
             <territoryOwner territory="Ost-in-Edhil" owner="HighElves"/>
+            <territoryOwner territory="Parth Galen" owner="Rohan"/>
             <territoryOwner territory="Paths of the Dead" owner="Gondor"/>
             <territoryOwner territory="Pelargir" owner="Gondor"/>
             <territoryOwner territory="Pelennor Fields" owner="Gondor"/>
@@ -8776,9 +8909,10 @@
             <territoryOwner territory="South Angmar" owner="Angmar"/>
             <territoryOwner territory="South Arthedain" owner="Arnor"/>
             <territoryOwner territory="South Bree-land" owner="Freefolk"/>
+            <territoryOwner territory="South Cardolan" owner="Arnor"/>
             <territoryOwner territory="South Dale" owner="Northmen"/>
             <territoryOwner territory="South Dorwinion" owner="Rhun"/>
-            <territoryOwner territory="South Downs" owner="Freefolk"/>
+            <territoryOwner territory="South Downs" owner="Arnor"/>
             <territoryOwner territory="South Dunland" owner="Saruman"/>
             <territoryOwner territory="South Emyn Uial" owner="Arnor"/>
             <territoryOwner territory="South Enedwaith" owner="Saruman"/>
@@ -8797,6 +8931,7 @@
             <territoryOwner territory="South Rhovanion" owner="Northmen"/>
             <territoryOwner territory="South Rhûn" owner="Rhun"/>
             <territoryOwner territory="South Umbar" owner="Harad"/>
+            <territoryOwner territory="South Undeep" owner="Mordor"/>
             <territoryOwner territory="South Vales of Anduin" owner="Moria"/>
             <territoryOwner territory="South Wilderland" owner="Rhun"/>
             <territoryOwner territory="Southfarthing" owner="Freefolk"/>
@@ -8808,6 +8943,7 @@
             <territoryOwner territory="Tarlang's Neck" owner="Gondor"/>
             <territoryOwner territory="Taur-e-Ndaedelos" owner="DolGuldur"/>
             <territoryOwner territory="Taur-nu-Fuin" owner="DolGuldur"/>
+            <territoryOwner territory="Tharbad" owner="Arnor"/>
             <territoryOwner territory="The Angle" owner="HighElves"/>
             <territoryOwner territory="The Wold" owner="Rohan"/>
             <territoryOwner territory="Thorin's Halls" owner="Dwarves"/>
@@ -8833,6 +8969,7 @@
             <territoryOwner territory="West Anórien" owner="Gondor"/>
             <territoryOwner territory="West Arnor" owner="Arnor"/>
             <territoryOwner territory="West Belfalas" owner="Gondor"/>
+            <territoryOwner territory="West Cardolan" owner="Arnor"/>
             <territoryOwner territory="West Dale" owner="Northmen"/>
             <territoryOwner territory="West Ephel Dúath" owner="Mordor"/>
             <territoryOwner territory="West Forodwaith" owner="Angmar"/>
@@ -8853,11 +8990,552 @@
             <territoryOwner territory="Westemnet" owner="Rohan"/>
             <territoryOwner territory="Westfarthing" owner="Freefolk"/>
             <territoryOwner territory="Westfold" owner="Rohan"/>
+            <territoryOwner territory="Wetwang" owner="Mordor"/>
             <territoryOwner territory="White Downs" owner="Freefolk"/>
             <territoryOwner territory="White Mountains" owner="Gondor"/>
             <territoryOwner territory="Witch-Realm" owner="Angmar"/>
         </ownerInitialize>
         <unitInitialize>
+
+			<unitPlacement unitType="river_terrain" territory="Adorn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Adorn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="settlement_terrain" territory="Aldburg" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Amon Dîn" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Amon Hen" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="settlement_terrain" territory="Amon Hen" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Amon Lanc" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="hill_terrain" territory="Amon Lhaw" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Amon Lhaw" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="hill_terrain" territory="Amon Sûl" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Amon Sûl" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="hill_terrain" territory="Andrast" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Andrath" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Annúminas" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Archet" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Arthedain" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ash Mountains" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="Azanulbizar" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="river_terrain" territory="Azanulbizar" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="settlement_terrain" territory="Barad-dûr" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="hill_terrain" territory="Barrow Downs" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Battle Plain" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Beorn's Hall" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Blackroot Vale" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Blackroot Vale" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Blue Mountains" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="river_terrain" territory="Brandywine Bridge" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Brandywine North Bank" quantity="1"/>
+			<unitPlacement unitType="settlement_terrain" territory="Bree" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="hill_terrain" territory="Bree Hill" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Buckland" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="river_terrain" territory="Cair Andros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="forest_terrain" territory="Cair Andros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Cair Andros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Calembel" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Carach Angren" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Caradhras" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="forest_terrain" territory="Caras Galadhon" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Caras Galadhon" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Caras Galadhon" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Carchost" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="cave_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="settlement_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="river_terrain" territory="Carrock" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="mountain_terrain" territory="Celebdil" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="Central Wilderness" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Chetwood" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="river_terrain" territory="Ciril" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Ciril" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="cave_terrain" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="City of Corsairs" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="hill_terrain" territory="Coldfells" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="river_terrain" territory="Crossings of Harnen" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="Crossroads" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Dagorlad" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="marsh_terrain" territory="Dead Marshes" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="Deeping-coomb" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="forest_terrain" territory="Derndingle" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Desolation of Smaug" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Desolation of the Morannon" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="Dimrill Dale" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="Dimrill Dale" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="hill_terrain" territory="Dol Amroth" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dol Amroth" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Dol Baran" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="hill_terrain" territory="Dor-en-Ernil" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dorwinion" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="river_terrain" territory="Dorwinion" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="forest_terrain" territory="Drúadan Forest" quantity="1"/>
+			<unitPlacement unitType="forest_terrain" territory="Drúwaith Iaur" quantity="1"/>
+			<unitPlacement unitType="hill_terrain" territory="Dunharrow" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dunharrow" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Dunland" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="settlement_terrain" territory="Durthang" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Dwimorberg" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="cave_terrain" territory="Dáin's Halls" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Dáin's Halls" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Eagle's Eyrie" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="East Anfalas" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="East Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="hill_terrain" territory="East Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="East Anórien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Arthedain" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Belfalas" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Bight" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="plains_terrain" territory="East Brown Lands" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="East Cardolan" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="mountain_terrain" territory="East Ephel Dúath" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="East Ered Lithui" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Forodwaith" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="East Haradwaith" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="East Harondor" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="hill_terrain" territory="East Iron Hills" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="East Lebennin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Lone Lands" quantity="1"/>
+			<unitPlacement unitType="mountain_terrain" territory="East Methedras" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="forest_terrain" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="plains_terrain" territory="East Mordor" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="East Mordor" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="East Mountains of Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="river_terrain" territory="East Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="East Osgiliath" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="East Osgiliath" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="East Rhovanion" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="East Rhudaur" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="East Trollshaws" quantity="1"/>
+			<unitPlacement unitType="hill_terrain" territory="East Wall of Rohan" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="East Wilderland" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="East Withered Heath" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Eastemnet" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Eastfarthing" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Eastfold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="settlement_terrain" territory="Edhellond" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Edoras" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Edoras" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="forest_terrain" territory="Egladil" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Egladil" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Elf Path" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Elostirion" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Elostirion" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Elvenking's Halls" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Elvenking's Halls" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Elvenking's Halls" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="cave_terrain" territory="Elvenking's Halls" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Emyn Arnen" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Emyn Beraid" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Emyn Duir" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Emyn Duir" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Emyn Muil" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="forest_terrain" territory="Enchanted River" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Enchanted River" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Enedwaith" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="river_terrain" territory="Entwade" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Entwade" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Entwash" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Entwash" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="forest_terrain" territory="Entwood" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ephel Dúath" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="cave_terrain" territory="Erebor" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Erebor" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Erech" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ered Lindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Ered Lindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ered Lithui" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ered Luin" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="hill_terrain" territory="Ered Luin Foothills" quantity="1"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ered Mithrin" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ered Nimrais" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Eregion" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="forest_terrain" territory="Eryn Galen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="Eryn Vorn" quantity="1"/>
+			<unitPlacement unitType="river_terrain" territory="Esgaroth" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Esgaroth" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="marsh_terrain" territory="Ethir Anduin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Ethraid Engrin" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Ethraid Engrin" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Ethring" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Ethring" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Ettendales" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="river_terrain" territory="Ettendales" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="hill_terrain" territory="Ettenmoors" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="forest_terrain" territory="Everholt" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="mountain_terrain" territory="Fanuidhol" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="hill_terrain" territory="Far Downs" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Far Harad" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="marsh_terrain" territory="Fenmark" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Fenmark" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Field of Cormallen" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Fields of Celebrant" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Fields of Celebrant" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Firien Wood" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Firien Wood" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Folde" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Ford of Bruinen" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Forlond" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Fornost" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Fornost" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="Forochel" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Forodwaith" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="river_terrain" territory="Framsburg" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Framsburg" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Freca's Stronghold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Freca's Stronghold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Freca's Stronghold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="cave_terrain" territory="Front Porch" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="river_terrain" territory="Gap of Rohan" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Gap of Rohan" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Gilrain" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Gilrain" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="marsh_terrain" territory="Gladden Fields" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Gladden Fields" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Gladden River" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="marsh_terrain" territory="Gladden River" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="river_terrain" territory="Glanduin" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="Glanduin" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="cave_terrain" territory="Glittering Caves" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="cave_terrain" territory="Goblin Gate" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="cave_terrain" territory="Goblin Town" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="settlement_terrain" territory="Goblin Town" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="forest_terrain" territory="Green Hill Country" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="hill_terrain" territory="Green Hill Country" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="hill_terrain" territory="Green Hills" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Greenfields" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="forest_terrain" territory="Greenwood the Great" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="mountain_terrain" territory="Grey Mountains" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="river_terrain" territory="Greylin" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Greylin" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Grimslade" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="mountain_terrain" territory="Halifirien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Halls of Grór" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="hill_terrain" territory="Halls of Grór" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Harlond" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Harrowdale" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Harrowdale" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Haudh in Gwanûr" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="forest_terrain" territory="Henneth Annûn" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Henneth Annûn" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="cave_terrain" territory="Henneth Annûn" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="High Moors" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="High Pass" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Hills of Evendim" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="hill_terrain" territory="Hills of Tarnost" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Hithaeglir" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="river_terrain" territory="Hoarwell" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="plains_terrain" territory="Hoarwell" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="settlement_terrain" territory="Hobbiton" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Hollin" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="settlement_terrain" territory="Hornburg" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Imlad Morgul" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="hill_terrain" territory="Imloth Melui" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Isengard" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="forest_terrain" territory="Ithilien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of Freca" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Balchoth" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Bardings" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="Lands of the Beornings" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="hill_terrain" territory="Lands of the Broadbeams" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Cold-drakes" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="forest_terrain" territory="Lands of the Drúedain" quantity="1"/>
+			<unitPlacement unitType="hill_terrain" territory="Lands of the Firebeards" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Gwathuirim" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Haradrim" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="hill_terrain" territory="Lands of the Hill-men" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Lossoth" quantity="1"/>
+			<unitPlacement unitType="marsh_terrain" territory="Lands of the Stoors" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Variags" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Wainriders" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="forest_terrain" territory="Lands of the Woodmen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Lands of the Éothéod" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Langstrand" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Last Bridge" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Lhûn" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Lhûn" quantity="1"/>
+			<unitPlacement unitType="river_terrain" territory="Limlight" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Limlight" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Linhir" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Linhir" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Lithlad" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="Little Lhûn" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Little Lhûn" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="marsh_terrain" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="settlement_terrain" territory="Lond Daer" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="marsh_terrain" territory="Long Marshes" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Long Marshes" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Lossarnach" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Lower Carnen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Lower Carnen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="Lower Forest River" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Lower Forest River" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Lower Langwell" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Lower Langwell" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Lower Lefnui" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Lower Lefnui" quantity="1"/>
+			<unitPlacement unitType="river_terrain" territory="Lower Poros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Lower Poros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Methedras" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="Michel Delving" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="settlement_terrain" territory="Michel Delving" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="marsh_terrain" territory="Midgewater Marshes" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Min-Rimmon" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Minas Morgul" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Minas Tirith" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Mindolluin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="cave_terrain" territory="Mines of Moria" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="settlement_terrain" territory="Mithlond" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Mithlond" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Morannon" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="Morgai" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="Morgulduin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Morgulduin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="cave_terrain" territory="Moria" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="settlement_terrain" territory="Moria" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="river_terrain" territory="Morthond" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Morthond" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Mount Gram" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="hill_terrain" territory="Mount Gram" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="cave_terrain" territory="Mount Gundabad" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="settlement_terrain" territory="Mount Gundabad" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="mountain_terrain" territory="Mountains of Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="mountain_terrain" territory="Mountains of Lune" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Mountains of Mirkwood" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Mountains of Mirkwood" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Mountains of Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="mountain_terrain" territory="Mountains of Shadow" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="marsh_terrain" territory="Mouths of Entwash" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="river_terrain" territory="Mouths of Entwash" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="forest_terrain" territory="Naith" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Nan Curunír" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="plains_terrain" territory="Nan Curunír" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="mountain_terrain" territory="Narchost" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="forest_terrain" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="plains_terrain" territory="Near Harad" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="forest_terrain" territory="Neldoreth" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="river_terrain" territory="Nimrodel" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Nimrodel" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="marsh_terrain" territory="Nindalf" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Arnor" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Berennyr" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="plains_terrain" territory="North Bree-land" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="North Brown Lands" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="North Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="North Dorwinion" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="hill_terrain" territory="North Downs" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Dunland" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="North Emyn Uial" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Enedwaith" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="mountain_terrain" territory="North Ephel Dúath" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="North Ered Luin" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="mountain_terrain" territory="North Ered Mithrin" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="forest_terrain" territory="North Fangorn" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="North Forlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="North Gorgoroth" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Harad" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="North Harlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="North Ithilien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Khand" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="North Lamedon" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Lindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="North Lórien" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="North Minhiriath" quantity="1"/>
+			<unitPlacement unitType="mountain_terrain" territory="North Misty Mountains" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="plains_terrain" territory="North Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="North Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="North Rhovanion" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="North Rhudaur" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="North Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="North Umbar" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="river_terrain" territory="North Undeep" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="hill_terrain" territory="North Vales of Anduin" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="plains_terrain" territory="North Wilderland" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="North Woodland Realm" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Northern Waste" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Northfarthing" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Northwest Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="marsh_terrain" territory="Nîn-in-Eilph" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Old Ford" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="Old Forest" quantity="1"/>
+			<unitPlacement unitType="forest_terrain" territory="Old Púkel-land" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Old Winyards" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="river_terrain" territory="Onodló" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Onodló" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Orodruin" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Ost-in-Edhil" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Ost-in-Edhil" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="Parth Galen" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="cave_terrain" territory="Paths of the Dead" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Pelargir" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Pelargir" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Pelennor Fields" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Pinnath Gelin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Plateau of Gorgoroth" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="Ras Morthil" quantity="1"/>
+			<unitPlacement unitType="hill_terrain" territory="Ravenhill" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="Realm of Vidugavia" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="hill_terrain" territory="Redhorn Gate" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="Redwater" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Redwater" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Rhimdath" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Rhimdath" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="settlement_terrain" territory="Rhosgobel" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Rhudaur" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="river_terrain" territory="Ringló Vale" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Ringló Vale" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Rivendell" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Rivendell" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="River Running" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="River Running" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="River of Forlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="River of Forlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Rushdown" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="hill_terrain" territory="Rushdown" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="river_terrain" territory="Sarn Ford" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="river_terrain" territory="Serni" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Serni" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Shirebourn" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Shirebourn" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="forest_terrain" territory="Silverlode" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Silverlode" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="river_terrain" territory="Sirannon" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="Sirannon" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="river_terrain" territory="Sirith" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Sirith" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="Snowbourn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Snowbourn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="South Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="South Arthedain" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Berennyr" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="South Bree-land" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="South Brown Lands" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="South Cardolan" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="South Dorwinion" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="hill_terrain" territory="South Downs" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="hill_terrain" territory="South Dunland" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="South Emyn Uial" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="forest_terrain" territory="South Enedwaith" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="mountain_terrain" territory="South Ered Luin" quantity="1"/>
+			<unitPlacement unitType="forest_terrain" territory="South Ered Luin" quantity="1"/>
+			<unitPlacement unitType="mountain_terrain" territory="South Ered Mithrin" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="South Forlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="South Gondor" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="South Gorgoroth" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Harlindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="forest_terrain" territory="South Ithilien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Khand" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="South Lamedon" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Lindon" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="plains_terrain" territory="South Minhiriath" quantity="1"/>
+			<unitPlacement unitType="forest_terrain" territory="South Mirkwood" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="river_terrain" territory="South Mordor" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Mordor" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="mountain_terrain" territory="South Mountains of Angmar" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="plains_terrain" territory="South Rhovanion" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="South Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="South Umbar" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="river_terrain" territory="South Undeep" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="South Vales of Anduin" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="plains_terrain" territory="South Wilderland" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="plains_terrain" territory="Southeast Forodwaith" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Southfarthing" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Southwest Forodwaith" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Southwest Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="settlement_terrain" territory="Staddle" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="mountain_terrain" territory="Starkhorn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Stonewain Valley" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="marsh_terrain" territory="Swanfleet" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="river_terrain" territory="Swanfleet" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Tarlang's Neck" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="forest_terrain" territory="Taur-e-Ndaedelos" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="forest_terrain" territory="Taur-nu-Fuin" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="river_terrain" territory="Tharbad" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Tharbad" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="The Angle" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="The Wold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="cave_terrain" territory="Thorin's Halls" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Thorin's Halls" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="Tolfalas" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Tookland" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="forest_terrain" territory="Tookland" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="hill_terrain" territory="Tower Hills" quantity="1" owner="HighElves"/>
+			<unitPlacement unitType="hill_terrain" territory="Treebeard's Hill" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="forest_terrain" territory="Treebeard's Hill" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="mountain_terrain" territory="Trihyrne" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="hill_terrain" territory="Trollfells" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="hill_terrain" territory="Tuckborough" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="settlement_terrain" territory="Tuckborough" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="plains_terrain" territory="Tumladen" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Tyrn Gorthad" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Udûn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="settlement_terrain" territory="Upbourn" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Upper Carnen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Upper Carnen" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="forest_terrain" territory="Upper Forest River" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Upper Forest River" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Upper Langwell" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Upper Langwell" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="river_terrain" territory="Upper Lefnui" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="Upper Lefnui" quantity="1"/>
+			<unitPlacement unitType="river_terrain" territory="Upper Poros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Upper Poros" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="hill_terrain" territory="Weather Hills" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="hill_terrain" territory="Weathertop" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="forest_terrain" territory="Wellinghall" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="settlement_terrain" territory="Wellinghall" quantity="1" owner="SilvanElves"/>
+			<unitPlacement unitType="plains_terrain" territory="West Anfalas" quantity="1"/>
+			<unitPlacement unitType="river_terrain" territory="West Anfalas" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="West Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="West Anórien" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="river_terrain" territory="West Arnor" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Arnor" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Belfalas" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Cardolan" quantity="1" owner="Arnor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Dale" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="mountain_terrain" territory="West Ephel Dúath" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Forodwaith" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="mountain_terrain" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="West Haradwaith" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="plains_terrain" territory="West Harondor" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="hill_terrain" territory="West Iron Hills" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="plains_terrain" territory="West Lebennin" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Lone Lands" quantity="1"/>
+			<unitPlacement unitType="plains_terrain" territory="West March" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="mountain_terrain" territory="West Methedras" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="mountain_terrain" territory="West Mountains of Angmar" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="West Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="West Nurn" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="river_terrain" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="settlement_terrain" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="West Rhûn" quantity="1" owner="Rhun"/>
+			<unitPlacement unitType="hill_terrain" territory="West Trollshaws" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="forest_terrain" territory="West Trollshaws" quantity="1" owner="OrcHolds"/>
+			<unitPlacement unitType="plains_terrain" territory="West Wilderland" quantity="1" owner="DolGuldur"/>
+			<unitPlacement unitType="plains_terrain" territory="West Withered Heath" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="plains_terrain" territory="Westemnet" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Westfarthing" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="river_terrain" territory="Westfold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="plains_terrain" territory="Westfold" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="marsh_terrain" territory="Wetwang" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="hill_terrain" territory="White Downs" quantity="1" owner="Freefolk"/>
+			<unitPlacement unitType="mountain_terrain" territory="White Mountains" quantity="1" owner="Gondor"/>
+			<unitPlacement unitType="plains_terrain" territory="Witch-Realm" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="river_terrain" territory="Withywindle" quantity="1"/>
+			<unitPlacement unitType="forest_terrain" territory="Withywindle" quantity="1"/>
+
+			<!-- NOT
+			
 			<unitPlacement unitType="settlement_terrain" territory="Aldburg" quantity="1" owner="Rohan"/>
             <unitPlacement unitType="settlement_terrain" territory="Amon Hen" quantity="1"/>
             <unitPlacement unitType="settlement_terrain" territory="Amon Lhaw" quantity="1"/>
@@ -8923,13 +9601,15 @@
             <unitPlacement unitType="settlement_terrain" territory="Tuckborough" quantity="1" owner="Freefolk"/>
             <unitPlacement unitType="settlement_terrain" territory="Upbourn" quantity="1" owner="Rohan"/>
             <unitPlacement unitType="settlement_terrain" territory="Wellinghall" quantity="1" owner="SilvanElves"/>
-            <unitPlacement unitType="settlement_terrain" territory="West Osgiliath" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="settlement_terrain" territory="West Osgiliath" quantity="1" owner="Gondor"/>-->
+			
+			
 			
 			
 			
 			<unitPlacement unitType="wall" territory="Aldburg" quantity="2" owner="Rohan"/>
-			<unitPlacement unitType="wall" territory="Amon Hen" quantity="2"/>
-			<unitPlacement unitType="wall" territory="Amon Lhaw" quantity="2"/>
+			<unitPlacement unitType="wall" territory="Amon Hen" quantity="1" owner="Rohan"/>
+			<unitPlacement unitType="wall" territory="Amon Lhaw" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="wall" territory="Amon Sûl" quantity="4" owner="Arnor"/>
 			<unitPlacement unitType="wall" territory="Annúminas" quantity="5" owner="Arnor"/>
 			<unitPlacement unitType="wall" territory="Archet" quantity="2" owner="Freefolk"/>
@@ -8979,7 +9659,7 @@
 			<unitPlacement unitType="wall" territory="Elostirion" quantity="2" owner="HighElves"/>
 			<unitPlacement unitType="wall" territory="Rivendell" quantity="6" owner="HighElves"/>
 			<unitPlacement unitType="wall" territory="Staddle" quantity="2" owner="Freefolk"/>
-			<unitPlacement unitType="wall" territory="Tharbad" quantity="2"/>
+			<unitPlacement unitType="wall" territory="Tharbad" quantity="2" owner="Arnor"/>
 			<unitPlacement unitType="wall" territory="Thorin's Halls" quantity="3" owner="Dwarves"/>
 			<unitPlacement unitType="wall" territory="West Osgiliath" quantity="4" owner="Gondor"/>
 		
@@ -9397,8 +10077,8 @@
             <unitPlacement unitType="orc_marauder" territory="Sirannon" quantity="1" owner="Moria"/>
             <unitPlacement unitType="warg_rider" territory="South Angmar" quantity="1" owner="Angmar"/>
             <unitPlacement unitType="orc_marauder" territory="South Angmar" quantity="2" owner="Angmar"/>
-            <unitPlacement unitType="bowman" territory="South Cardolan" quantity="1"/>
-            <unitPlacement unitType="scout" territory="South Cardolan" quantity="1"/>
+            <unitPlacement unitType="bowman" territory="South Cardolan" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="scout" territory="South Cardolan" quantity="1" owner="Arnor"/>
             <unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="2" owner="Saruman"/>
             <unitPlacement unitType="man_at_arms" territory="South Emyn Uial" quantity="2" owner="Arnor"/>
             <unitPlacement unitType="dwarven_axethrower" territory="South Ered Mithrin" quantity="1" owner="Dwarves"/>
@@ -9447,8 +10127,8 @@
             <unitPlacement unitType="ent" territory="Wellinghall" quantity="1" owner="Lorien"/>
             <unitPlacement unitType="orc_marauder" territory="West Angmar" quantity="2" owner="Angmar"/>
             <unitPlacement unitType="spearman" territory="West Belfalas" quantity="1" owner="Gondor"/>
-            <unitPlacement unitType="bowman" territory="West Cardolan" quantity="1"/>
-            <unitPlacement unitType="spearman" territory="West Cardolan" quantity="1"/>
+            <unitPlacement unitType="bowman" territory="West Cardolan" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="spearman" territory="West Cardolan" quantity="1" owner="Arnor"/>
             <unitPlacement unitType="riddermark_militia" territory="Westemnet" quantity="2" owner="Rohan"/>
             <unitPlacement unitType="rohirric_scout" territory="Westemnet" quantity="1" owner="Rohan"/>
             <unitPlacement unitType="eorling_rider" territory="Westemnet" quantity="2" owner="Rohan"/>
@@ -9543,6 +10223,10 @@
 				</property>
 
 				<property name="Low Luck for AntiAircraft" value="false" editable="true">
+					<boolean/>
+				</property>
+				
+				<property name="Enter Territories With Higher Movement Costs Then Remaining Moves" value="false" editable="false">
 					<boolean/>
 				</property>
 
