@@ -8913,7 +8913,7 @@
             <territoryOwner territory="Witch-Realm" owner="Angmar"/>
         </ownerInitialize>
         <unitInitialize>
-
+			
 			<unitPlacement unitType="river_terrain" territory="Adorn" quantity="1" owner="Rohan"/>
 			<unitPlacement unitType="plains_terrain" territory="Adorn" quantity="1" owner="Rohan"/>
 			<unitPlacement unitType="settlement_terrain" territory="Aldburg" quantity="1" owner="Rohan"/>
@@ -9579,6 +9579,368 @@
 			<unitPlacement unitType="wall" territory="Tharbad" quantity="2" owner="Arnor"/>
 			<unitPlacement unitType="wall" territory="Thorin's Halls" quantity="3" owner="Dwarves"/>
 			<unitPlacement unitType="wall" territory="West Osgiliath" quantity="4" owner="Gondor"/>
+			
+			
+			<unitPlacement unitType="bowman" territory="Aldburg" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="riddermark_militia" territory="Aldburg" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="riddermark_militia" territory="Amon Hen" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="orc_marauder" territory="Amon Lhaw" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="man_at_arms" territory="Amon Sûl" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_guard" territory="Amon Sûl" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="scout" territory="Andrath" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="ranger" territory="Andrath" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="man_at_arms" territory="Annúminas" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="bowman" territory="Annúminas" quantity="4" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_guard" territory="Annúminas" quantity="3" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Annúminas" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="spearman" territory="Archet" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="bowman" territory="Arthedain" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Arthedain" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="orc_marauder" territory="Azanulbizar" quantity="2" owner="Moria"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Azanulbizar" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="olog_hai" territory="Barad-dûr" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Barad-dûr" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="uruk_pikeman" territory="Barad-dûr" quantity="3" owner="Mordor"/>
+            <unitPlacement unitType="barrow_wight" territory="Barrow Downs" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="bear" territory="Beorn's Hall" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="beorning_warrior" territory="Beorn's Hall" quantity="4" owner="Northmen"/>
+            <unitPlacement unitType="hobbit_archer" territory="Bree" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="pony_rider" territory="Bree" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="ranger" territory="Bree" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="spearman" territory="Bree" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="scout" territory="Bree Hill" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="hobbit_archer" territory="Buckland" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Cair Andros" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Cair Andros" quantity="4" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Calembel" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Calembel" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="catapult" territory="Carach Angren" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Carach Angren" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="olog_hai" territory="Carach Angren" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Carach Angren" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="galadhrim_longbowman" territory="Caras Galadhon" quantity="4" owner="SilvanElves"/>
+            <unitPlacement unitType="elven_hunter" territory="Caras Galadhon" quantity="2" owner="SilvanElves"/>
+            <unitPlacement unitType="troll" territory="Celebdil" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Celebdil" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="halforc" territory="Central Wilderness" quantity="3" owner="Saruman"/>
+            <unitPlacement unitType="crebain" territory="Central Wilderness" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="galadhrim_longbowman" territory="Cerin Amroth" quantity="3" owner="SilvanElves"/>
+            <unitPlacement unitType="elven_archer" territory="Cerin Amroth" quantity="4" owner="SilvanElves"/>
+            <unitPlacement unitType="elven_warden" territory="Cerin Amroth" quantity="5" owner="SilvanElves"/>
+            <unitPlacement unitType="ranger" territory="Chetwood" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="bowman" territory="City of Corsairs" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="black_numenorean" territory="City of Corsairs" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="corsair" territory="City of Corsairs" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="catapult" territory="City of Corsairs" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="man_at_arms" territory="Crossroads" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Crossroads" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="barding_infantry" territory="Dale" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="winged_nazgul" territory="Dead Marshes" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="huorn" territory="Derndingle" quantity="2" owner="SilvanElves"/>
+            <unitPlacement unitType="warg_rider" territory="Dimrill Dale" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="swan_knight" territory="Dol Amroth" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Dol Amroth" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Dol Baran" quantity="2" owner="Saruman"/>
+            <unitPlacement unitType="uruk_warrior" territory="Dol Guldur" quantity="4" owner="DolGuldur"/>
+            <unitPlacement unitType="nazgul" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="bat" territory="Dol Guldur" quantity="2" owner="DolGuldur"/>
+            <unitPlacement unitType="spearman" territory="Dorwinion" quantity="6" owner="Rhun"/>
+            <unitPlacement unitType="chariot" territory="Dorwinion" quantity="3" owner="Rhun"/>
+            <unitPlacement unitType="trebuchet" territory="Dorwinion" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="riddermark_militia" territory="Dunharrow" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="dunlending_wildman" territory="Dunland" quantity="5" owner="Saruman"/>
+            <unitPlacement unitType="crebain" territory="Dunland" quantity="3" owner="Saruman"/>
+            <unitPlacement unitType="dwarven_pikeman" territory="Dáin's Halls" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Dáin's Halls" quantity="3" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_halberdier" territory="Dáin's Halls" quantity="5" owner="Dwarves"/>
+            <unitPlacement unitType="eagle" territory="Eagle's Eyrie" quantity="2" owner="HighElves"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="East Angmar" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="troll" territory="East Angmar" quantity="1" owner="Angmar"/>
+            <unitPlacement unitType="bowman" territory="East Arthedain" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="man_at_arms" territory="East Belfalas" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="East Belfalas" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="East Cardolan" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="oliphaunt" territory="East Haradwaith" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="dwarven_pikeman" territory="East Iron Hills" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="orc_marauder" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="warg_scout" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="orc_marauder" territory="East Mordor" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="East Mordor" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="East Nurn" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="East Nurn" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="man_at_arms" territory="East Osgiliath" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="East Osgiliath" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="uruloke" territory="East Withered Heath" quantity="1" owner="Angmar"/>
+            <unitPlacement unitType="cold_drake" territory="East Withered Heath" quantity="1" owner="Angmar"/>
+            <unitPlacement unitType="rohirric_scout" territory="Eastemnet" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="man_at_arms" territory="Edhellond" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="swan_knight" territory="Edhellond" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Edhellond" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="eorling_rider" territory="Edoras" quantity="4" owner="Rohan"/>
+            <unitPlacement unitType="kings_company" territory="Edoras" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="bowman" territory="Edoras" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="elven_archer" territory="Elostirion" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="noldorin_warrior" territory="Elostirion" quantity="2" owner="HighElves"/>
+            <unitPlacement unitType="elven_warden" territory="Elvenking's Halls" quantity="2" owner="SilvanElves"/>
+            <unitPlacement unitType="elven_archer" territory="Elvenking's Halls" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="man_at_arms" territory="Emyn Arnen" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="elven_archer" territory="Emyn Duir" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="orc_marauder" territory="Emyn Muil" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Emyn Muil" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Enedwaith" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="huorn" territory="Entwood" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Ephel Dúath" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Erebor" quantity="5" owner="Dwarves"/>
+            <unitPlacement unitType="raven" territory="Erebor" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_axethrower" territory="Erebor" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="trebuchet" territory="Erebor" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="spearman" territory="Erech" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Ered Mithrin" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_axethrower" territory="Ered Mithrin" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="warg_scout" territory="Eregion" quantity="3" owner="Moria"/>
+            <unitPlacement unitType="werewolf" territory="Eregion" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="woodman" territory="Eryn Galen" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="woodman" territory="Esgaroth" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="barding_infantry" territory="Esgaroth" quantity="3" owner="Northmen"/>
+            <unitPlacement unitType="rohirric_scout" territory="Ethraid Engrin" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="riddermark_militia" territory="Ethraid Engrin" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="spearman" territory="Ethring" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Ethring" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="troll" territory="Ettendales" quantity="1" owner="OrcHolds"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Fanuidhol" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="warg_scout" territory="Fanuidhol" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="trollman" territory="Far Harad" quantity="3" owner="Harad"/>
+            <unitPlacement unitType="elven_cavalry" territory="Fields of Celebrant" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="eorling_rider" territory="Folde" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="rohirric_scout" territory="Folde" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="elven_hunter" territory="Forlond" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="trebuchet" territory="Fornost" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="orc_marauder" territory="Forochel" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Forochel" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Forodwaith" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Framsburg" quantity="3" owner="Northmen"/>
+            <unitPlacement unitType="bowman" territory="Freca's Stronghold" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="goblin_stabber" territory="Front Porch" quantity="1" owner="OrcHolds"/>
+            <unitPlacement unitType="goblin_shooter" territory="Front Porch" quantity="1" owner="OrcHolds"/>
+            <unitPlacement unitType="helming_warrior" territory="Gap of Rohan" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="beorning_warrior" territory="Gladden Fields" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="goblin_stabber" territory="Goblin Gate" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="goblin_shooter" territory="Goblin Town" quantity="6" owner="OrcHolds"/>
+            <unitPlacement unitType="goblin_stabber" territory="Goblin Town" quantity="4" owner="OrcHolds"/>
+            <unitPlacement unitType="man_at_arms" territory="Greenfields" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Greenfields" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="woodman" territory="Greenwood the Great" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Grey Mountains" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Greylin" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="ranger" territory="Halifirien" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="dwarven_halberdier" territory="Halls of Grór" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Halls of Grór" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="elven_archer" territory="Harlond" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="noldorin_warrior" territory="Harlond" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="man_at_arms" territory="Haudh in Gwanûr" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="ranger" territory="Henneth Annûn" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="elven_hunter" territory="High Moors" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="elven_cavalry" territory="High Moors" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="noldorin_warrior" territory="High Pass" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="elven_archer" territory="High Pass" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="orc_marauder" territory="Hithaeglir" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="troll" territory="Hithaeglir" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="hobbit_archer" territory="Hobbiton" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="pony_rider" territory="Hobbiton" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="warg_rider" territory="Hollin" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="warg_scout" territory="Hollin" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="helming_warrior" territory="Hornburg" quantity="4" owner="Rohan"/>
+            <unitPlacement unitType="bowman" territory="Hornburg" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="orc_marauder" territory="Imlad Morgul" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="man_at_arms" territory="Imloth Melui" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="uruk_pikeman" territory="Isengard" quantity="10" owner="Saruman"/>
+            <unitPlacement unitType="uruk_warrior" territory="Isengard" quantity="8" owner="Saruman"/>
+            <unitPlacement unitType="wizard" territory="Isengard" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="fire_of_orthanc" territory="Isengard" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="ranger" territory="Ithilien" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="raider" territory="Kingdom of Rhovanion" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="balchoth_tribesman" territory="Lands of the Balchoth" quantity="5" owner="Rhun"/>
+            <unitPlacement unitType="barding_infantry" territory="Lands of the Bardings" quantity="5" owner="Northmen"/>
+            <unitPlacement unitType="beorning_warrior" territory="Lands of the Beornings" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="dwarven_pikeman" territory="Lands of the Broadbeams" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_axeman" territory="Lands of the Broadbeams" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="cold_drake" territory="Lands of the Cold-drakes" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="dwarven_axethrower" territory="Lands of the Firebeards" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dwarven_pikeman" territory="Lands of the Firebeards" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="dunlending_wildman" territory="Lands of the Gwathuirim" quantity="3" owner="Saruman"/>
+            <unitPlacement unitType="bowman" territory="Lands of the Haradrim" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="trollman" territory="Lands of the Haradrim" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="orc_marauder" territory="Lands of the Hill-men" quantity="5" owner="Angmar"/>
+            <unitPlacement unitType="variag_raider" territory="Lands of the Variags" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="war_wagon" territory="Lands of the Wainriders" quantity="2" owner="Rhun"/>
+            <unitPlacement unitType="chariot" territory="Lands of the Wainriders" quantity="3" owner="Rhun"/>
+            <unitPlacement unitType="wainrider_chieftain" territory="Lands of the Wainriders" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="woodman" territory="Lands of the Woodmen" quantity="3" owner="Northmen"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Lands of the Éothéod" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="spearman" territory="Linhir" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Linhir" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="ranger" territory="Linhir" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="olog_hai" territory="Lithlad" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="warg_rider" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="man_at_arms" territory="Lossarnach" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="barding_infantry" territory="Lower Carnen" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="raider" territory="Lower Carnen" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Lower Langwell" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="beorning_warrior" territory="Lower Langwell" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="man_at_arms" territory="Lower Poros" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Lower Poros" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="hobbit_archer" territory="Michel Delving" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Minas Morgul" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="uruk_warrior" territory="Minas Morgul" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="Minas Morgul" quantity="6" owner="Mordor"/>
+            <unitPlacement unitType="winged_nazgul" territory="Minas Morgul" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="tower_guard" territory="Minas Tirith" quantity="6" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Minas Tirith" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Minas Tirith" quantity="4" owner="Gondor"/>
+            <unitPlacement unitType="balrog" territory="Mines of Moria" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="bat" territory="Mines of Moria" quantity="2" owner="Moria"/>
+            <unitPlacement unitType="elven_cavalry" territory="Mithlond" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="noldorin_warrior" territory="Mithlond" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="uruk_pikeman" territory="Morannon" quantity="3" owner="Mordor"/>
+            <unitPlacement unitType="olog_hai" territory="Morannon" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Morgai" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="Morgai" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="spearman" territory="Morgulduin" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Morgulduin" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="orc_marauder" territory="Moria" quantity="4" owner="Moria"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Moria" quantity="3" owner="Moria"/>
+            <unitPlacement unitType="troll" territory="Moria" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="warg_rider" territory="Mount Gram" quantity="3" owner="OrcHolds"/>
+            <unitPlacement unitType="warg_scout" territory="Mount Gram" quantity="4" owner="OrcHolds"/>
+            <unitPlacement unitType="orc_marauder" territory="Mount Gram" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="orc_marauder" territory="Mount Gundabad" quantity="7" owner="OrcHolds"/>
+            <unitPlacement unitType="elven_hunter" territory="Mountains of Mirkwood" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="orc_marauder" territory="Mountains of Shadow" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="elven_archer" territory="Naith" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="halforc" territory="Nan Curunír" quantity="4" owner="Saruman"/>
+            <unitPlacement unitType="orc_marauder" territory="Narchost" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="orc_marauder" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="bowman" territory="Near Harad" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="elven_hunter" territory="Nimrodel" quantity="2" owner="SilvanElves"/>
+            <unitPlacement unitType="man_at_arms" territory="North Arnor" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="North Arnor" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="warg_scout" territory="North Berennyr" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="ranger" territory="North Bree-land" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="barding_infantry" territory="North Dale" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="ranger" territory="North Downs" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="man_at_arms" territory="North Downs" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunlending_wildman" territory="North Dunland" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="halforc" territory="North Enedwaith" quantity="2" owner="Saruman"/>
+            <unitPlacement unitType="uruk_warrior" territory="North Enedwaith" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="North Ephel Dúath" quantity="2" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="North Ephel Dúath" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="ranger" territory="North Ithilien" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="variag_raider" territory="North Khand" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="man_at_arms" territory="North Lamedon" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="elven_warden" territory="North Lórien" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="orc_marauder" territory="North Misty Mountains" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="North Misty Mountains" quantity="1" owner="OrcHolds"/>
+            <unitPlacement unitType="orc_marauder" territory="North Nurn" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="warg_rider" territory="North Rhudaur" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="corsair" territory="North Umbar" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="bowman" territory="North Umbar" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="elven_hunter" territory="North Woodland Realm" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="orc_marauder" territory="Nurn" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="elven_hunter" territory="Nîn-in-Eilph" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="noldorin_warrior" territory="Ost-in-Edhil" quantity="2" owner="HighElves"/>
+            <unitPlacement unitType="oathbreaker" territory="Paths of the Dead" quantity="9" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="Pelargir" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Pelargir" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="man_at_arms" territory="Pelargir" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="ranger" territory="Pinnath Gelin" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="Pinnath Gelin" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="raven" territory="Ravenhill" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="raider" territory="Realm of Vidugavia" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="beorning_warrior" territory="Rhosgobel" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="woodman" territory="Rhosgobel" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="easterling_cavalry" territory="Rhûn" quantity="2" owner="Rhun"/>
+            <unitPlacement unitType="wainrider_chieftain" territory="Rhûn" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="chariot" territory="Rhûn" quantity="3" owner="Rhun"/>
+            <unitPlacement unitType="war_wagon" territory="Rhûn" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="noldorin_warrior" territory="Rivendell" quantity="3" owner="HighElves"/>
+            <unitPlacement unitType="elven_archer" territory="Rivendell" quantity="4" owner="HighElves"/>
+            <unitPlacement unitType="wizard" territory="Rivendell" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="goblin_shooter" territory="Rushdown" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="elven_warden" territory="Silverlode" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="elven_archer" territory="Silverlode" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="man_at_arms" territory="South Arthedain" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="ranger" territory="South Bree-land" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="scout" territory="South Bree-land" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="dunadan_lancer" territory="South Cardolan" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="dunlending_wildman" territory="South Dunland" quantity="2" owner="Saruman"/>
+            <unitPlacement unitType="crebain" territory="South Dunland" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="uruk_warrior" territory="South Enedwaith" quantity="1" owner="Saruman"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="South Gorgoroth" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="orc_marauder" territory="South Gorgoroth" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="ranger" territory="South Ithilien" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="variag_raider" territory="South Khand" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="South Mordor" quantity="3" owner="Mordor"/>
+            <unitPlacement unitType="easterling_cavalry" territory="South Rhûn" quantity="3" owner="Rhun"/>
+            <unitPlacement unitType="corsair" territory="South Umbar" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="easterling_cavalry" territory="South Wilderland" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="balchoth_tribesman" territory="South Wilderland" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="hobbit_archer" territory="Staddle" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="elven_archer" territory="Swanfleet" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="warg_scout" territory="Taur-e-Ndaedelos" quantity="2" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="Taur-e-Ndaedelos" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="Taur-nu-Fuin" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Taur-nu-Fuin" quantity="2" owner="DolGuldur"/>
+            <unitPlacement unitType="warg_scout" territory="Taur-nu-Fuin" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="man_at_arms" territory="Tharbad" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="bowman" territory="Tharbad" quantity="4" owner="Arnor"/>
+            <unitPlacement unitType="dunadan_guard" territory="Tharbad" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="elven_cavalry" territory="The Angle" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="hobbit_archer" territory="Tookland" quantity="2" owner="Freefolk"/>
+            <unitPlacement unitType="ent" territory="Treebeard's Hill" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="troll" territory="Trollfells" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="hobbit_archer" territory="Tuckborough" quantity="1" owner="Freefolk"/>
+            <unitPlacement unitType="man_at_arms" territory="Tumladen" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="barrow_wight" territory="Tyrn Gorthad" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="barding_infantry" territory="Upper Carnen" quantity="1" owner="Northmen"/>
+            <unitPlacement unitType="spearman" territory="Upper Poros" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="scout" territory="Weather Hills" quantity="1" owner="Arnor"/>
+            <unitPlacement unitType="ranger" territory="Weather Hills" quantity="2" owner="Arnor"/>
+            <unitPlacement unitType="ent" territory="Wellinghall" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="dunadan_lancer" territory="West Anórien" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="orc_marauder" territory="West Ephel Dúath" quantity="1" owner="Mordor"/>
+            <unitPlacement unitType="warg_rider" territory="West Forodwaith" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
+            <unitPlacement unitType="oliphaunt" territory="West Haradwaith" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="dwarven_axeman" territory="West Iron Hills" quantity="2" owner="Dwarves"/>
+            <unitPlacement unitType="man_at_arms" territory="West Lebennin" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="rohirric_scout" territory="West March" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="bowman" territory="West March" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="eorling_rider" territory="West March" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="spearman" territory="West Osgiliath" quantity="2" owner="Gondor"/>
+            <unitPlacement unitType="dunadan_lancer" territory="West Osgiliath" quantity="3" owner="Gondor"/>
+            <unitPlacement unitType="spearman" territory="West Rhûn" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="balchoth_tribesman" territory="West Rhûn" quantity="1" owner="Rhun"/>
+            <unitPlacement unitType="troll" territory="West Trollshaws" quantity="2" owner="OrcHolds"/>
+            <unitPlacement unitType="uruloke" territory="West Withered Heath" quantity="1" owner="Angmar"/>
+            <unitPlacement unitType="rohirric_scout" territory="Westemnet" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="riddermark_militia" territory="Westemnet" quantity="1" owner="Rohan"/>
+            <unitPlacement unitType="helming_warrior" territory="Westfold" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="eorling_rider" territory="Westfold" quantity="2" owner="Rohan"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Witch-Realm" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="orc_marauder" territory="Witch-Realm" quantity="4" owner="Angmar"/>
+            <unitPlacement unitType="nazgul" territory="Witch-Realm" quantity="1" owner="Angmar"/>
+            <unitPlacement unitType="black_ship" territory="sz 3" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="black_ship" territory="sz 4" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="dromund" territory="sz Anduin 2" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="swan_boat" territory="sz Anduin 6" quantity="1" owner="SilvanElves"/>
+            <unitPlacement unitType="dromund" territory="sz Bay of Belfalas" quantity="1" owner="Gondor"/>
+            <unitPlacement unitType="swan_boat" territory="sz Bruinen 1" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="dromund" territory="sz Gulf of Lhûn" quantity="1" owner="HighElves"/>
+            <unitPlacement unitType="black_ship" territory="sz Gulf of Umbar" quantity="3" owner="Harad"/>
 		
 		
 			<!--<unitPlacement unitType="dwarven_pikeman" territory="Lands of the Broadbeams" quantity="1" owner="Dwarves"/>
