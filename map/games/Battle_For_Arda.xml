@@ -120,6 +120,16 @@
 				<element name="sz Isen"/>
 			</variable>
 			
+			<variable name="RIVERCROSSING.FROM">
+				<element name="Eastfarthing"/>     <element name="Southfarthing"/><element name="The Angle"/>     <element name="The Angle"/>       <element name="East Trollshaws"/><element name="The Angle"/>      <element name="East Trollshaws"/><element name="West Harondor"/>      <element name="East Harondor"/>      <element name="West Harondor"/>      <element name="East Harondor"/>      <element name="Rhimdath"/>            <element name="Rhimdath"/>              <element name="Lands of the Stoors"/>   <element name="Gladden Fields"/>        <element name="Lands of the Stoors"/><element name="Gladden Fields"/><element name="The Wold"/>      <element name="Fields of Celebrant"/><element name="Eastemnet"/>    <element name="Parth Galen"/>   <element name="Eastemnet"/>  <element name="Parth Galen"/>
+			</variable>
+			<variable name="RIVERCROSSING.TO">
+				<element name="Buckland"/>         <element name="West Cardolan"/><element name="East Lone Lands"/><element name="Rivendell"/>      <element name="Rivendell"/>      <element name="High Moors"/>     <element name="High Moors"/>     <element name="Near Harad"/>         <element name="Near Harad"/>         <element name="North Harad"/>        <element name="North Harad"/>        <element name="Lands of the Éothéod"/><element name="Lands of the Beornings"/><element name="Lands of the Beornings"/><element name="Lands of the Beornings"/><element name="Beorn's Hall"/>       <element name="Beorn's Hall"/>  <element name="North Berennyr"/><element name="North Berennyr"/>     <element name="South Berennyr"/><element name="South Berennyr"/><element name="Emyn Muil"/>   <element name="Emyn Muil"/>
+			</variable>
+			<variable name="RIVERCROSSING.THROUGH">
+				<element name="Brandywine Bridge"/><element name="Sarn Ford"/>    <element name="Last Bridge"/>    <element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Carrock"/>             <element name="Carrock"/>               <element name="Old Ford"/>              <element name="Old Ford"/>              <element name="Old Ford"/>           <element name="Old Ford"/>      <element name="North Undeep"/>  <element name="North Undeep"/>       <element name="South Undeep"/>  <element name="South Undeep"/>  <element name="South Undeep"/><element name="South Undeep"/>
+			</variable>
+			
 		
 		
 			<variable name="MELEE_INFANTRY">
@@ -2484,13 +2494,37 @@
 					<!--CANALS-->
 					
 					<!--CROSSINGS-->
-					<!--<connection t1="Eastfarthing" t2="Buckland"/>
+					<connection t1="Eastfarthing" t2="Buckland"/>
+					
 					<connection t1="Southfarthing" t2="West Cardolan"/>
+					
 					<connection t1="The Angle" t2="East Lone Lands"/>
+					
 					<connection t1="The Angle" t2="Rivendell"/>
 					<connection t1="East Trollshaws" t2="Rivendell"/>
 					<connection t1="The Angle" t2="High Moors"/>
-					<connection t1="East Trollshaws" t2="High Moors"/>-->
+					<connection t1="East Trollshaws" t2="High Moors"/>
+					
+					<connection t1="West Harondor" t2="Near Harad"/>
+					<connection t1="East Harondor" t2="Near Harad"/>
+					<connection t1="West Harondor" t2="North Harad"/>
+					<connection t1="East Harondor" t2="North Harad"/>
+					
+					<connection t1="Rhimdath" t2="Lands of the Éothéod"/>
+					<connection t1="Rhimdath" t2="Lands of the Beornings"/>
+					
+					<connection t1="Lands of the Stoors" t2="Lands of the Beornings"/>
+					<connection t1="Gladden Fields" t2="Lands of the Beornings"/>
+					<connection t1="Lands of the Stoors" t2="Beorn's Hall"/>
+					<connection t1="Gladden Fields" t2="Beorn's Hall"/>
+
+					<connection t1="The Wold" t2="North Berennyr"/>
+					<connection t1="Fields of Celebrant" t2="North Berennyr"/>
+					
+					<connection t1="Eastemnet" t2="South Berennyr"/>
+					<connection t1="Parth Galen" t2="South Berennyr"/>
+					<connection t1="Eastemnet" t2="Emyn Muil"/>
+					<connection t1="Parth Galen" t2="Emyn Muil"/>
 					
         </map>
 		
@@ -7883,71 +7917,19 @@
 						<option name="territoryEffect" value="major_river"/>
 					</attachment>
 					
-				   
-				   
-				   
-				    <!--<attachment name="canalAttachment_Crossing_Brandywine_Bridge_1" attachTo="Eastfarthing" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Brandywine Bridge 1"/>
-						<option name="landTerritories" value="Brandywine Bridge"/>
+					
+					
+					
+					
+					<attachment foreach="$RIVERCROSSING.FROM$:$RIVERCROSSING.TO$:$RIVERCROSSING.THROUGH$" name="canalAttachment_Crossing_from_@RIVERCROSSING.FROM@_to_@RIVERCROSSING.TO@_through_@RIVERCROSSING.THROUGH@" attachTo="@RIVERCROSSING.FROM@" javaClass="CanalAttachment" type="territory">
+						<option name="canalName" value="Crossing @RIVERCROSSING.THROUGH@ (between @RIVERCROSSING.FROM@ and @RIVERCROSSING.TO@)"/>
+						<option name="landTerritories" value="@RIVERCROSSING.THROUGH@"/>
 					</attachment>
-					<attachment name="canalAttachment_Crossing_Brandywine_Bridge_1" attachTo="Buckland" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Brandywine Bridge 1"/>
-						<option name="landTerritories" value="Brandywine Bridge"/>
+					<attachment foreach="$RIVERCROSSING.FROM$:$RIVERCROSSING.TO$:$RIVERCROSSING.THROUGH$" name="canalAttachment_Crossing_from_@RIVERCROSSING.FROM@_to_@RIVERCROSSING.TO@_through_@RIVERCROSSING.THROUGH@" attachTo="@RIVERCROSSING.TO@" javaClass="CanalAttachment" type="territory">
+						<option name="canalName" value="Crossing @RIVERCROSSING.THROUGH@ (between @RIVERCROSSING.FROM@ and @RIVERCROSSING.TO@)"/>
+						<option name="landTerritories" value="@RIVERCROSSING.THROUGH@"/>
 					</attachment>
 					
-					<attachment name="canalAttachment_Crossing_Sarn_Ford_1" attachTo="Southfarthing" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Sarn Ford 1"/>
-						<option name="landTerritories" value="Sarn Ford"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Sarn_Ford_1" attachTo="West Cardolan" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Sarn Ford 1"/>
-						<option name="landTerritories" value="Sarn Ford"/>
-					</attachment>
-					
-					<attachment name="canalAttachment_Crossing_Last_Bridge_1" attachTo="East Lone Lands" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Last Bridge 1"/>
-						<option name="landTerritories" value="Last Bridge"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Last_Bridge_1" attachTo="The Angle" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Last Bridge 1"/>
-						<option name="landTerritories" value="Last Bridge"/>
-					</attachment>
-					
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_1" attachTo="The Angle" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 1"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_1" attachTo="Rivendell" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 1"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_2" attachTo="East Trollshaws" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 2"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_2" attachTo="Rivendell" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 2"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_3" attachTo="The Angle" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 3"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_3" attachTo="High Moors" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 3"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_4" attachTo="East Trollshaws" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 4"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>
-					<attachment name="canalAttachment_Crossing_Ford_of_Bruinen_4" attachTo="High Moors" javaClass="CanalAttachment" type="territory">
-						<option name="canalName" value="Crossing Ford of Bruinen 4"/>
-						<option name="landTerritories" value="Ford of Bruinen"/>
-					</attachment>-->
 					
 				   
 				   
