@@ -70,6 +70,17 @@
 			
 			
 			
+			<variable name="LAND_TERRAIN">
+				<element name="mountain"/>
+				<element name="hill"/>
+				<element name="cave"/>
+				<element name="forest"/>
+				<element name="marsh"/>
+				<element name="plains"/>
+				<element name="settlement"/>
+				<element name="river"/>
+			</variable>
+			
 			
 			
 			
@@ -499,24 +510,6 @@
 				<element name="spider"/>
 			</variable>
 			
-			<variable name="EVADE">
-				<element name="uruk_warrior" />
-				<element name="barrow_wight" />
-				<element name="raider" />
-				<element name="variag_raider" />
-				<element name="rohirric_scout" />
-				<element name="elven_cavalry" />
-				<element name="easterling_cavalry" />
-				<element name="warg_rider" />
-				<element name="spider" />
-				<element name="ranger"/>
-				<element name="elven_hunter"/>
-				<element name="warg_scout"/>
-				<element name="werewolf"/>
-				<element name="huorn"/>
-				<element name="ent"/>
-			</variable>
-			
 			<variable name="FLANK">
 				<element name="raider"/>
 				<element name="variag_raider"/>
@@ -554,6 +547,20 @@
 				<element name="nazgul"/>
 				<element name="winged_nazgul"/>
 			</variable>
+			<variable name="AMBUSH">
+				<element name="beorning_warrior"/>
+				<element name="uruk_warrior"/>
+				<element name="elven_warden"/>
+				<element name="warg_scout"/>
+				<element name="troll"/>
+				<element name="spider"/>
+				<element name="barrow_wight"/>
+				<element name="dwarven_axeman"/>
+				<element name="hobbit_archer"/>
+				<element name="huorn"/>
+				<element name="ranger"/>
+				<element name="elven_hunter"/>
+			</variable>
 			
 
 			
@@ -586,6 +593,13 @@
 			</variable>
 			<variable name="FORMATION.VALUE">
 				<element name="4"/>      <element name="3"/>       <element name="3"/>           <element name="2"/>             <element name="4"/>                 <element name="6"/>           <element name="4"/>            <element name="2"/>               <element name="3"/>           <element name="6"/>
+			</variable>
+			
+			<variable name="SCOUTING.UNIT">
+				<element name="elven_cavalry"/><element name="rohirric_scout"/><element name="scout"/><element name="warg_scout"/><element name="crebain"/><element name="ranger"/><element name="elven_hunter"/>
+			</variable>
+			<variable name="SCOUTING.VALUE">
+				<element name="4"/>            <element name="6"/>             <element name="4"/>    <element name="4"/>         <element name="4"/>      <element name="6"/>     <element name="6"/>           
 			</variable>
 		</variableList>
 		<map>
@@ -2889,7 +2903,7 @@
 				<result resourceOrUnit="halforc" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_uruk_warrior">
-				<cost resource="PUs" quantity="9" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="uruk_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_uruk_pikeman">
@@ -2933,7 +2947,7 @@
 				<result resourceOrUnit="man_at_arms" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_ranger">
-				<cost resource="PUs" quantity="8" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="ranger" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_tower_guard">
@@ -2951,7 +2965,7 @@
 			
 			
 			<productionRule name="buy_beorning_warrior">
-				<cost resource="PUs" quantity="5" />
+				<cost resource="PUs" quantity="6" />
 				<result resourceOrUnit="beorning_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_woodman">
@@ -2977,7 +2991,7 @@
 			
 			
 			<productionRule name="buy_elven_warden">
-				<cost resource="PUs" quantity="5" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="elven_warden" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_elven_hunter">
@@ -2989,7 +3003,7 @@
 				<result resourceOrUnit="galadhrim_longbowman" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_elven_cavalry">
-				<cost resource="PUs" quantity="10" />
+				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="elven_cavalry" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_huorn">
@@ -2997,7 +3011,7 @@
 				<result resourceOrUnit="huorn" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_ent">
-				<cost resource="PUs" quantity="30" />
+				<cost resource="PUs" quantity="28" />
 				<result resourceOrUnit="ent" quantity="1"/>
 			</productionRule>
 			
@@ -3007,7 +3021,7 @@
 				<result resourceOrUnit="balchoth_tribesman" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_easterling_cavalry">
-				<cost resource="PUs" quantity="10" />
+				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="easterling_cavalry" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_chariot">
@@ -3033,7 +3047,7 @@
 				<result resourceOrUnit="noldorin_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_eagle">
-				<cost resource="PUs" quantity="24" />
+				<cost resource="PUs" quantity="30" />
 				<result resourceOrUnit="eagle" quantity="1"/>
 			</productionRule>
 			
@@ -3055,7 +3069,7 @@
 				<result resourceOrUnit="black_numenorean" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_variag_raider">
-				<cost resource="PUs" quantity="9" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="variag_raider" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_oliphaunt">
@@ -3066,7 +3080,7 @@
 			
 			
 			<productionRule name="buy_hobbit_archer">
-				<cost resource="PUs" quantity="4" />
+				<cost resource="PUs" quantity="5" />
 				<result resourceOrUnit="hobbit_archer" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_scout">
@@ -3111,11 +3125,11 @@
 				<result resourceOrUnit="orc_marauder" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_barrow_wight">
-				<cost resource="PUs" quantity="8" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="barrow_wight" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_warg_scout">
-				<cost resource="PUs" quantity="9" />
+				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="warg_scout" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_goblin_stabber">
@@ -3164,7 +3178,7 @@
 				<result resourceOrUnit="cold_drake" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_werewolf">
-				<cost resource="PUs" quantity="24" />
+				<cost resource="PUs" quantity="20" />
 				<result resourceOrUnit="werewolf" quantity="1"/>
 			</productionRule>
 			
@@ -3178,7 +3192,7 @@
 				<result resourceOrUnit="helming_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_rohirric_scout">
-				<cost resource="PUs" quantity="9" />
+				<cost resource="PUs" quantity="7" />
 				<result resourceOrUnit="rohirric_scout" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_eorling_rider">
@@ -3513,9 +3527,18 @@
 					<attachment name="unitAttachment" attachTo="uruk_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="3"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="3"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="beorning_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -3523,12 +3546,13 @@
 						<option name="movement" value="2"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="2"/>
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="3"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="4"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
 						<option name="maxAAattacks" value="1"/>
 						<option name="maxRoundsAA" value="1"/>
@@ -3570,6 +3594,15 @@
 						<option name="attack" value="1"/>
 						<option name="defense" value="4"/>
 						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="5"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="man_at_arms" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -3589,9 +3622,18 @@
 					<attachment name="unitAttachment" attachTo="barrow_wight" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="2"/>
 						<option name="defense" value="5"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="6"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
@@ -3621,6 +3663,16 @@
 						<option name="movement" value="2"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="3"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="3"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="dwarven_pikeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -3659,6 +3711,16 @@
 						<option name="movement" value="2"/>
 						<option name="attack" value="2"/>
 						<option name="defense" value="2"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="3"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
@@ -3723,32 +3785,32 @@
 					<attachment name="unitAttachment" attachTo="ranger" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="5"/>
-						<option name="targetsAA" value="$FLYING$"/>
-						<option name="typeAA" value="antiair"/>
-						<option name="attackAA" value="3"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="5"/>
 						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
 						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="-1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="elven_hunter" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="3"/>
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="5"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="4"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
 						<option name="maxAAattacks" value="1"/>
 						<option name="maxRoundsAA" value="1"/>
@@ -3800,7 +3862,6 @@
 					<attachment name="unitAttachment" attachTo="raider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="1"/>
 					</attachment>
@@ -3808,7 +3869,6 @@
 					<attachment name="unitAttachment" attachTo="variag_raider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="2"/>
 					</attachment>
@@ -3834,46 +3894,27 @@
 						<option name="movement" value="4"/>
 						<option name="attack" value="3"/>
 						<option name="defense" value="2"/>
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="3"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
-						<option name="damageableAA" value="true"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="rohirric_scout" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="3"/>
 						<option name="defense" value="3"/>
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="3"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
-						<option name="damageableAA" value="true"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="warg_scout" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="3"/>
 						<option name="defense" value="4"/>
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="4"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="5"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
 						<option name="maxAAattacks" value="1"/>
 						<option name="maxRoundsAA" value="1"/>
@@ -3882,7 +3923,6 @@
 					<attachment name="unitAttachment" attachTo="elven_cavalry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="3"/>
 					</attachment>
@@ -3890,7 +3930,6 @@
 					<attachment name="unitAttachment" attachTo="easterling_cavalry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="2"/>
 					</attachment>
@@ -4010,7 +4049,6 @@
 					<attachment name="unitAttachment" attachTo="warg_rider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="2"/>
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
@@ -4027,7 +4065,6 @@
 					<attachment name="unitAttachment" attachTo="werewolf" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
-						<option name="canEvade" value="true"/>
 						<option name="hitPoints" value="2"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="6"/>
@@ -4065,16 +4102,6 @@
 						<option name="canAirBattle" value="true"/>
 						<option name="airDefense" value="1"/>
 						<option name="airAttack" value="1"/>
-						
-						<option name="targetsAA" value="$EVADE$"/>
-						<option name="typeAA" value="tracking"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="3"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
-						<option name="damageableAA" value="true"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="raven" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4185,6 +4212,15 @@
 						<option name="attack" value="6"/>
 						<option name="defense" value="5"/>
 						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="6"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="olog_hai" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4209,27 +4245,42 @@
 					<attachment name="unitAttachment" attachTo="spider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="canEvade" value="true"/>
 						<option name="hitPoints" value="2"/>
 						<option name="attack" value="3"/>
 						<option name="defense" value="7"/>
 						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="8"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="huorn" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="canEvade" value="true"/>
 						<option name="hitPoints" value="2"/>
 						<option name="attack" value="4"/>
 						<option name="defense" value="6"/>
 						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="6"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="ent" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="canEvade" value="true"/>
 						<option name="hitPoints" value="2"/>
 						<option name="attack" value="7"/>
 						<option name="defense" value="5"/>
@@ -4888,6 +4939,18 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					
+					<attachment foreach="$SCOUTING.UNIT$:$SCOUTING.VALUE$" name="supportAttachment_formation_@SCOUTING.UNIT@" attachTo="@SCOUTING.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="enemy"/>
+						<option name="side" value="offence"/>
+						<option name="dice" value="AAstrength"/>
+						<option name="bonus" value="-@SCOUTING.VALUE@"/>
+						<option name="number" value="1"/>
+						<option name="bonusType" value="scouting"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					
 					<!--Terrain Support-->
 					
 					<attachment name="supportAttachment_plains_terrain_charge" attachTo="plains_terrain" javaClass="UnitSupportAttachment" type="unitType">
@@ -4964,6 +5027,87 @@
 						<option name="bonus" value="-10"/>
 						<option name="number" value="9999"/>
 						<option name="bonusType" value="settlement_terrain_charge"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					
+					
+					
+					<attachment foreach="$LAND_TERRAIN$" name="supportAttachment_@LAND_TERRAIN@_ambush_overcap" attachTo="@LAND_TERRAIN@_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-1"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="ambush_overcap"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					
+					<attachment name="supportAttachment_mountain_terrain_ambush" attachTo="mountain_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="3"/>
+						<option name="bonusType" value="ambush_slot"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_hill_terrain_ambush" attachTo="hill_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="2"/>
+						<option name="bonusType" value="ambush_slot"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_cave_terrain_ambush" attachTo="cave_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="3"/>
+						<option name="bonusType" value="ambush_slot"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_forest_terrain_ambush" attachTo="forest_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="3"/>
+						<option name="bonusType" value="ambush_slot"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_marsh_terrain_ambush" attachTo="marsh_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="1"/>
+						<option name="number" value="1"/>
+						<option name="bonusType" value="ambush_slot"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					<attachment name="supportAttachment_settlement_terrain_ambush" attachTo="settlement_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$AMBUSH$"/>
+						<option name="faction" value="allied"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAroll"/>
+						<option name="bonus" value="-99"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="block_ambush"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
