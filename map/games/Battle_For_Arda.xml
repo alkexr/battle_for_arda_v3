@@ -186,6 +186,8 @@
 				<element name="swan_knight"/>
 				<element name="kings_company"/>
 				<element name="warg_rider"/>
+				<element name="southron_cavalry"/>
+				<element name="white_wolf"/>
 			</variable>
 			<variable name="RANGED_CAVALRY">
 				<element name="rohirric_scout"/>
@@ -204,13 +206,14 @@
 			<variable name="CREATURE">
 				<element name="troll"/>
 				<element name="olog_hai"/>
-				<element name="spider"/>
+				<element name="giant_spider"/>
 				<element name="huorn"/>
 				<element name="ent"/>
 				<element name="oliphaunt"/>
 				<element name="bear"/>
 				<element name="werewolf"/>
 				<element name="cold_drake"/>
+				<element name="spider"/>
 			</variable>
 			<variable name="OTHER_UNIT">
 				<element name="wizard"/>
@@ -309,7 +312,7 @@
 				<element name="kings_company" />
 				<element name="warg_rider" />
 				<element name="olog_hai" />
-				<element name="spider" />
+				<element name="giant_spider" />
 				<element name="oliphaunt" />
 				<element name="bear" />
 				<element name="wizard" />
@@ -319,6 +322,8 @@
 				<element name="catapult" />
 				<element name="trebuchet" />
 				<element name="war_wagon" />
+				<element name="southron_cavalry" />
+				<element name="white_wolf" />
 			</variable>
 			
 			
@@ -340,6 +345,7 @@
 				<element name="troll"/>
 				<element name="huorn"/>
 				<element name="ent"/>
+				<element name="spider"/>
 			</variable>
 			<!--<variable name="UNSEEN">
 				<element name="elven_warden"/>
@@ -375,6 +381,8 @@
 				<element name="swan_knight"/>
 				<element name="kings_company"/>
 				<element name="oliphaunt"/>
+				<element name="white_wolf"/>
+				<element name="southron_cavalry"/>
 			</variable>
 			<variable name="TP_WILDERNESS">
 				<element name="dunlending_wildman"/>
@@ -394,6 +402,7 @@
 				<element name="woodman"/>
 				<element name="ranger"/>
 				<element name="elven_hunter"/>
+				<element name="giant_spider"/>
 				<element name="spider"/>
 			</variable>
 			<variable name="TP_WOODLAND">
@@ -517,7 +526,7 @@
 			</variable>
 			
 			<variable name="WEB_4x3">
-				<element name="spider"/>
+				<element name="giant_spider"/>
 			</variable>
 			
 			<variable name="FLANK">
@@ -539,11 +548,13 @@
 				<element name="swan_knight"/>
 				<element name="kings_company"/>
 				<element name="olog_hai"/>
+				<element name="southron_cavalry"/>
 			</variable>
 			<variable name="CHARGE_HILL">
 				<element name="warg_rider"/>
 				<element name="werewolf"/>
 				<element name="bear"/>
+				<element name="white_wolf"/>
 			</variable>
 			<variable name="CHARGE">
 				<element name="$CHARGE_PLAINS$"/>
@@ -563,13 +574,14 @@
 				<element name="elven_warden"/>
 				<element name="warg_scout"/>
 				<element name="troll"/>
-				<element name="spider"/>
+				<element name="giant_spider"/>
 				<element name="barrow_wight"/>
 				<element name="dwarven_axeman"/>
 				<element name="hobbit_archer"/>
 				<element name="huorn"/>
 				<element name="ranger"/>
 				<element name="elven_hunter"/>
+				<element name="spider"/>
 			</variable>
 			
 
@@ -606,10 +618,10 @@
 			</variable>
 			
 			<variable name="SCOUTING.UNIT">
-				<element name="elven_cavalry"/><element name="rohirric_scout"/><element name="scout"/><element name="warg_scout"/><element name="crebain"/><element name="ranger"/><element name="elven_hunter"/>
+				<element name="elven_cavalry"/><element name="rohirric_scout"/><element name="scout"/><element name="warg_scout"/><element name="crebain"/><element name="ranger"/><element name="elven_hunter"/><element name="southron_cavalry"/><element name="white_wolf"/>
 			</variable>
 			<variable name="SCOUTING.VALUE">
-				<element name="4"/>            <element name="6"/>             <element name="4"/>    <element name="4"/>         <element name="4"/>      <element name="6"/>     <element name="6"/>           
+				<element name="4"/>            <element name="6"/>             <element name="4"/>    <element name="4"/>         <element name="4"/>      <element name="6"/>     <element name="6"/>           <element name="3"/>               <element name="4"/>     
 			</variable>
 		</variableList>
 		<map>
@@ -2637,7 +2649,7 @@
 			<!--<unit name="uruloke_hit2" />-->
 			<unit name="troll" />
 			<unit name="olog_hai" />
-			<unit name="spider" />
+			<unit name="giant_spider" />
 			<unit name="huorn" />
 			<unit name="ent" />
 			<unit name="oliphaunt" />
@@ -2663,6 +2675,10 @@
 			<unit name="wall_ruined" />
 			<unit name="werewolf" />
 			<unit name="cold_drake" />
+			
+			<unit name="southron_cavalry" />
+			<unit name="white_wolf" />
+			<unit name="spider" />
 			
 			<unit name="settlement_terrain" />
 			<unit name="plains_terrain" />
@@ -3178,9 +3194,9 @@
 				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="bat" quantity="1"/>
 			</productionRule>
-			<productionRule name="buy_spider">
+			<productionRule name="buy_giant_spider">
 				<cost resource="PUs" quantity="22" />
-				<result resourceOrUnit="spider" quantity="1"/>
+				<result resourceOrUnit="giant_spider" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_olog_hai">
 				<cost resource="PUs" quantity="20" />
@@ -3214,6 +3230,19 @@
 			<productionRule name="buy_werewolf">
 				<cost resource="PUs" quantity="20" />
 				<result resourceOrUnit="werewolf" quantity="1"/>
+			</productionRule>
+			
+			<productionRule name="buy_southron_cavalry">
+				<cost resource="PUs" quantity="6" />
+				<result resourceOrUnit="southron_cavalry" quantity="1"/>
+			</productionRule>
+			<productionRule name="buy_white_wolf">
+				<cost resource="PUs" quantity="7" />
+				<result resourceOrUnit="white_wolf" quantity="1"/>
+			</productionRule>
+			<productionRule name="buy_spider">
+				<cost resource="PUs" quantity="7" />
+				<result resourceOrUnit="spider" quantity="1"/>
 			</productionRule>
 			
 			
@@ -3288,7 +3317,7 @@
 					<productionFrontier name="AngmarFrontier">
 							<frontierRules name="buy_snaga_skirmisher"/>
 							<frontierRules name="buy_orc_marauder"/>
-							<frontierRules name="buy_warg_rider"/>
+							<frontierRules name="buy_white_wolf"/>
 							<frontierRules name="buy_barrow_wight"/>
 							<frontierRules name="buy_cold_drake"/>
 							<frontierRules name="buy_uruloke"/>
@@ -3302,7 +3331,7 @@
 							<frontierRules name="buy_uruk_warrior"/>
 							<frontierRules name="buy_uruk_pikeman"/>
 							<frontierRules name="buy_olog_hai"/>
-							<frontierRules name="buy_spider"/>
+							<frontierRules name="buy_giant_spider"/>
 							<frontierRules name="buy_winged_nazgul"/>
 							<frontierRules name="buy_wall"/>
 							<frontierRules name="buy_catapult"/>
@@ -3405,6 +3434,7 @@
 							<frontierRules name="buy_bowman"/>
 							<frontierRules name="buy_trollman"/>
 							<frontierRules name="buy_black_numenorean"/>
+							<frontierRules name="buy_southron_cavalry"/>
 							<frontierRules name="buy_variag_raider"/>
 							<frontierRules name="buy_oliphaunt"/>
 							<frontierRules name="buy_wall"/>
@@ -3984,6 +4014,22 @@
 						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
+					<attachment name="unitAttachment" attachTo="southron_cavalry" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="4"/>
+						<option name="attack" value="2"/>
+						<option name="defense" value="3"/>
+						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
+						<option name="typeAA" value="charge"/>
+						<option name="attackAA" value="0"/>
+						<option name="offensiveAttackAA" value="4"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
+					</attachment>
+					
 					<attachment name="unitAttachment" attachTo="eorling_rider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
@@ -4085,6 +4131,22 @@
 						<option name="movement" value="4"/>
 						<option name="attack" value="5"/>
 						<option name="defense" value="2"/>
+						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
+						<option name="typeAA" value="charge"/>
+						<option name="attackAA" value="0"/>
+						<option name="offensiveAttackAA" value="4"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
+					</attachment>
+					
+					<attachment name="unitAttachment" attachTo="white_wolf" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="4"/>
+						<option name="attack" value="4"/>
+						<option name="defense" value="5"/>
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
@@ -4277,6 +4339,23 @@
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="spider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
+						<option name="transportCost" value="1"/>
+						<option name="movement" value="2"/>
+						<option name="attack" value="2"/>
+						<option name="defense" value="7"/>
+						
+						<option name="targetsAA" value="$ANY_UNIT$"/>
+						<option name="typeAA" value="ambush"/>
+						<option name="attackAA" value="6"/>
+						<option name="offensiveAttackAA" value="0"/>
+						<option name="isAAforCombatOnly" value="true"/>
+						<option name="mayOverStackAA" value="true"/>
+						<option name="damageableAA" value="true"/>
+						<option name="maxAAattacks" value="1"/>
+						<option name="maxRoundsAA" value="1"/>
+					</attachment>
+					
+					<attachment name="unitAttachment" attachTo="giant_spider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
 						<option name="hitPoints" value="2"/>
@@ -9791,6 +9870,7 @@
             <unitPlacement unitType="orc_marauder" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
             <unitPlacement unitType="warg_scout" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
             <unitPlacement unitType="snaga_skirmisher" territory="East Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="East Mirkwood" quantity="2" owner="DolGuldur"/>
             <unitPlacement unitType="orc_marauder" territory="East Mordor" quantity="2" owner="Mordor"/>
             <unitPlacement unitType="snaga_skirmisher" territory="East Mordor" quantity="1" owner="Mordor"/>
             <unitPlacement unitType="snaga_skirmisher" territory="East Mountains of Angmar" quantity="3" owner="Angmar"/>
@@ -9838,6 +9918,7 @@
             <unitPlacement unitType="snaga_skirmisher" territory="Fanuidhol" quantity="1" owner="Moria"/>
             <unitPlacement unitType="warg_scout" territory="Fanuidhol" quantity="1" owner="Moria"/>
             <unitPlacement unitType="trollman" territory="Far Harad" quantity="3" owner="Harad"/>
+            <unitPlacement unitType="southron_cavalry" territory="Far Harad" quantity="4" owner="Harad"/>
             <unitPlacement unitType="elven_cavalry" territory="Fields of Celebrant" quantity="1" owner="SilvanElves"/>
             <unitPlacement unitType="eorling_rider" territory="Folde" quantity="2" owner="Rohan"/>
             <unitPlacement unitType="rohirric_scout" territory="Folde" quantity="1" owner="Rohan"/>
@@ -9845,6 +9926,7 @@
             <unitPlacement unitType="trebuchet" territory="Fornost" quantity="1" owner="Arnor"/>
             <unitPlacement unitType="orc_marauder" territory="Forochel" quantity="2" owner="Angmar"/>
             <unitPlacement unitType="snaga_skirmisher" territory="Forochel" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="white_wolf" territory="Forochel" quantity="2" owner="Angmar"/>
             <unitPlacement unitType="snaga_skirmisher" territory="Forodwaith" quantity="3" owner="Angmar"/>
             <unitPlacement unitType="eotheod_cavalry" territory="Framsburg" quantity="3" owner="Northmen"/>
             <unitPlacement unitType="bowman" territory="Freca's Stronghold" quantity="2" owner="Rohan"/>
@@ -9948,7 +10030,7 @@
             <unitPlacement unitType="elven_archer" territory="Naith" quantity="1" owner="SilvanElves"/>
             <unitPlacement unitType="halforc" territory="Nan Curunír" quantity="4" owner="Saruman"/>
             <unitPlacement unitType="orc_marauder" territory="Narchost" quantity="2" owner="Mordor"/>
-            <unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="Narrows of Mirkwood" quantity="2" owner="DolGuldur"/>
             <unitPlacement unitType="orc_marauder" territory="Narrows of Mirkwood" quantity="1" owner="DolGuldur"/>
             <unitPlacement unitType="bowman" territory="Near Harad" quantity="1" owner="Harad"/>
             <unitPlacement unitType="elven_hunter" territory="Nimrodel" quantity="2" owner="SilvanElves"/>
@@ -9971,7 +10053,7 @@
             <unitPlacement unitType="orc_marauder" territory="North Misty Mountains" quantity="2" owner="OrcHolds"/>
             <unitPlacement unitType="snaga_skirmisher" territory="North Misty Mountains" quantity="1" owner="OrcHolds"/>
             <unitPlacement unitType="orc_marauder" territory="North Nurn" quantity="1" owner="Mordor"/>
-            <unitPlacement unitType="warg_rider" territory="North Rhudaur" quantity="2" owner="Angmar"/>
+            <unitPlacement unitType="white_wolf" territory="North Rhudaur" quantity="2" owner="Angmar"/>
             <unitPlacement unitType="corsair" territory="North Umbar" quantity="4" owner="Harad"/>
             <unitPlacement unitType="bowman" territory="North Umbar" quantity="1" owner="Harad"/>
             <unitPlacement unitType="elven_hunter" territory="North Woodland Realm" quantity="1" owner="SilvanElves"/>
@@ -10017,8 +10099,8 @@
             <unitPlacement unitType="hobbit_archer" territory="Staddle" quantity="2" owner="Freefolk"/>
             <unitPlacement unitType="elven_archer" territory="Swanfleet" quantity="1" owner="HighElves"/>
             <unitPlacement unitType="warg_scout" territory="Taur-e-Ndaedelos" quantity="2" owner="DolGuldur"/>
-            <unitPlacement unitType="spider" territory="Taur-e-Ndaedelos" quantity="1" owner="DolGuldur"/>
-            <unitPlacement unitType="spider" territory="Taur-nu-Fuin" quantity="1" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="Taur-e-Ndaedelos" quantity="3" owner="DolGuldur"/>
+            <unitPlacement unitType="spider" territory="Taur-nu-Fuin" quantity="2" owner="DolGuldur"/>
             <unitPlacement unitType="snaga_skirmisher" territory="Taur-nu-Fuin" quantity="2" owner="DolGuldur"/>
             <unitPlacement unitType="warg_scout" territory="Taur-nu-Fuin" quantity="1" owner="DolGuldur"/>
             <unitPlacement unitType="man_at_arms" territory="Tharbad" quantity="2" owner="Arnor"/>
@@ -10038,7 +10120,7 @@
             <unitPlacement unitType="ent" territory="Wellinghall" quantity="1" owner="SilvanElves"/>
             <unitPlacement unitType="dunadan_lancer" territory="West Anórien" quantity="2" owner="Gondor"/>
             <unitPlacement unitType="orc_marauder" territory="West Ephel Dúath" quantity="1" owner="Mordor"/>
-            <unitPlacement unitType="warg_rider" territory="West Forodwaith" quantity="3" owner="Angmar"/>
+            <unitPlacement unitType="white_wolf" territory="West Forodwaith" quantity="3" owner="Angmar"/>
             <unitPlacement unitType="dwarven_axethrower" territory="West Grey Mountains" quantity="1" owner="Dwarves"/>
             <unitPlacement unitType="oliphaunt" territory="West Haradwaith" quantity="1" owner="Harad"/>
             <unitPlacement unitType="dwarven_axeman" territory="West Iron Hills" quantity="2" owner="Dwarves"/>
