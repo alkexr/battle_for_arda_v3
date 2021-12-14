@@ -118,16 +118,19 @@
 				<element name="sz Baranduin 3"/>
 				<element name="sz Baranduin 4"/>
 				<element name="sz Isen"/>
+				
+				<element name="sz Long Lake"/>
+				<element name="sz Redwater"/>
 			</variable>
 			
 			<variable name="RIVERCROSSING.FROM">
-				<element name="Eastfarthing"/>     <element name="Southfarthing"/><element name="The Angle"/>     <element name="The Angle"/>       <element name="East Trollshaws"/><element name="The Angle"/>      <element name="East Trollshaws"/><element name="West Harondor"/>      <element name="East Harondor"/>      <element name="West Harondor"/>      <element name="East Harondor"/>      <element name="Rhimdath"/>            <element name="Rhimdath"/>              <element name="Lands of the Stoors"/>   <element name="Gladden Fields"/>        <element name="Lands of the Stoors"/><element name="Gladden Fields"/><element name="The Wold"/>      <element name="Fields of Celebrant"/><element name="Eastemnet"/>    <element name="Parth Galen"/>   <element name="Eastemnet"/>  <element name="Parth Galen"/>
+				<element name="Eastfarthing"/>     <element name="Southfarthing"/><element name="The Angle"/>     <element name="The Angle"/>       <element name="East Trollshaws"/><element name="The Angle"/>      <element name="East Trollshaws"/><element name="West Harondor"/>      <element name="East Harondor"/>      <element name="West Harondor"/>      <element name="East Harondor"/>      <element name="Rhimdath"/>            <element name="Rhimdath"/>              <element name="Lands of the Stoors"/>   <element name="Gladden Fields"/>        <element name="Lands of the Stoors"/><element name="Gladden Fields"/><element name="The Wold"/>      <element name="Fields of Celebrant"/><element name="Eastemnet"/>    <element name="Parth Galen"/>   <element name="Eastemnet"/>  <element name="Parth Galen"/>   <element name="North Dorwinion"/>
 			</variable>
 			<variable name="RIVERCROSSING.TO">
-				<element name="Buckland"/>         <element name="West Cardolan"/><element name="East Lone Lands"/><element name="Rivendell"/>      <element name="Rivendell"/>      <element name="High Moors"/>     <element name="High Moors"/>     <element name="Near Harad"/>         <element name="Near Harad"/>         <element name="North Harad"/>        <element name="North Harad"/>        <element name="Lands of the Éothéod"/><element name="Lands of the Beornings"/><element name="Lands of the Beornings"/><element name="Lands of the Beornings"/><element name="Beorn's Hall"/>       <element name="Beorn's Hall"/>  <element name="North Berennyr"/><element name="North Berennyr"/>     <element name="South Berennyr"/><element name="South Berennyr"/><element name="Emyn Muil"/>   <element name="Emyn Muil"/>
+				<element name="Buckland"/>         <element name="West Cardolan"/><element name="East Lone Lands"/><element name="Rivendell"/>      <element name="Rivendell"/>      <element name="High Moors"/>     <element name="High Moors"/>     <element name="Near Harad"/>         <element name="Near Harad"/>         <element name="North Harad"/>        <element name="North Harad"/>        <element name="South Éothéod"/><element name="Lands of the Beornings"/>       <element name="Lands of the Beornings"/><element name="Lands of the Beornings"/><element name="Beorn's Hall"/>       <element name="Beorn's Hall"/>  <element name="North Berennyr"/><element name="North Berennyr"/>     <element name="South Berennyr"/><element name="South Berennyr"/><element name="Emyn Muil"/>   <element name="Emyn Muil"/>   <element name="South Dale"/>
 			</variable>
 			<variable name="RIVERCROSSING.THROUGH">
-				<element name="Brandywine Bridge"/><element name="Sarn Ford"/>    <element name="Last Bridge"/>    <element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Carrock"/>             <element name="Carrock"/>               <element name="Old Ford"/>              <element name="Old Ford"/>              <element name="Old Ford"/>           <element name="Old Ford"/>      <element name="North Undeep"/>  <element name="North Undeep"/>       <element name="South Undeep"/>  <element name="South Undeep"/>  <element name="South Undeep"/><element name="South Undeep"/>
+				<element name="Brandywine Bridge"/><element name="Sarn Ford"/>    <element name="Last Bridge"/>    <element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Ford of Bruinen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Crossings of Harnen"/><element name="Carrock"/>             <element name="Carrock"/>               <element name="Old Ford"/>              <element name="Old Ford"/>              <element name="Old Ford"/>           <element name="Old Ford"/>      <element name="North Undeep"/>  <element name="North Undeep"/>       <element name="South Undeep"/>  <element name="South Undeep"/>  <element name="South Undeep"/><element name="South Undeep"/><element name="Crossing of Carnen"/>
 			</variable>
 			
 		
@@ -665,8 +668,8 @@
 <territory name="Chetwood"/>
 <territory name="Ciril"/>
 <territory name="Cirith Ungol"/>
-<territory name="City of Corsairs"/>
 <territory name="Coldfells"/>
+<territory name="Crossing of Carnen"/>
 <territory name="Crossings of Harnen"/>
 <territory name="Crossroads"/>
 <territory name="Dagorlad"/>
@@ -824,7 +827,6 @@
 <territory name="Lands of the Variags"/>
 <territory name="Lands of the Wainriders"/>
 <territory name="Lands of the Woodmen"/>
-<territory name="Lands of the Éothéod"/>
 <territory name="Langstrand"/>
 <territory name="Last Bridge"/>
 <territory name="Lhûn"/>
@@ -834,10 +836,8 @@
 <territory name="Little Lhûn"/>
 <territory name="Loeg Ningloron"/>
 <territory name="Lond Daer"/>
-<territory name="sz Long Lake" water="true"/>
 <territory name="Long Marshes"/>
 <territory name="Lossarnach"/>
-<territory name="Lower Carnen"/>
 <territory name="Lower Forest River"/>
 <territory name="Lower Langwell"/>
 <territory name="Lower Lefnui"/>
@@ -890,6 +890,7 @@
 <territory name="North Gorgoroth"/>
 <territory name="North Harad"/>
 <territory name="North Harlindon"/>
+<territory name="North Iron Hills"/>
 <territory name="North Ithilien"/>
 <territory name="North Khand"/>
 <territory name="North Lamedon"/>
@@ -906,6 +907,7 @@
 <territory name="North Vales of Anduin"/>
 <territory name="North Wilderland"/>
 <territory name="North Woodland Realm"/>
+<territory name="North Éothéod"/>
 <territory name="Northern Waste"/>
 <territory name="Northfarthing"/>
 <territory name="Northwest Rhûn"/>
@@ -928,7 +930,6 @@
 <territory name="Ravenhill"/>
 <territory name="Realm of Vidugavia"/>
 <territory name="Redhorn Gate"/>
-<territory name="Redwater"/>
 <territory name="Rhimdath"/>
 <territory name="Rhosgobel"/>
 <territory name="Rhudaur"/>
@@ -977,6 +978,7 @@
 <territory name="South Undeep"/>
 <territory name="South Vales of Anduin"/>
 <territory name="South Wilderland"/>
+<territory name="South Éothéod"/>
 <territory name="Southeast Forodwaith"/>
 <territory name="Southfarthing"/>
 <territory name="Southwest Forodwaith"/>
@@ -1002,8 +1004,8 @@
 <territory name="Tumladen"/>
 <territory name="Tyrn Gorthad"/>
 <territory name="Udûn"/>
+<territory name="Umbar"/>
 <territory name="Upbourn"/>
-<territory name="Upper Carnen"/>
 <territory name="Upper Forest River"/>
 <territory name="Upper Langwell"/>
 <territory name="Upper Lefnui"/>
@@ -1098,12 +1100,15 @@
 <territory name="sz Icebay of Forochel" water="true"/>
 <territory name="sz Isen" water="true"/>
 <territory name="sz Lhûn" water="true"/>
+<territory name="sz Long Lake" water="true"/>
 <territory name="sz Mitheithel" water="true"/>
 <territory name="sz Nen Hithoel" water="true"/>
 <territory name="sz Nenuial" water="true"/>
+<territory name="sz Redwater" water="true"/>
 <territory name="sz Ringló" water="true"/>
 <territory name="sz Sea of Núrnen" water="true"/>
 <territory name="sz Sea of Rhûn" water="true"/>
+<territory name="Éothéod"/>
 
 <!-- Territory Connections -->
 <connection t1="Adorn" t2="Drúwaith Iaur"/>
@@ -1266,8 +1271,8 @@
 <connection t1="Carn Dûm" t2="West Mountains of Angmar"/>
 <connection t1="Carn Dûm" t2="Witch-Realm"/>
 <connection t1="Carrock" t2="Lands of the Beornings"/>
-<connection t1="Carrock" t2="Lands of the Éothéod"/>
 <connection t1="Carrock" t2="Rhimdath"/>
+<connection t1="Carrock" t2="South Éothéod"/>
 <connection t1="Carrock" t2="sz Anduin 9"/>
 <connection t1="Carrock" t2="sz Anduin 10"/>
 <connection t1="Celebdil" t2="Glanduin"/>
@@ -1303,14 +1308,15 @@
 <connection t1="Cirith Ungol" t2="Mountains of Shadow"/>
 <connection t1="Cirith Ungol" t2="North Ephel Dúath"/>
 <connection t1="Cirith Ungol" t2="Plateau of Gorgoroth"/>
-<connection t1="City of Corsairs" t2="North Umbar"/>
-<connection t1="City of Corsairs" t2="South Umbar"/>
-<connection t1="City of Corsairs" t2="sz Gulf of Umbar"/>
 <connection t1="Coldfells" t2="East Mountains of Angmar"/>
 <connection t1="Coldfells" t2="Mount Gundabad"/>
 <connection t1="Coldfells" t2="North Misty Mountains"/>
 <connection t1="Coldfells" t2="South Mountains of Angmar"/>
 <connection t1="Coldfells" t2="Trollfells"/>
+<connection t1="Crossing of Carnen" t2="North Dorwinion"/>
+<connection t1="Crossing of Carnen" t2="South Dale"/>
+<connection t1="Crossing of Carnen" t2="sz Celduin 2"/>
+<connection t1="Crossing of Carnen" t2="sz Redwater"/>
 <connection t1="Crossings of Harnen" t2="East Harondor"/>
 <connection t1="Crossings of Harnen" t2="Near Harad"/>
 <connection t1="Crossings of Harnen" t2="North Harad"/>
@@ -1330,7 +1336,7 @@
 <connection t1="Dagorlad" t2="Southwest Rhûn"/>
 <connection t1="Dagorlad" t2="West Rhûn"/>
 <connection t1="Dale" t2="Erebor"/>
-<connection t1="Dale" t2="North Dale"/>
+<connection t1="Dale" t2="Lands of the Bardings"/>
 <connection t1="Dale" t2="Ravenhill"/>
 <connection t1="Dale" t2="River Running"/>
 <connection t1="Dead Marshes" t2="Desolation of the Morannon"/>
@@ -1348,11 +1354,11 @@
 <connection t1="Derndingle" t2="Treebeard's Hill"/>
 <connection t1="Derndingle" t2="Wellinghall"/>
 <connection t1="Desolation of Smaug" t2="Elvenking's Halls"/>
-<connection t1="Desolation of Smaug" t2="sz Long Lake"/>
 <connection t1="Desolation of Smaug" t2="Long Marshes"/>
 <connection t1="Desolation of Smaug" t2="North Woodland Realm"/>
 <connection t1="Desolation of Smaug" t2="Ravenhill"/>
 <connection t1="Desolation of Smaug" t2="River Running"/>
+<connection t1="Desolation of Smaug" t2="sz Long Lake"/>
 <connection t1="Desolation of the Morannon" t2="Morannon"/>
 <connection t1="Desolation of the Morannon" t2="Narchost"/>
 <connection t1="Desolation of the Morannon" t2="North Ithilien"/>
@@ -1412,8 +1418,7 @@
 <connection t1="Dwimorberg" t2="Tarlang's Neck"/>
 <connection t1="Dáin's Halls" t2="Ered Mithrin"/>
 <connection t1="Dáin's Halls" t2="Grey Mountains"/>
-<connection t1="Dáin's Halls" t2="Lands of the Cold-drakes"/>
-<connection t1="Dáin's Halls" t2="North Woodland Realm"/>
+<connection t1="Dáin's Halls" t2="Greylin"/>
 <connection t1="Dáin's Halls" t2="Upper Forest River"/>
 <connection t1="Eagle's Eyrie" t2="Front Porch"/>
 <connection t1="Eagle's Eyrie" t2="Goblin Gate"/>
@@ -1461,12 +1466,10 @@
 <connection t1="East Cardolan" t2="Tharbad"/>
 <connection t1="East Cardolan" t2="West Lone Lands"/>
 <connection t1="East Cardolan" t2="sz Greyflood 3"/>
-<connection t1="East Dale" t2="Lands of the Bardings"/>
-<connection t1="East Dale" t2="Lower Carnen"/>
-<connection t1="East Dale" t2="Redwater"/>
+<connection t1="East Dale" t2="North Dale"/>
 <connection t1="East Dale" t2="South Dale"/>
-<connection t1="East Dale" t2="Upper Carnen"/>
 <connection t1="East Dale" t2="West Dale"/>
+<connection t1="East Dale" t2="sz Redwater"/>
 <connection t1="East Ephel Dúath" t2="East Nurn"/>
 <connection t1="East Ephel Dúath" t2="Ephel Dúath"/>
 <connection t1="East Ephel Dúath" t2="North Harad"/>
@@ -1479,6 +1482,7 @@
 <connection t1="East Ered Lithui" t2="South Rhûn"/>
 <connection t1="East Ered Lithui" t2="Southwest Rhûn"/>
 <connection t1="East Forodwaith" t2="East Iron Hills"/>
+<connection t1="East Forodwaith" t2="North Iron Hills"/>
 <connection t1="East Forodwaith" t2="North Rhûn"/>
 <connection t1="East Forodwaith" t2="Northern Waste"/>
 <connection t1="East Forodwaith" t2="Southeast Forodwaith"/>
@@ -1491,11 +1495,9 @@
 <connection t1="East Harondor" t2="West Harondor"/>
 <connection t1="East Harondor" t2="sz Harnen 3"/>
 <connection t1="East Iron Hills" t2="Halls of Grór"/>
+<connection t1="East Iron Hills" t2="North Iron Hills"/>
 <connection t1="East Iron Hills" t2="North Rhûn"/>
 <connection t1="East Iron Hills" t2="Northwest Rhûn"/>
-<connection t1="East Iron Hills" t2="Southeast Forodwaith"/>
-<connection t1="East Iron Hills" t2="Upper Carnen"/>
-<connection t1="East Iron Hills" t2="West Iron Hills"/>
 <connection t1="East Lebennin" t2="Imloth Melui"/>
 <connection t1="East Lebennin" t2="Lossarnach"/>
 <connection t1="East Lebennin" t2="Pelargir"/>
@@ -1557,7 +1559,7 @@
 <connection t1="East Wilderland" t2="South Rhovanion"/>
 <connection t1="East Wilderland" t2="South Wilderland"/>
 <connection t1="East Withered Heath" t2="Forodwaith"/>
-<connection t1="East Withered Heath" t2="North Dale"/>
+<connection t1="East Withered Heath" t2="Lands of the Bardings"/>
 <connection t1="East Withered Heath" t2="North Ered Mithrin"/>
 <connection t1="East Withered Heath" t2="South Ered Mithrin"/>
 <connection t1="East Withered Heath" t2="Southwest Forodwaith"/>
@@ -1594,9 +1596,9 @@
 <connection t1="Elf Path" t2="Elvenking's Halls"/>
 <connection t1="Elf Path" t2="Enchanted River"/>
 <connection t1="Elf Path" t2="Lands of the Beornings"/>
-<connection t1="Elf Path" t2="Lands of the Éothéod"/>
 <connection t1="Elf Path" t2="Lower Forest River"/>
 <connection t1="Elf Path" t2="Mountains of Mirkwood"/>
+<connection t1="Elf Path" t2="South Éothéod"/>
 <connection t1="Elostirion" t2="Emyn Beraid"/>
 <connection t1="Elostirion" t2="Tower Hills"/>
 <connection t1="Elvenking's Halls" t2="Enchanted River"/>
@@ -1616,10 +1618,10 @@
 <connection t1="Emyn Duir" t2="Enchanted River"/>
 <connection t1="Emyn Duir" t2="Eryn Galen"/>
 <connection t1="Emyn Duir" t2="Greenwood the Great"/>
-<connection t1="Emyn Duir" t2="sz Long Lake"/>
 <connection t1="Emyn Duir" t2="Long Marshes"/>
 <connection t1="Emyn Duir" t2="Mountains of Mirkwood"/>
 <connection t1="Emyn Duir" t2="North Rhovanion"/>
+<connection t1="Emyn Duir" t2="sz Long Lake"/>
 <connection t1="Emyn Muil" t2="South Berennyr"/>
 <connection t1="Emyn Muil" t2="South Brown Lands"/>
 <connection t1="Emyn Muil" t2="South Undeep"/>
@@ -1650,7 +1652,7 @@
 <connection t1="Ephel Dúath" t2="West Ephel Dúath"/>
 <connection t1="Ephel Dúath" t2="West Nurn"/>
 <connection t1="Ephel Dúath" t2="sz Harnen 3"/>
-<connection t1="Erebor" t2="North Dale"/>
+<connection t1="Erebor" t2="Lands of the Bardings"/>
 <connection t1="Erebor" t2="Ravenhill"/>
 <connection t1="Erebor" t2="South Ered Mithrin"/>
 <connection t1="Erech" t2="Morthond"/>
@@ -1673,10 +1675,12 @@
 <connection t1="Ered Luin Foothills" t2="South Ered Luin"/>
 <connection t1="Ered Luin Foothills" t2="Tower Hills"/>
 <connection t1="Ered Luin Foothills" t2="White Downs"/>
+<connection t1="Ered Mithrin" t2="Grey Mountains"/>
 <connection t1="Ered Mithrin" t2="Lands of the Cold-drakes"/>
 <connection t1="Ered Mithrin" t2="North Ered Mithrin"/>
 <connection t1="Ered Mithrin" t2="North Woodland Realm"/>
 <connection t1="Ered Mithrin" t2="South Ered Mithrin"/>
+<connection t1="Ered Mithrin" t2="Upper Forest River"/>
 <connection t1="Ered Mithrin" t2="West Withered Heath"/>
 <connection t1="Ered Nimrais" t2="Freca's Stronghold"/>
 <connection t1="Ered Nimrais" t2="Glittering Caves"/>
@@ -1701,8 +1705,8 @@
 <connection t1="Eryn Vorn" t2="sz 15"/>
 <connection t1="Eryn Vorn" t2="sz 17"/>
 <connection t1="Eryn Vorn" t2="sz Baranduin 1"/>
-<connection t1="Esgaroth" t2="sz Long Lake"/>
 <connection t1="Esgaroth" t2="Long Marshes"/>
+<connection t1="Esgaroth" t2="sz Long Lake"/>
 <connection t1="Ethir Anduin" t2="Linhir"/>
 <connection t1="Ethir Anduin" t2="Serni"/>
 <connection t1="Ethir Anduin" t2="West Lebennin"/>
@@ -1790,9 +1794,10 @@
 <connection t1="Forodwaith" t2="Northern Waste"/>
 <connection t1="Forodwaith" t2="Southwest Forodwaith"/>
 <connection t1="Framsburg" t2="Greylin"/>
-<connection t1="Framsburg" t2="Lands of the Éothéod"/>
 <connection t1="Framsburg" t2="Lower Langwell"/>
+<connection t1="Framsburg" t2="South Éothéod"/>
 <connection t1="Framsburg" t2="sz Anduin 10"/>
+<connection t1="Framsburg" t2="Éothéod"/>
 <connection t1="Freca's Stronghold" t2="Lands of Freca"/>
 <connection t1="Freca's Stronghold" t2="Old Púkel-land"/>
 <connection t1="Front Porch" t2="Goblin Town"/>
@@ -1846,22 +1851,22 @@
 <connection t1="Greenwood the Great" t2="North Wilderland"/>
 <connection t1="Grey Mountains" t2="Greylin"/>
 <connection t1="Grey Mountains" t2="Lands of the Cold-drakes"/>
-<connection t1="Grey Mountains" t2="Upper Forest River"/>
-<connection t1="Grey Mountains" t2="West Forodwaith"/>
+<connection t1="Grey Mountains" t2="North Éothéod"/>
 <connection t1="Grey Mountains" t2="West Grey Mountains"/>
-<connection t1="Greylin" t2="Lands of the Éothéod"/>
-<connection t1="Greylin" t2="Lower Langwell"/>
+<connection t1="Greylin" t2="North Éothéod"/>
+<connection t1="Greylin" t2="South Éothéod"/>
 <connection t1="Greylin" t2="Upper Forest River"/>
-<connection t1="Greylin" t2="Upper Langwell"/>
-<connection t1="Greylin" t2="West Grey Mountains"/>
+<connection t1="Greylin" t2="Éothéod"/>
 <connection t1="Grimslade" t2="Westemnet"/>
 <connection t1="Grimslade" t2="Westfold"/>
 <connection t1="Halifirien" t2="Harrowdale"/>
 <connection t1="Halifirien" t2="Min-Rimmon"/>
 <connection t1="Halifirien" t2="North Lamedon"/>
-<connection t1="Halls of Grór" t2="Southeast Forodwaith"/>
+<connection t1="Halls of Grór" t2="North Iron Hills"/>
+<connection t1="Halls of Grór" t2="Northwest Rhûn"/>
 <connection t1="Halls of Grór" t2="Southwest Forodwaith"/>
 <connection t1="Halls of Grór" t2="West Iron Hills"/>
+<connection t1="Halls of Grór" t2="sz Redwater"/>
 <connection t1="Harlond" t2="North Harlindon"/>
 <connection t1="Harlond" t2="South Lindon"/>
 <connection t1="Harlond" t2="sz Gulf of Lhûn"/>
@@ -1928,15 +1933,15 @@
 <connection t1="Lands of the Balchoth" t2="South Wilderland"/>
 <connection t1="Lands of the Balchoth" t2="Southwest Rhûn"/>
 <connection t1="Lands of the Balchoth" t2="West Rhûn"/>
-<connection t1="Lands of the Bardings" t2="sz Long Lake"/>
 <connection t1="Lands of the Bardings" t2="North Dale"/>
 <connection t1="Lands of the Bardings" t2="River Running"/>
-<connection t1="Lands of the Bardings" t2="Upper Carnen"/>
+<connection t1="Lands of the Bardings" t2="South Ered Mithrin"/>
+<connection t1="Lands of the Bardings" t2="Southwest Forodwaith"/>
 <connection t1="Lands of the Bardings" t2="West Dale"/>
 <connection t1="Lands of the Bardings" t2="West Iron Hills"/>
-<connection t1="Lands of the Beornings" t2="Lands of the Éothéod"/>
 <connection t1="Lands of the Beornings" t2="Mountains of Mirkwood"/>
 <connection t1="Lands of the Beornings" t2="Old Ford"/>
+<connection t1="Lands of the Beornings" t2="South Éothéod"/>
 <connection t1="Lands of the Beornings" t2="sz Anduin 9"/>
 <connection t1="Lands of the Broadbeams" t2="Lands of the Firebeards"/>
 <connection t1="Lands of the Broadbeams" t2="Lhûn"/>
@@ -1945,6 +1950,7 @@
 <connection t1="Lands of the Broadbeams" t2="sz Lhûn"/>
 <connection t1="Lands of the Cold-drakes" t2="North Ered Mithrin"/>
 <connection t1="Lands of the Cold-drakes" t2="West Forodwaith"/>
+<connection t1="Lands of the Cold-drakes" t2="West Grey Mountains"/>
 <connection t1="Lands of the Drúedain" t2="Old Púkel-land"/>
 <connection t1="Lands of the Drúedain" t2="Ras Morthil"/>
 <connection t1="Lands of the Drúedain" t2="sz 11"/>
@@ -1983,9 +1989,6 @@
 <connection t1="Lands of the Woodmen" t2="Narrows of Mirkwood"/>
 <connection t1="Lands of the Woodmen" t2="North Wilderland"/>
 <connection t1="Lands of the Woodmen" t2="Rhosgobel"/>
-<connection t1="Lands of the Éothéod" t2="Lower Forest River"/>
-<connection t1="Lands of the Éothéod" t2="Upper Forest River"/>
-<connection t1="Lands of the Éothéod" t2="sz Anduin 10"/>
 <connection t1="Langstrand" t2="Morthond"/>
 <connection t1="Langstrand" t2="Pinnath Gelin"/>
 <connection t1="Langstrand" t2="sz 7"/>
@@ -2012,27 +2015,18 @@
 <connection t1="Loeg Ningloron" t2="sz Anduin 8"/>
 <connection t1="Lond Daer" t2="South Enedwaith"/>
 <connection t1="Lond Daer" t2="sz Greyflood 1"/>
-<connection t1="sz Long Lake" t2="Long Marshes"/>
-<connection t1="sz Long Lake" t2="North Rhovanion"/>
-<connection t1="sz Long Lake" t2="River Running"/>
-<connection t1="sz Long Lake" t2="West Dale"/>
-<connection t1="sz Long Lake" t2="sz Celduin 3"/>
+<connection t1="Long Marshes" t2="sz Long Lake"/>
 <connection t1="Lossarnach" t2="Minas Tirith"/>
 <connection t1="Lossarnach" t2="Pelennor Fields"/>
 <connection t1="Lossarnach" t2="West Osgiliath"/>
 <connection t1="Lossarnach" t2="sz Anduin 2"/>
-<connection t1="Lower Carnen" t2="North Dorwinion"/>
-<connection t1="Lower Carnen" t2="Redwater"/>
-<connection t1="Lower Carnen" t2="Rhûn"/>
-<connection t1="Lower Carnen" t2="South Dale"/>
-<connection t1="Lower Carnen" t2="sz Celduin 1"/>
-<connection t1="Lower Carnen" t2="sz Celduin 2"/>
 <connection t1="Lower Forest River" t2="North Woodland Realm"/>
+<connection t1="Lower Forest River" t2="South Éothéod"/>
 <connection t1="Lower Forest River" t2="Upper Forest River"/>
-<connection t1="Lower Langwell" t2="Rhimdath"/>
 <connection t1="Lower Langwell" t2="Rushdown"/>
 <connection t1="Lower Langwell" t2="Upper Langwell"/>
 <connection t1="Lower Langwell" t2="sz Anduin 10"/>
+<connection t1="Lower Langwell" t2="Éothéod"/>
 <connection t1="Lower Lefnui" t2="Ras Morthil"/>
 <connection t1="Lower Lefnui" t2="Upper Lefnui"/>
 <connection t1="Lower Lefnui" t2="West Anfalas"/>
@@ -2090,6 +2084,7 @@
 <connection t1="Mount Gram" t2="South Mountains of Angmar"/>
 <connection t1="Mount Gram" t2="Trollfells"/>
 <connection t1="Mount Gundabad" t2="North Misty Mountains"/>
+<connection t1="Mount Gundabad" t2="North Éothéod"/>
 <connection t1="Mount Gundabad" t2="Upper Langwell"/>
 <connection t1="Mount Gundabad" t2="West Forodwaith"/>
 <connection t1="Mount Gundabad" t2="West Grey Mountains"/>
@@ -2147,12 +2142,13 @@
 <connection t1="North Brown Lands" t2="South Mirkwood"/>
 <connection t1="North Brown Lands" t2="South Rhovanion"/>
 <connection t1="North Brown Lands" t2="Taur-e-Ndaedelos"/>
-<connection t1="North Dale" t2="River Running"/>
-<connection t1="North Dale" t2="South Ered Mithrin"/>
-<connection t1="North Dale" t2="Southwest Forodwaith"/>
+<connection t1="North Dale" t2="West Dale"/>
 <connection t1="North Dale" t2="West Iron Hills"/>
+<connection t1="North Dale" t2="sz Redwater"/>
 <connection t1="North Dorwinion" t2="Rhûn"/>
 <connection t1="North Dorwinion" t2="sz Celduin 1"/>
+<connection t1="North Dorwinion" t2="sz Celduin 2"/>
+<connection t1="North Dorwinion" t2="sz Redwater"/>
 <connection t1="North Downs" t2="South Angmar"/>
 <connection t1="North Downs" t2="West Angmar"/>
 <connection t1="North Downs" t2="Witch-Realm"/>
@@ -2183,6 +2179,8 @@
 <connection t1="North Harlindon" t2="sz 18"/>
 <connection t1="North Harlindon" t2="sz 20"/>
 <connection t1="North Harlindon" t2="sz Gulf of Lhûn"/>
+<connection t1="North Iron Hills" t2="Southeast Forodwaith"/>
+<connection t1="North Iron Hills" t2="Southwest Forodwaith"/>
 <connection t1="North Ithilien" t2="Wetwang"/>
 <connection t1="North Khand" t2="South Khand"/>
 <connection t1="North Lamedon" t2="Ringló Vale"/>
@@ -2204,6 +2202,7 @@
 <connection t1="North Nurn" t2="sz Sea of Núrnen"/>
 <connection t1="North Rhovanion" t2="Realm of Vidugavia"/>
 <connection t1="North Rhovanion" t2="sz Celduin 3"/>
+<connection t1="North Rhovanion" t2="sz Long Lake"/>
 <connection t1="North Rhudaur" t2="Rhudaur"/>
 <connection t1="North Rhudaur" t2="South Angmar"/>
 <connection t1="North Rhudaur" t2="South Arthedain"/>
@@ -2211,6 +2210,7 @@
 <connection t1="North Rhûn" t2="Northwest Rhûn"/>
 <connection t1="North Rhûn" t2="Rhûn"/>
 <connection t1="North Umbar" t2="South Umbar"/>
+<connection t1="North Umbar" t2="Umbar"/>
 <connection t1="North Umbar" t2="West Haradwaith"/>
 <connection t1="North Umbar" t2="sz 3"/>
 <connection t1="North Umbar" t2="sz 4"/>
@@ -2227,14 +2227,16 @@
 <connection t1="North Woodland Realm" t2="Ravenhill"/>
 <connection t1="North Woodland Realm" t2="South Ered Mithrin"/>
 <connection t1="North Woodland Realm" t2="Upper Forest River"/>
+<connection t1="North Éothéod" t2="Upper Langwell"/>
+<connection t1="North Éothéod" t2="West Grey Mountains"/>
+<connection t1="North Éothéod" t2="Éothéod"/>
 <connection t1="Northern Waste" t2="Southeast Forodwaith"/>
 <connection t1="Northern Waste" t2="Southwest Forodwaith"/>
 <connection t1="Northfarthing" t2="South Emyn Uial"/>
 <connection t1="Northfarthing" t2="West Arnor"/>
 <connection t1="Northfarthing" t2="Westfarthing"/>
-<connection t1="Northwest Rhûn" t2="Redwater"/>
 <connection t1="Northwest Rhûn" t2="Rhûn"/>
-<connection t1="Northwest Rhûn" t2="Upper Carnen"/>
+<connection t1="Northwest Rhûn" t2="sz Redwater"/>
 <connection t1="Nurn" t2="South Gorgoroth"/>
 <connection t1="Nurn" t2="South Mordor"/>
 <connection t1="Nurn" t2="West Nurn"/>
@@ -2257,7 +2259,6 @@
 <connection t1="Orodruin" t2="Plateau of Gorgoroth"/>
 <connection t1="Ost-in-Edhil" t2="Sirannon"/>
 <connection t1="Ost-in-Edhil" t2="Swanfleet"/>
-<connection t1="Parth Galen" t2="South Undeep"/>
 <connection t1="Parth Galen" t2="sz Nen Hithoel"/>
 <connection t1="Paths of the Dead" t2="Starkhorn"/>
 <connection t1="Paths of the Dead" t2="White Mountains"/>
@@ -2274,8 +2275,6 @@
 <connection t1="Ravenhill" t2="River Running"/>
 <connection t1="Ravenhill" t2="South Ered Mithrin"/>
 <connection t1="Realm of Vidugavia" t2="South Rhovanion"/>
-<connection t1="Redwater" t2="Rhûn"/>
-<connection t1="Redwater" t2="Upper Carnen"/>
 <connection t1="Rhimdath" t2="Rushdown"/>
 <connection t1="Rhimdath" t2="sz Anduin 9"/>
 <connection t1="Rhimdath" t2="sz Anduin 10"/>
@@ -2283,9 +2282,13 @@
 <connection t1="Rhudaur" t2="Weather Hills"/>
 <connection t1="Rhudaur" t2="Weathertop"/>
 <connection t1="Rhudaur" t2="sz Mitheithel"/>
+<connection t1="Rhûn" t2="sz Redwater"/>
 <connection t1="Rivendell" t2="sz Bruinen 2"/>
+<connection t1="River Running" t2="West Dale"/>
+<connection t1="River Running" t2="sz Long Lake"/>
 <connection t1="River of Forlindon" t2="South Forlindon"/>
 <connection t1="Rushdown" t2="Upper Langwell"/>
+<connection t1="Rushdown" t2="sz Anduin 10"/>
 <connection t1="Sarn Ford" t2="Southfarthing"/>
 <connection t1="Sarn Ford" t2="West Cardolan"/>
 <connection t1="Sarn Ford" t2="sz Baranduin 2"/>
@@ -2316,6 +2319,7 @@
 <connection t1="South Dale" t2="West Dale"/>
 <connection t1="South Dale" t2="sz Celduin 2"/>
 <connection t1="South Dale" t2="sz Celduin 3"/>
+<connection t1="South Dale" t2="sz Redwater"/>
 <connection t1="South Dorwinion" t2="sz Celduin 1"/>
 <connection t1="South Dorwinion" t2="sz Sea of Rhûn"/>
 <connection t1="South Downs" t2="West Lone Lands"/>
@@ -2341,7 +2345,6 @@
 <connection t1="South Harlindon" t2="sz Baranduin 1"/>
 <connection t1="South Ithilien" t2="Upper Poros"/>
 <connection t1="South Ithilien" t2="sz Anduin 1"/>
-<connection t1="South Ithilien" t2="sz Anduin 2"/>
 <connection t1="South Lamedon" t2="sz Ringló"/>
 <connection t1="South Lindon" t2="Tower Hills"/>
 <connection t1="South Lindon" t2="sz Gulf of Lhûn"/>
@@ -2358,12 +2361,16 @@
 <connection t1="South Rhovanion" t2="Taur-e-Ndaedelos"/>
 <connection t1="South Rhûn" t2="Southwest Rhûn"/>
 <connection t1="South Rhûn" t2="sz Sea of Rhûn"/>
+<connection t1="South Umbar" t2="Umbar"/>
 <connection t1="South Umbar" t2="West Haradwaith"/>
 <connection t1="South Umbar" t2="sz Gulf of Umbar"/>
+<connection t1="South Undeep" t2="Parth Galen"/>
 <connection t1="South Undeep" t2="sz Anduin 5"/>
 <connection t1="South Undeep" t2="sz Nen Hithoel"/>
 <connection t1="South Vales of Anduin" t2="sz Anduin 7"/>
 <connection t1="South Wilderland" t2="West Rhûn"/>
+<connection t1="South Éothéod" t2="Upper Forest River"/>
+<connection t1="South Éothéod" t2="sz Anduin 10"/>
 <connection t1="Southeast Forodwaith" t2="Southwest Forodwaith"/>
 <connection t1="Southfarthing" t2="Tuckborough"/>
 <connection t1="Southfarthing" t2="sz Baranduin 2"/>
@@ -2397,8 +2404,8 @@
 <connection t1="Tyrn Gorthad" t2="West Cardolan"/>
 <connection t1="Tyrn Gorthad" t2="Withywindle"/>
 <connection t1="Tyrn Gorthad" t2="sz Baranduin 3"/>
-<connection t1="Upper Carnen" t2="West Iron Hills"/>
-<connection t1="Upper Langwell" t2="West Grey Mountains"/>
+<connection t1="Umbar" t2="sz Gulf of Umbar"/>
+<connection t1="Upper Langwell" t2="Éothéod"/>
 <connection t1="Upper Lefnui" t2="White Mountains"/>
 <connection t1="Upper Poros" t2="West Harondor"/>
 <connection t1="Weather Hills" t2="Weathertop"/>
@@ -2413,10 +2420,12 @@
 <connection t1="West Cardolan" t2="sz Baranduin 2"/>
 <connection t1="West Cardolan" t2="sz Baranduin 3"/>
 <connection t1="West Dale" t2="sz Celduin 3"/>
+<connection t1="West Dale" t2="sz Long Lake"/>
 <connection t1="West Ephel Dúath" t2="West Nurn"/>
 <connection t1="West Forodwaith" t2="West Grey Mountains"/>
 <connection t1="West Harondor" t2="sz Harnen 1"/>
 <connection t1="West Harondor" t2="sz Harnen 2"/>
+<connection t1="West Iron Hills" t2="sz Redwater"/>
 <connection t1="West Lebennin" t2="sz Anduin 1"/>
 <connection t1="West Lone Lands" t2="sz Bruinen 1"/>
 <connection t1="West Lone Lands" t2="sz Greyflood 3"/>
@@ -2489,6 +2498,7 @@
 <connection t1="sz 21" t2="sz 22"/>
 <connection t1="sz Anduin 1" t2="sz Anduin 2"/>
 <connection t1="sz Anduin 1" t2="sz Bay of Tolfalas"/>
+<connection t1="sz Anduin 2" t2="South Ithilien"/>
 <connection t1="sz Anduin 6" t2="sz Anduin 7"/>
 <connection t1="sz Anduin 7" t2="sz Anduin 8"/>
 <connection t1="sz Baranduin 1" t2="Brandywine North Bank"/>
@@ -2499,6 +2509,7 @@
 <connection t1="sz Bruinen 1" t2="sz Greyflood 3"/>
 <connection t1="sz Celduin 1" t2="sz Celduin 2"/>
 <connection t1="sz Celduin 2" t2="sz Celduin 3"/>
+<connection t1="sz Celduin 3" t2="sz Long Lake"/>
 <connection t1="sz Greyflood 1" t2="sz Greyflood 2"/>
 <connection t1="sz Harnen 1" t2="sz Harnen 2"/>
 <connection t1="sz Isen" t2="sz 14"/>
@@ -2522,7 +2533,7 @@
 					<connection t1="West Harondor" t2="North Harad"/>
 					<connection t1="East Harondor" t2="North Harad"/>
 					
-					<connection t1="Rhimdath" t2="Lands of the Éothéod"/>
+					<connection t1="Rhimdath" t2="South Éothéod"/>
 					<connection t1="Rhimdath" t2="Lands of the Beornings"/>
 					
 					<connection t1="Lands of the Stoors" t2="Lands of the Beornings"/>
@@ -2537,6 +2548,8 @@
 					<connection t1="Parth Galen" t2="South Berennyr"/>
 					<connection t1="Eastemnet" t2="Emyn Muil"/>
 					<connection t1="Parth Galen" t2="Emyn Muil"/>
+					
+					<connection t1="North Dorwinion" t2="South Dale"/>
 					
         </map>
 		
@@ -5948,24 +5961,6 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="plains"/>
                    </attachment>
-				   <attachment name="territoryAttachment" attachTo="Lower Carnen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-						<option name="territoryEffect" value="plains"/>
-						<option name="territoryEffect" value="river"/>
-                   </attachment>
-				   <attachment name="territoryAttachment" attachTo="Upper Carnen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-						<option name="territoryEffect" value="plains"/>
-						<option name="territoryEffect" value="river"/>
-                   </attachment>
-				   <attachment name="territoryAttachment" attachTo="Redwater" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-                        <option name="production" value="1"/>
-						<option name="unitProduction" value="0"/>
-						<option name="territoryEffect" value="plains"/>
-						<option name="territoryEffect" value="river"/>
-                   </attachment>
 				   <attachment name="territoryAttachment" attachTo="Realm of Vidugavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
 						<option name="unitProduction" value="0"/>
@@ -6041,6 +6036,11 @@
                         <option name="capital" value="Dwarves"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="East Iron Hills" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="2"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="hill"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="North Iron Hills" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="hill"/>
@@ -6740,7 +6740,7 @@
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="plains"/>
                    </attachment>
-                    <attachment name="territoryAttachment" attachTo="City of Corsairs" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                    <attachment name="territoryAttachment" attachTo="Umbar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="12"/>
 						<option name="unitProduction" value="8"/>
 						<option name="territoryEffect" value="settlement"/>
@@ -6767,6 +6767,11 @@
 						<option name="territoryEffect" value="plains"/>
                    </attachment>
                     <attachment name="territoryAttachment" attachTo="Crossings of Harnen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="1"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="river"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="Crossing of Carnen" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="1"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="river"/>
@@ -6819,7 +6824,17 @@
 						<option name="territoryEffect" value="plains"/>
                    </attachment>
                    
-                    <attachment name="territoryAttachment" attachTo="Lands of the Éothéod" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                    <attachment name="territoryAttachment" attachTo="Éothéod" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="3"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="plains"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="North Éothéod" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
+                        <option name="production" value="2"/>
+						<option name="unitProduction" value="0"/>
+						<option name="territoryEffect" value="plains"/>
+                   </attachment>
+				   <attachment name="territoryAttachment" attachTo="South Éothéod" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
                         <option name="production" value="2"/>
 						<option name="unitProduction" value="0"/>
 						<option name="territoryEffect" value="plains"/>
@@ -8147,7 +8162,7 @@
 						<option name="directOwnershipTerritories" value="Barad-dûr" count="1"/>
 					</attachment>
 					<attachment name="conditionAttachment_HaradCapital" attachTo="Harad" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="directOwnershipTerritories" value="City of Corsairs" count="1"/>
+						<option name="directOwnershipTerritories" value="Umbar" count="1"/>
 					</attachment>
 					<attachment name="conditionAttachment_NorthmenCapital" attachTo="Northmen" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
 						<option name="directOwnershipTerritories" value="Esgaroth" count="1"/>
@@ -8577,7 +8592,7 @@
 					
 					<!--VICTORY-->
 					<attachment name="conditionAttachment_Evil_All_Capitals" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="alliedOwnershipTerritories" value="Barad-dûr:City of Corsairs:Isengard:Moria:Carn Dûm:Dol Guldur:Dorwinion" count="7"/>
+						<option name="alliedOwnershipTerritories" value="Barad-dûr:Umbar:Isengard:Moria:Carn Dûm:Dol Guldur:Dorwinion" count="7"/>
 					</attachment>
 					
 					<attachment name="conditionAttachment_Evil_Capital_Victory" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
@@ -8589,7 +8604,7 @@
 					</attachment>
 					
 					<attachment name="conditionAttachment_Good_Capital_Victory" attachTo="Gondor" javaClass="games.strategy.triplea.attachments.RulesAttachment" type="player">
-						<option name="alliedOwnershipTerritories" value="Barad-dûr:City of Corsairs:Isengard:Moria:Carn Dûm:Dol Guldur:Dorwinion" count="3"/>
+						<option name="alliedOwnershipTerritories" value="Barad-dûr:Umbar:Isengard:Moria:Carn Dûm:Dol Guldur:Dorwinion" count="3"/>
 					</attachment>
 					
 					<attachment name="triggerAttachmentRhun_Evil_Capital_Victory" attachTo="Mordor" javaClass="games.strategy.triplea.attachments.TriggerAttachment" type="player">
@@ -8770,7 +8785,7 @@
             <territoryOwner territory="Chetwood" owner="Freefolk"/>
             <territoryOwner territory="Ciril" owner="Gondor"/>
             <territoryOwner territory="Cirith Ungol" owner="Mordor"/>
-            <territoryOwner territory="City of Corsairs" owner="Harad"/>
+            <territoryOwner territory="Umbar" owner="Harad"/>
             <territoryOwner territory="Coldfells" owner="OrcHolds"/>
             <territoryOwner territory="Crossings of Harnen" owner="Harad"/>
             <territoryOwner territory="Crossroads" owner="Gondor"/>
@@ -8917,7 +8932,10 @@
             <territoryOwner territory="Lands of the Variags" owner="Harad"/>
             <territoryOwner territory="Lands of the Wainriders" owner="Rhun"/>
             <territoryOwner territory="Lands of the Woodmen" owner="Northmen"/>
-            <territoryOwner territory="Lands of the Éothéod" owner="Northmen"/>
+            <territoryOwner territory="Éothéod" owner="Northmen"/>
+            <territoryOwner territory="South Éothéod" owner="Northmen"/>
+            <territoryOwner territory="North Éothéod" owner="Northmen"/>
+            <territoryOwner territory="Crossing of Carnen" owner="Northmen"/>
             <territoryOwner territory="Langstrand" owner="Gondor"/>
             <territoryOwner territory="Last Bridge" owner="HighElves"/>
             <territoryOwner territory="Limlight" owner="SilvanElves"/>
@@ -8928,7 +8946,6 @@
             <territoryOwner territory="Lond Daer" owner="Saruman"/>
             <territoryOwner territory="Long Marshes" owner="Northmen"/>
             <territoryOwner territory="Lossarnach" owner="Gondor"/>
-            <territoryOwner territory="Lower Carnen" owner="Northmen"/>
             <territoryOwner territory="Lower Forest River" owner="SilvanElves"/>
             <territoryOwner territory="Lower Langwell" owner="Northmen"/>
             <territoryOwner territory="Lower Poros" owner="Gondor"/>
@@ -9012,7 +9029,6 @@
             <territoryOwner territory="Ravenhill" owner="Dwarves"/>
             <territoryOwner territory="Realm of Vidugavia" owner="Northmen"/>
             <territoryOwner territory="Redhorn Gate" owner="Moria"/>
-            <territoryOwner territory="Redwater" owner="Northmen"/>
             <territoryOwner territory="Rhimdath" owner="Northmen"/>
             <territoryOwner territory="Rhosgobel" owner="Northmen"/>
             <territoryOwner territory="Rhûn" owner="Rhun"/>
@@ -9080,7 +9096,6 @@
             <territoryOwner territory="Tyrn Gorthad" owner="Angmar"/>
             <territoryOwner territory="Udûn" owner="Mordor"/>
             <territoryOwner territory="Upbourn" owner="Rohan"/>
-            <territoryOwner territory="Upper Carnen" owner="Northmen"/>
             <territoryOwner territory="Upper Forest River" owner="Northmen"/>
             <territoryOwner territory="Upper Langwell" owner="Northmen"/>
             <territoryOwner territory="Upper Poros" owner="Gondor"/>
@@ -9099,6 +9114,7 @@
             <territoryOwner territory="West Haradwaith" owner="Harad"/>
             <territoryOwner territory="West Harondor" owner="Harad"/>
             <territoryOwner territory="West Iron Hills" owner="Dwarves"/>
+            <territoryOwner territory="North Iron Hills" owner="Dwarves"/>
             <territoryOwner territory="West Lebennin" owner="Gondor"/>
             <territoryOwner territory="West March" owner="Rohan"/>
             <territoryOwner territory="West Methedras" owner="Saruman"/>
@@ -9173,9 +9189,10 @@
 			<unitPlacement unitType="plains_terrain" territory="Ciril" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="cave_terrain" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
-			<unitPlacement unitType="settlement_terrain" territory="City of Corsairs" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="settlement_terrain" territory="Umbar" quantity="1" owner="Harad"/>
 			<unitPlacement unitType="hill_terrain" territory="Coldfells" quantity="1" owner="OrcHolds"/>
 			<unitPlacement unitType="river_terrain" territory="Crossings of Harnen" quantity="1" owner="Harad"/>
+			<unitPlacement unitType="river_terrain" territory="Crossing of Carnen" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="plains_terrain" territory="Crossroads" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="plains_terrain" territory="Dagorlad" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="river_terrain" territory="Dale" quantity="1" owner="Northmen"/>
@@ -9221,6 +9238,7 @@
 			<unitPlacement unitType="plains_terrain" territory="East Haradwaith" quantity="1" owner="Harad"/>
 			<unitPlacement unitType="plains_terrain" territory="East Harondor" quantity="1" owner="Harad"/>
 			<unitPlacement unitType="hill_terrain" territory="East Iron Hills" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="hill_terrain" territory="North Iron Hills" quantity="1" owner="Dwarves"/>
 			<unitPlacement unitType="plains_terrain" territory="East Lebennin" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="plains_terrain" territory="East Lone Lands" quantity="1"/>
 			<unitPlacement unitType="mountain_terrain" territory="East Methedras" quantity="1" owner="Saruman"/>
@@ -9378,7 +9396,9 @@
 			<unitPlacement unitType="plains_terrain" territory="Lands of the Variags" quantity="1" owner="Harad"/>
 			<unitPlacement unitType="plains_terrain" territory="Lands of the Wainriders" quantity="1" owner="Rhun"/>
 			<unitPlacement unitType="forest_terrain" territory="Lands of the Woodmen" quantity="1" owner="Northmen"/>
-			<unitPlacement unitType="plains_terrain" territory="Lands of the Éothéod" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="Éothéod" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="South Éothéod" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="plains_terrain" territory="North Éothéod" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="plains_terrain" territory="Langstrand" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="river_terrain" territory="Last Bridge" quantity="1" owner="HighElves"/>
 			<unitPlacement unitType="river_terrain" territory="Lhûn" quantity="1"/>
@@ -9395,8 +9415,6 @@
 			<unitPlacement unitType="marsh_terrain" territory="Long Marshes" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="river_terrain" territory="Long Marshes" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="plains_terrain" territory="Lossarnach" quantity="1" owner="Gondor"/>
-			<unitPlacement unitType="plains_terrain" territory="Lower Carnen" quantity="1" owner="Northmen"/>
-			<unitPlacement unitType="river_terrain" territory="Lower Carnen" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="forest_terrain" territory="Lower Forest River" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="river_terrain" territory="Lower Forest River" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="river_terrain" territory="Lower Langwell" quantity="1" owner="Northmen"/>
@@ -9506,8 +9524,6 @@
 			<unitPlacement unitType="hill_terrain" territory="Ravenhill" quantity="1" owner="Dwarves"/>
 			<unitPlacement unitType="plains_terrain" territory="Realm of Vidugavia" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="hill_terrain" territory="Redhorn Gate" quantity="1" owner="Moria"/>
-			<unitPlacement unitType="plains_terrain" territory="Redwater" quantity="1" owner="Northmen"/>
-			<unitPlacement unitType="river_terrain" territory="Redwater" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="river_terrain" territory="Rhimdath" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="plains_terrain" territory="Rhimdath" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="settlement_terrain" territory="Rhosgobel" quantity="1" owner="Northmen"/>
@@ -9602,8 +9618,6 @@
 			<unitPlacement unitType="hill_terrain" territory="Tyrn Gorthad" quantity="1" owner="Angmar"/>
 			<unitPlacement unitType="plains_terrain" territory="Udûn" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Upbourn" quantity="1" owner="Rohan"/>
-			<unitPlacement unitType="plains_terrain" territory="Upper Carnen" quantity="1" owner="Northmen"/>
-			<unitPlacement unitType="river_terrain" territory="Upper Carnen" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="forest_terrain" territory="Upper Forest River" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="river_terrain" territory="Upper Forest River" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="river_terrain" territory="Upper Langwell" quantity="1" owner="Northmen"/>
@@ -9674,7 +9688,7 @@
             <unitPlacement unitType="settlement_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
             <unitPlacement unitType="settlement_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
             <unitPlacement unitType="settlement_terrain" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
-            <unitPlacement unitType="settlement_terrain" territory="City of Corsairs" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="settlement_terrain" territory="Umbar" quantity="1" owner="Harad"/>
             <unitPlacement unitType="settlement_terrain" territory="Dale" quantity="1" owner="Northmen"/>
             <unitPlacement unitType="settlement_terrain" territory="Dol Amroth" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="settlement_terrain" territory="Dol Guldur" quantity="1" owner="DolGuldur"/>
@@ -9743,7 +9757,7 @@
 			<unitPlacement unitType="wall" territory="Caras Galadhon" quantity="4" owner="SilvanElves"/>
 			<unitPlacement unitType="wall" territory="Carn Dûm" quantity="7" owner="Angmar"/>
 			<unitPlacement unitType="wall" territory="Cirith Ungol" quantity="3" owner="Mordor"/>
-			<unitPlacement unitType="wall" territory="City of Corsairs" quantity="7" owner="Harad"/>
+			<unitPlacement unitType="wall" territory="Umbar" quantity="7" owner="Harad"/>
 			<unitPlacement unitType="wall" territory="Dale" quantity="5" owner="Northmen"/>
 			<unitPlacement unitType="wall" territory="Dol Amroth" quantity="4" owner="Gondor"/>
 			<unitPlacement unitType="wall" territory="Dol Guldur" quantity="5" owner="DolGuldur"/>
@@ -9833,10 +9847,10 @@
             <unitPlacement unitType="elven_archer" territory="Cerin Amroth" quantity="4" owner="SilvanElves"/>
             <unitPlacement unitType="elven_warden" territory="Cerin Amroth" quantity="5" owner="SilvanElves"/>
             <unitPlacement unitType="ranger" territory="Chetwood" quantity="1" owner="Freefolk"/>
-            <unitPlacement unitType="bowman" territory="City of Corsairs" quantity="2" owner="Harad"/>
-            <unitPlacement unitType="black_numenorean" territory="City of Corsairs" quantity="4" owner="Harad"/>
-            <unitPlacement unitType="corsair" territory="City of Corsairs" quantity="4" owner="Harad"/>
-            <unitPlacement unitType="catapult" territory="City of Corsairs" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="bowman" territory="Umbar" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="black_numenorean" territory="Umbar" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="corsair" territory="Umbar" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="catapult" territory="Umbar" quantity="2" owner="Harad"/>
             <unitPlacement unitType="man_at_arms" territory="Crossroads" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="dunadan_lancer" territory="Crossroads" quantity="2" owner="Gondor"/>
             <unitPlacement unitType="barding_infantry" territory="Dale" quantity="1" owner="Northmen"/>
@@ -9986,7 +10000,7 @@
             <unitPlacement unitType="chariot" territory="Lands of the Wainriders" quantity="3" owner="Rhun"/>
             <unitPlacement unitType="wainrider_chieftain" territory="Lands of the Wainriders" quantity="1" owner="Rhun"/>
             <unitPlacement unitType="woodman" territory="Lands of the Woodmen" quantity="3" owner="Northmen"/>
-            <unitPlacement unitType="eotheod_cavalry" territory="Lands of the Éothéod" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Éothéod" quantity="2" owner="Northmen"/>
             <unitPlacement unitType="spearman" territory="Linhir" quantity="2" owner="Gondor"/>
             <unitPlacement unitType="man_at_arms" territory="Linhir" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="ranger" territory="Linhir" quantity="1" owner="Gondor"/>
@@ -9994,8 +10008,6 @@
             <unitPlacement unitType="orc_marauder" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
             <unitPlacement unitType="warg_rider" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
             <unitPlacement unitType="man_at_arms" territory="Lossarnach" quantity="1" owner="Gondor"/>
-            <unitPlacement unitType="barding_infantry" territory="Lower Carnen" quantity="1" owner="Northmen"/>
-            <unitPlacement unitType="raider" territory="Lower Carnen" quantity="1" owner="Northmen"/>
             <unitPlacement unitType="eotheod_cavalry" territory="Lower Langwell" quantity="1" owner="Northmen"/>
             <unitPlacement unitType="beorning_warrior" territory="Lower Langwell" quantity="1" owner="Northmen"/>
             <unitPlacement unitType="man_at_arms" territory="Lower Poros" quantity="1" owner="Gondor"/>
@@ -10113,7 +10125,6 @@
             <unitPlacement unitType="hobbit_archer" territory="Tuckborough" quantity="1" owner="Freefolk"/>
             <unitPlacement unitType="man_at_arms" territory="Tumladen" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="barrow_wight" territory="Tyrn Gorthad" quantity="2" owner="Angmar"/>
-            <unitPlacement unitType="barding_infantry" territory="Upper Carnen" quantity="1" owner="Northmen"/>
             <unitPlacement unitType="spearman" territory="Upper Poros" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="scout" territory="Weather Hills" quantity="1" owner="Arnor"/>
             <unitPlacement unitType="ranger" territory="Weather Hills" quantity="2" owner="Arnor"/>
@@ -10234,12 +10245,12 @@
             <unitPlacement unitType="factory" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
             <unitPlacement unitType="spider" territory="Cirith Ungol" quantity="1" owner="Mordor"/>
             <unitPlacement unitType="wall" territory="Cirith Ungol" quantity="3" owner="Mordor"/>
-            <unitPlacement unitType="factory" territory="City of Corsairs" quantity="1" owner="Harad"/>
-            <unitPlacement unitType="wall" territory="City of Corsairs" quantity="7" owner="Harad"/>
-            <unitPlacement unitType="fortress" territory="City of Corsairs" quantity="1" owner="Harad"/>
-            <unitPlacement unitType="corsair" territory="City of Corsairs" quantity="4" owner="Harad"/>
-            <unitPlacement unitType="black_numenorean" territory="City of Corsairs" quantity="1" owner="Harad"/>
-            <unitPlacement unitType="catapult" territory="City of Corsairs" quantity="2" owner="Harad"/>
+            <unitPlacement unitType="factory" territory="Umbar" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="wall" territory="Umbar" quantity="7" owner="Harad"/>
+            <unitPlacement unitType="fortress" territory="Umbar" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="corsair" territory="Umbar" quantity="4" owner="Harad"/>
+            <unitPlacement unitType="black_numenorean" territory="Umbar" quantity="1" owner="Harad"/>
+            <unitPlacement unitType="catapult" territory="Umbar" quantity="2" owner="Harad"/>
             <unitPlacement unitType="corsair" territory="Crossings of Harnen" quantity="2" owner="Harad"/>
             <unitPlacement unitType="bowman" territory="Crossings of Harnen" quantity="1" owner="Harad"/>
             <unitPlacement unitType="factory" territory="Dale" quantity="1" owner="Northmen"/>
@@ -10431,7 +10442,7 @@
             <unitPlacement unitType="warg_rider" territory="Lands of the Gwathuirim" quantity="2" owner="Saruman"/>
             <unitPlacement unitType="crebain" territory="Lands of the Gwathuirim" quantity="1" owner="Saruman"/>
             <unitPlacement unitType="orc_marauder" territory="Forochel" quantity="3" owner="Angmar"/>
-            <unitPlacement unitType="eotheod_cavalry" territory="Lands of the Éothéod" quantity="2" owner="Northmen"/>
+            <unitPlacement unitType="eotheod_cavalry" territory="Éothéod" quantity="2" owner="Northmen"/>
             
             <unitPlacement unitType="elven_hunter" territory="Last Bridge" quantity="1" owner="HighElves"/>
             <unitPlacement unitType="bowman" territory="Lefnui Vale" quantity="1"/>
