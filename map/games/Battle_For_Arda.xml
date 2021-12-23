@@ -198,6 +198,28 @@
 				<element name="easterling_cavalry"/>
 				<element name="chariot"/>
 			</variable>
+			<variable name="EQUINE_CAVALRY">
+				<element name="raider"/>
+				<element name="variag_raider"/>
+				<element name="pony_rider"/>
+				<element name="scout"/>
+				<element name="eotheod_cavalry"/>
+				<element name="eorling_rider"/>
+				<element name="dunadan_lancer"/>
+				<element name="wainrider_chieftain"/>
+				<element name="swan_knight"/>
+				<element name="kings_company"/>
+				<element name="southron_cavalry"/>
+				<element name="rohirric_scout"/>
+				<element name="elven_cavalry"/>
+				<element name="easterling_cavalry"/>
+				<element name="chariot"/>
+			</variable>
+			<variable name="LUPINE_CAVALRY">
+				<element name="warg_scout"/>
+				<element name="warg_rider"/>
+				<element name="white_wolf"/>
+			</variable>
 			<variable name="FLYING">
 				<element name="eagle"/>
 				<element name="crebain"/>
@@ -5246,7 +5268,7 @@
 					<attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
 						<option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
@@ -5281,7 +5303,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
@@ -5317,7 +5339,8 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
+						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.05"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
@@ -5353,7 +5376,7 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
 					
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
@@ -5389,7 +5412,8 @@
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
+						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.05"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
@@ -5424,7 +5448,8 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$ANY_CAVALRY$" count="1"/>
+						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.05"/>
+						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.05"/>
 						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
@@ -5493,6 +5518,8 @@
 					</attachment>
 					
 					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
+						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.05"/>
+						
 						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
 						
