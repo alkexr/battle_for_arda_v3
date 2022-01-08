@@ -5030,43 +5030,33 @@
 					
 					<!--Terrain Support-->
 					
-					<attachment name="supportAttachment_plains_terrain_charge" attachTo="plains_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
-						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="AAroll"/>
-						<option name="bonus" value="1"/>
-						<option name="number" value="9999"/>
-						<option name="bonusType" value="plains_terrain_charge"/>
-						<option name="impArtTech" value="false"/>
-						<option name="players" value="$ANY_PLAYER$"/>
-					</attachment>
 					<attachment name="supportAttachment_hill_terrain_charge" attachTo="hill_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_HILL$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="AAroll"/>
-						<option name="bonus" value="1"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAstrength"/>
+						<option name="bonus" value="-1"/>
 						<option name="number" value="9999"/>
 						<option name="bonusType" value="hill_terrain_charge"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					<attachment name="supportAttachment_mountain_terrain_charge" attachTo="mountain_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
-						<option name="dice" value="AAroll"/>
-						<option name="bonus" value="-10"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAstrength"/>
+						<option name="bonus" value="-2"/>
 						<option name="number" value="9999"/>
 						<option name="bonusType" value="mountain_terrain_charge"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
+					
 					<attachment name="supportAttachment_cave_terrain_charge" attachTo="cave_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
+						<option name="side" value="defence"/>
 						<option name="dice" value="AAroll"/>
 						<option name="bonus" value="-10"/>
 						<option name="number" value="9999"/>
@@ -5075,9 +5065,9 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					<attachment name="supportAttachment_forest_terrain_charge" attachTo="forest_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
+						<option name="side" value="defence"/>
 						<option name="dice" value="AAroll"/>
 						<option name="bonus" value="-10"/>
 						<option name="number" value="9999"/>
@@ -5086,9 +5076,9 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					<attachment name="supportAttachment_marsh_terrain_charge" attachTo="marsh_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
+						<option name="side" value="defence"/>
 						<option name="dice" value="AAroll"/>
 						<option name="bonus" value="-10"/>
 						<option name="number" value="9999"/>
@@ -5097,9 +5087,9 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					<attachment name="supportAttachment_settlement_terrain_charge" attachTo="settlement_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE_PLAINS$:$CHARGE_HILL$"/>
+						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
-						<option name="side" value="offence:defence"/>
+						<option name="side" value="defence"/>
 						<option name="dice" value="AAroll"/>
 						<option name="bonus" value="-10"/>
 						<option name="number" value="9999"/>
