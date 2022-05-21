@@ -4525,6 +4525,8 @@
 						<option name="defense" value="5"/>
 						<option name="defenseRolls" value="2"/>
 						
+						<option name="canEvade" value="true"/>
+						
 						<option name="targetsAA" value="$DUEL$"/>
 						<option name="typeAA" value="duel"/>
 						<option name="attackAA" value="3"/>
@@ -4543,6 +4545,8 @@
 						
 						<option name="attack" value="6"/>
 						<option name="defense" value="6"/>
+						
+						<option name="canEvade" value="true"/>
 						
 						<option name="targetsAA" value="$DUEL$"/>
 						<option name="typeAA" value="duel"/>
@@ -4563,6 +4567,8 @@
 						
 						<option name="attack" value="7"/>
 						<option name="defense" value="7"/>
+						
+						<option name="canEvade" value="true"/>
 						
 						<option name="canAirBattle" value="true"/>
 						<option name="airDefense" value="3"/>
@@ -4589,6 +4595,8 @@
 						<option name="attackRolls" value="3"/>
 						<option name="defense" value="6"/>
 						<option name="defenseRolls" value="3"/>
+						
+						<option name="canEvade" value="true"/>
 						
 						<option name="targetsAA" value="$DUEL$"/>
 						<option name="typeAA" value="duel"/>
