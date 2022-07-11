@@ -3,9 +3,9 @@
 <!DOCTYPE game SYSTEM "game.dtd">
 
 <game>
-	<info name="ME - Battle for Arda V3" version="2.3"/>
+	<info name="Middle Earth - Battle for Arda (v3)" version="2.3"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
-	<triplea minimumVersion="2.1"/>
+	<triplea minimumVersion="2.5"/>
 	<diceSides value="12"/>
 		<variableList>
 			<variable name="ANY_PLAYER">
@@ -11358,10 +11358,11 @@
 		<div style="text-align: center">
 			<table border="1" bgcolor="3D3D99" align="center">
 				<tr>
-					<th style="font-size:140%;000000">====================<br>Middle Earth<br>The Battle For Arda<br>====================</th>
+					<th style="font-size:140%;000000">====================<br>Middle Earth<br>The Battle For Arda<br>version 3 (beta)<br>====================</th>
 				</tr>
 			</table>
 		</div>
+		<br><br><br><h1>This is a development version. These notes are out of date.</h1><br><br><br><br><br>
 		<h1>Map options</h1>
 		<ul>
 			<li><b>Free For All:</b> (Default OFF) Game is free for all, every faction is at war with every other. Can lead to fun games against AI, but otherwise not recommended.</li>
