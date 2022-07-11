@@ -391,6 +391,104 @@
 				<element name="elven_cavalry"/>
 			</variable>-->
 			
+			<variable name="TPC_INFANTRY">
+				<element name="spearman"/>
+				<element name="halforc"/>
+				<element name="goblin_stabber"/>
+				<element name="riddermark_militia"/>
+				<element name="man_at_arms"/>
+				<element name="corsair"/>
+				<element name="orc_marauder"/>
+			</variable>
+			<variable name="TPC_HEAVY">
+				<element name="dwarven_pikeman"/>
+				<element name="trollman"/>
+				<element name="uruk_pikeman"/>
+				<element name="dunadan_guard"/>
+				<element name="barding_infantry"/>
+				<element name="black_numenorean"/>
+				<element name="tower_guard"/>
+				<element name="dwarven_halberdier"/>
+				<element name="olog_hai"/>
+			</variable>
+			<variable name="TPC_BOW">
+				<element name="hobbit_archer"/>
+				<element name="bowman"/>
+				<element name="galadhrim_longbowman"/>
+				<element name="goblin_shooter"/>
+			</variable>
+			<variable name="TPC_CAVALRY">
+				<element name="variag_raider"/>
+				<element name="easterling_cavalry"/>
+				<element name="eotheod_cavalry"/>
+				<element name="eorling_rider"/>
+				<element name="dunadan_lancer"/>
+				<element name="chariot"/>
+				<element name="wainrider_chieftain"/>
+				<element name="swan_knight"/>
+				<element name="kings_company"/>
+				<element name="warg_rider"/>
+				<element name="white_wolf"/>
+				<element name="war_wagon"/>
+			</variable>
+			<variable name="TPC_SCOUT">
+				<element name="pony_rider"/>
+				<element name="raider"/>
+				<element name="rohirric_scout"/>
+				<element name="elven_cavalry"/>
+				<element name="scout"/>
+				<element name="warg_scout"/>
+				<element name="southron_cavalry"/>
+				<element name="uruk_warrior"/>
+			</variable>
+			<variable name="TPC_WILD">
+				<element name="dunlending_wildman"/>
+				<element name="beorning_warrior"/>
+				<element name="snaga_skirmisher"/>
+				<element name="dwarven_axeman"/>
+				<element name="balchoth_tribesman"/>
+				<element name="helming_warrior"/>
+			</variable>
+			<variable name="TPC_HUNT">
+				<element name="woodman"/>
+				<element name="ranger"/>
+				<element name="elven_hunter"/>
+				<element name="spider"/>
+				<element name="huorn"/>
+				<element name="ent"/>
+			</variable>
+			<variable name="TPC_WOODLAND">
+				<element name="elven_warden"/>
+				<element name="elven_archer"/>
+				<element name="noldorin_warrior"/>
+				<element name="bear"/>
+			</variable>
+			<variable name="TPC_CAVE">
+				<element name="troll"/>
+				<element name="werewolf"/>
+				<element name="barrow_wight"/>
+				<element name="cold_drake"/>
+				<element name="giant_spider"/>
+				<element name="oathbreaker"/>
+			</variable>
+			<variable name="TPC_FLY">
+				<element name="eagle"/>
+				<element name="crebain"/>
+				<element name="raven"/>
+				<element name="bat"/>
+				<element name="uruloke"/>
+				<element name="winged_nazgul"/>
+			</variable>
+			<variable name="TPC_IDK">
+				<element name="oliphaunt"/>
+				<element name="dwarven_axethrower"/>
+				<element name="balrog"/>
+				<element name="nazgul"/>
+				<element name="wizard"/>
+				<element name="wall"/>
+				<element name="fortress"/>
+			</variable>
+			
 			<variable name="TP_LEVY">
 				<element name="spearman"/>
 				<element name="halforc"/>
@@ -5207,70 +5305,58 @@
 						<option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
 						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
@@ -5279,35 +5365,29 @@
 						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
 						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-3"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-3"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-3"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
@@ -5315,35 +5395,29 @@
 						<option name="noBlitz" value="$ANY_UNIT$"/>
 						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
 					
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
@@ -5351,35 +5425,29 @@
 						<option name="noBlitz" value="$ANY_UNIT$"/>
 						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-3"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
@@ -5387,136 +5455,112 @@
 						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
 						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="2"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="3"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="noBlitz" value="$ANY_UNIT$"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="0"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
 						
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="3"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="2"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="3"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					<attachment name="territoryEffectAttachment" attachTo="plains" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="$TP_OPEN$" count="3"/>
-						<option name="combatDefenseEffect" value="$TP_OPEN$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="2"/>
+						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="3"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="2"/>
+						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="2"/>
+						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
+						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_WILD$" count="-1"/>
+						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
+						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="-2"/>
+						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="1"/>
+						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="-2"/>
+						<option name="combatOffenseEffect" value="$TPC_FLY$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_FLY$" count="0"/>
 						
-						<option name="combatOffenseEffect" value="$TP_WILDERNESS$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TP_WILDERNESS$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AMBUSHER$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AMBUSHER$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_UNYIELDING$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_UNYIELDING$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_RELENTLESS$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_RELENTLESS$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_WOODLAND$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_WOODLAND$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_DWARVEN$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_DWARVEN$" count="-1"/>
-						
-						<option name="combatOffenseEffect" value="$TP_LEVY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TP_LEVY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_AIR$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_AIR$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TP_FORTIFICATION$" count="0"/>
-						<option name="combatDefenseEffect" value="$TP_FORTIFICATION$" count="0"/>
+						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
+						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
 					</attachment>
 					
 					<attachment name="territoryEffectAttachment" attachTo="major_river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
