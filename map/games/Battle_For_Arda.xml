@@ -5301,7 +5301,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="$ANY_UNIT$"/>
 						<option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
 						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
 						
@@ -5332,8 +5331,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
-						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
 						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
@@ -5361,10 +5358,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
-						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
-						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
 						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="0"/>
@@ -5392,8 +5385,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
 					
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
@@ -5422,8 +5413,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="$ANY_UNIT$"/>
-						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
 						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="-1"/>
@@ -5452,8 +5441,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$EQUINE_CAVALRY$" count="0.5"/>
-						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
 						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
@@ -5482,7 +5469,6 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="noBlitz" value="$ANY_UNIT$"/>
 						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
@@ -5510,7 +5496,6 @@
 					</attachment>
 					
 					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$LUPINE_CAVALRY$" count="0.5"/>
 						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
