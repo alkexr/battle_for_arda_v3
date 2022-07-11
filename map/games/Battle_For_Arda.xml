@@ -9147,7 +9147,7 @@
 			<unitPlacement unitType="settlement_terrain" territory="Archet" quantity="1" owner="Freefolk"/>
 			<unitPlacement unitType="plains_terrain" territory="Arthedain" quantity="1" owner="Arnor"/>
 			<unitPlacement unitType="mountain_terrain" territory="Ash Mountains" quantity="1" owner="Mordor"/>
-			<unitPlacement unitType="plains_terrain" territory="Azanulbizar" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="hill_terrain" territory="Azanulbizar" quantity="1" owner="Moria"/>
 			<unitPlacement unitType="river_terrain" territory="Azanulbizar" quantity="1" owner="Moria"/>
 			<unitPlacement unitType="settlement_terrain" territory="Barad-dûr" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="hill_terrain" territory="Barrow Downs" quantity="1" owner="Angmar"/>
@@ -9171,11 +9171,11 @@
 			<unitPlacement unitType="hill_terrain" territory="Caras Galadhon" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="settlement_terrain" territory="Caras Galadhon" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="mountain_terrain" territory="Carchost" quantity="1" owner="Mordor"/>
-			<unitPlacement unitType="cave_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
+			<unitPlacement unitType="hill_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
 			<unitPlacement unitType="settlement_terrain" territory="Carn Dûm" quantity="1" owner="Angmar"/>
 			<unitPlacement unitType="river_terrain" territory="Carrock" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="mountain_terrain" territory="Celebdil" quantity="1" owner="Moria"/>
-			<unitPlacement unitType="plains_terrain" territory="Central Wilderness" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="forest_terrain" territory="Central Wilderness" quantity="1" owner="Saruman"/>
 			<unitPlacement unitType="hill_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="forest_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
 			<unitPlacement unitType="settlement_terrain" territory="Cerin Amroth" quantity="1" owner="SilvanElves"/>
@@ -9198,7 +9198,7 @@
 			<unitPlacement unitType="plains_terrain" territory="Desolation of Smaug" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="plains_terrain" territory="Desolation of the Morannon" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="river_terrain" territory="Dimrill Dale" quantity="1" owner="Moria"/>
-			<unitPlacement unitType="plains_terrain" territory="Dimrill Dale" quantity="1" owner="Moria"/>
+			<unitPlacement unitType="hill_terrain" territory="Dimrill Dale" quantity="1" owner="Moria"/>
 			<unitPlacement unitType="hill_terrain" territory="Dol Amroth" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Dol Amroth" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="hill_terrain" territory="Dol Baran" quantity="1" owner="Saruman"/>
@@ -9212,6 +9212,7 @@
 			<unitPlacement unitType="hill_terrain" territory="Dunharrow" quantity="1" owner="Rohan"/>
 			<unitPlacement unitType="settlement_terrain" territory="Dunharrow" quantity="1" owner="Rohan"/>
 			<unitPlacement unitType="hill_terrain" territory="Dunland" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="hill_terrain" territory="Durthang" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Durthang" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="mountain_terrain" territory="Dwimorberg" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="cave_terrain" territory="Dáin's Halls" quantity="1" owner="Dwarves"/>
@@ -9282,6 +9283,7 @@
 			<unitPlacement unitType="mountain_terrain" territory="Ephel Dúath" quantity="1" owner="Mordor"/>
 			<unitPlacement unitType="cave_terrain" territory="Erebor" quantity="1" owner="Dwarves"/>
 			<unitPlacement unitType="settlement_terrain" territory="Erebor" quantity="1" owner="Dwarves"/>
+			<unitPlacement unitType="hill_terrain" territory="Erech" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Erech" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="mountain_terrain" territory="Ered Lindon" quantity="1" owner="HighElves"/>
 			<unitPlacement unitType="forest_terrain" territory="Ered Lindon" quantity="1" owner="HighElves"/>
@@ -9293,7 +9295,7 @@
 			<unitPlacement unitType="plains_terrain" territory="Eregion" quantity="1" owner="Moria"/>
 			<unitPlacement unitType="forest_terrain" territory="Eryn Galen" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="forest_terrain" territory="Eryn Vorn" quantity="1"/>
-			<unitPlacement unitType="river_terrain" territory="Esgaroth" quantity="1" owner="Northmen"/>
+			<unitPlacement unitType="marsh_terrain" territory="Esgaroth" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="settlement_terrain" territory="Esgaroth" quantity="1" owner="Northmen"/>
 			<unitPlacement unitType="marsh_terrain" territory="Ethir Anduin" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="river_terrain" territory="Ethraid Engrin" quantity="1" owner="Rohan"/>
@@ -9424,6 +9426,7 @@
 			<unitPlacement unitType="marsh_terrain" territory="Midgewater Marshes" quantity="1" owner="Arnor"/>
 			<unitPlacement unitType="mountain_terrain" territory="Min-Rimmon" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Minas Morgul" quantity="1" owner="Mordor"/>
+			<unitPlacement unitType="hill_terrain" territory="Minas Tirith" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="settlement_terrain" territory="Minas Tirith" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="mountain_terrain" territory="Mindolluin" quantity="1" owner="Gondor"/>
 			<unitPlacement unitType="cave_terrain" territory="Mines of Moria" quantity="1" owner="Moria"/>
@@ -9558,7 +9561,7 @@
 			<unitPlacement unitType="hill_terrain" territory="South Downs" quantity="1" owner="Arnor"/>
 			<unitPlacement unitType="hill_terrain" territory="South Dunland" quantity="1" owner="Saruman"/>
 			<unitPlacement unitType="hill_terrain" territory="South Emyn Uial" quantity="1" owner="Arnor"/>
-			<unitPlacement unitType="forest_terrain" territory="South Enedwaith" quantity="1" owner="Saruman"/>
+			<unitPlacement unitType="marsh_terrain" territory="South Enedwaith" quantity="1" owner="Saruman"/>
 			<unitPlacement unitType="mountain_terrain" territory="South Ered Luin" quantity="1"/>
 			<unitPlacement unitType="forest_terrain" territory="South Ered Luin" quantity="1"/>
 			<unitPlacement unitType="mountain_terrain" territory="South Ered Mithrin" quantity="1" owner="Dwarves"/>
