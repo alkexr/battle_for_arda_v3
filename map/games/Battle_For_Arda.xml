@@ -5296,6 +5296,19 @@
 					</attachment>
 					
 					
+					<attachment name="supportAttachment_cave_terrain_siege" attachTo="cave_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$SIEGE_ENGINE$"/>
+						<option name="faction" value="enemy"/>
+						<option name="side" value="defence"/>
+						<option name="dice" value="AAstrength"/>
+						<option name="bonus" value="-3"/>
+						<option name="number" value="9999"/>
+						<option name="bonusType" value="cave_terrain_siege"/>
+						<option name="impArtTech" value="false"/>
+						<option name="players" value="$ANY_PLAYER$"/>
+					</attachment>
+					
+					
 					
 					
 					
