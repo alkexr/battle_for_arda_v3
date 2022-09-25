@@ -266,6 +266,13 @@
 				<element name="ancient_wall"/>
 			</variable>
 			
+			<variable name="HERO">
+				<element name="wizard"/>
+				<element name="nazgul"/>
+				<element name="winged_nazgul"/>
+				<element name="balrog"/>
+			</variable>
+			
 			<variable name="ANY_INFANTRY">
 				<element name="$MELEE_INFANTRY$"/>
 				<element name="$RANGED_INFANTRY$"/>
@@ -693,6 +700,7 @@
 				<element name="wizard"/>
 				<element name="nazgul"/>
 				<element name="winged_nazgul"/>
+				<element name="balrog"/>
 			</variable>
 			<variable name="AMBUSH">
 				<element name="beorning_warrior"/>
@@ -4625,15 +4633,15 @@
 						
 						<option name="canEvade" value="true"/>
 						
-						<option name="targetsAA" value="$DUEL$"/>
+						<option name="targetsAA" value="$HERO$"/>
 						<option name="typeAA" value="duel"/>
-						<option name="attackAA" value="3"/>
-						<option name="offensiveAttackAA" value="3"/>
+						<option name="attackAA" value="4"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="false"/>
 						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="-1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
@@ -4646,15 +4654,15 @@
 						
 						<option name="canEvade" value="true"/>
 						
-						<option name="targetsAA" value="$DUEL$"/>
+						<option name="targetsAA" value="$HERO$"/>
 						<option name="typeAA" value="duel"/>
 						<option name="attackAA" value="2"/>
-						<option name="offensiveAttackAA" value="2"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="false"/>
 						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="-1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
@@ -4672,15 +4680,15 @@
 						<option name="airDefense" value="3"/>
 						<option name="airAttack" value="3"/>
 						
-						<option name="targetsAA" value="$DUEL$"/>
+						<option name="targetsAA" value="$HERO$"/>
 						<option name="typeAA" value="duel"/>
 						<option name="attackAA" value="2"/>
-						<option name="offensiveAttackAA" value="2"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="false"/>
 						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="-1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
@@ -4696,15 +4704,15 @@
 						
 						<option name="canEvade" value="true"/>
 						
-						<option name="targetsAA" value="$DUEL$"/>
+						<option name="targetsAA" value="$HERO$"/>
 						<option name="typeAA" value="duel"/>
 						<option name="attackAA" value="3"/>
-						<option name="offensiveAttackAA" value="3"/>
+						<option name="offensiveAttackAA" value="0"/>
 						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="false"/>
+						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="false"/>
 						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="-1"/>
+						<option name="maxRoundsAA" value="1"/>
 						
 					</attachment>
 					
