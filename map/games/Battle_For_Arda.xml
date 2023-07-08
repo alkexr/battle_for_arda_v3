@@ -5434,6 +5434,7 @@
 					
 					
 					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
+						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
 						
 						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-2"/>
 						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="-1"/>
