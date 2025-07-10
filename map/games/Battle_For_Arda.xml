@@ -738,10 +738,10 @@
 			</variable>
 			
 			<variable name="LEAD.UNIT">
-				<element name="black_numenorean"/><element name="swan_knight"/><element name="wainrider_chieftain"/><element name="kings_company"/><element name="ent"/><element name="nazgul"/><element name="winged_nazgul"/><element name="balrog"/><element name="wizard"/><element name="werewolf"/>
+				<element name="black_numenorean"/><element name="wainrider_chieftain"/><element name="kings_company"/><element name="ent"/><element name="nazgul"/><element name="winged_nazgul"/><element name="balrog"/><element name="wizard"/><element name="werewolf"/>
 			</variable>
 			<variable name="LEAD.VALUE">
-				<element name="4"/>               <element name="6"/>          <element name="8"/>                  <element name="8"/>            <element name="8"/>  <element name="8"/>     <element name="8"/>            <element name="12"/>   <element name="20"/>     <element name="4"/>
+				<element name="4"/>               <element name="8"/>                  <element name="8"/>            <element name="8"/>  <element name="8"/>     <element name="8"/>            <element name="12"/>   <element name="20"/>     <element name="4"/>
 			</variable>
 			
 			<variable name="FORMATION.UNIT">
@@ -3097,7 +3097,7 @@
 				<result resourceOrUnit="halforc" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_uruk_warrior">
-				<cost resource="PUs" quantity="7" />
+				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="uruk_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_uruk_pikeman">
@@ -3149,7 +3149,7 @@
 				<result resourceOrUnit="tower_guard" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_swan_knight">
-				<cost resource="PUs" quantity="12" />
+				<cost resource="PUs" quantity="10" />
 				<result resourceOrUnit="swan_knight" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_oathbreaker">
@@ -3237,7 +3237,7 @@
 				<result resourceOrUnit="elven_archer" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_noldorin_warrior">
-				<cost resource="PUs" quantity="7" />
+				<cost resource="PUs" quantity="8" />
 				<result resourceOrUnit="noldorin_warrior" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_eagle">
@@ -3274,7 +3274,7 @@
 			
 			
 			<productionRule name="buy_hobbit_archer">
-				<cost resource="PUs" quantity="5" />
+				<cost resource="PUs" quantity="4" />
 				<result resourceOrUnit="hobbit_archer" quantity="1"/>
 			</productionRule>
 			<productionRule name="buy_scout">
@@ -3696,7 +3696,7 @@
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
 						<option name="attack" value="2"/>
-						<option name="defense" value="5"/>
+						<option name="defense" value="4"/>
 						
 					</attachment>
 					
@@ -3727,7 +3727,7 @@
 					<attachment name="unitAttachment" attachTo="uruk_pikeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="attack" value="4"/>
+						<option name="attack" value="3"/>
 						<option name="defense" value="6"/>
 						
 					</attachment>
@@ -3735,7 +3735,7 @@
 					<attachment name="unitAttachment" attachTo="uruk_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="attack" value="4"/>
+						<option name="attack" value="5"/>
 						<option name="defense" value="4"/>
 						
 						<option name="targetsAA" value="$ANY_UNIT$"/>
@@ -3862,15 +3862,15 @@
 					<attachment name="unitAttachment" attachTo="tower_guard" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="4"/>
-						<option name="defense" value="6"/>
+						<option name="attack" value="3"/>
+						<option name="defense" value="4"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="dwarven_axeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="5"/>
-						<option name="defense" value="3"/>
+						<option name="attack" value="4"/>
+						<option name="defense" value="2"/>
 						
 						<option name="targetsAA" value="$ANY_UNIT$"/>
 						<option name="typeAA" value="ambush"/>
@@ -3886,23 +3886,23 @@
 					<attachment name="unitAttachment" attachTo="dwarven_pikeman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="2"/>
-						<option name="defense" value="6"/>
+						<option name="attack" value="1"/>
+						<option name="defense" value="4"/>
 						
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="dwarven_halberdier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="6"/>
-						<option name="defense" value="4"/>
+						<option name="attack" value="4"/>
+						<option name="defense" value="3"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="noldorin_warrior" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="6"/>
-						<option name="defense" value="4"/>
+						<option name="attack" value="5"/>
+						<option name="defense" value="6"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="trollman" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -3917,8 +3917,8 @@
 					<attachment name="unitAttachment" attachTo="hobbit_archer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
-						<option name="attack" value="2"/>
-						<option name="defense" value="2"/>
+						<option name="attack" value="1"/>
+						<option name="defense" value="1"/>
 						
 						<option name="targetsAA" value="$ANY_UNIT$"/>
 						<option name="typeAA" value="ambush"/>
@@ -3978,7 +3978,7 @@
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="2"/>
 						<option name="attack" value="2"/>
-						<option name="defense" value="4"/>
+						<option name="defense" value="3"/>
 						<option name="targetsAA" value="$FLYING$"/>
 						<option name="typeAA" value="antiair"/>
 						<option name="attackAA" value="4"/>
@@ -4177,12 +4177,12 @@
 					<attachment name="unitAttachment" attachTo="eorling_rider" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="attack" value="5"/>
-						<option name="defense" value="2"/>
+						<option name="attack" value="3"/>
+						<option name="defense" value="4"/>
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="10"/>
+						<option name="offensiveAttackAA" value="8"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4241,12 +4241,12 @@
 					<attachment name="unitAttachment" attachTo="swan_knight" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="3"/>
-						<option name="attack" value="7"/>
-						<option name="defense" value="6"/>
+						<option name="attack" value="6"/>
+						<option name="defense" value="5"/>
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="6"/>
+						<option name="offensiveAttackAA" value="8"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4290,7 +4290,7 @@
 						<option name="transportCost" value="1"/>
 						<option name="movement" value="4"/>
 						<option name="attack" value="4"/>
-						<option name="defense" value="5"/>
+						<option name="defense" value="2"/>
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
@@ -4329,8 +4329,8 @@
 						<option name="airDefense" value="5"/>
 						<option name="airAttack" value="5"/>
 						
-                        <option name="attack" value="7"/>
-						<option name="defense" value="4"/>
+                        <option name="attack" value="6"/>
+						<option name="defense" value="3"/>
                     </attachment>
 					
 					<attachment name="unitAttachment" attachTo="crebain" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -5321,254 +5321,107 @@
 					
 					
 					
-					<attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
-						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="hill" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="cave" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-3"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-3"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-3"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="3"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="pass" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-					
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-3"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="1"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="forest" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="3"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					
-					<attachment name="territoryEffectAttachment" attachTo="river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					<attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="-2"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="-2"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
-					
-					<attachment name="territoryEffectAttachment" attachTo="plains" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
-						<option name="combatOffenseEffect" value="$TPC_INFANTRY$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_INFANTRY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_HEAVY$" count="2"/>
-						<option name="combatDefenseEffect" value="$TPC_HEAVY$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_BOW$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_BOW$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVALRY$" count="3"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVALRY$" count="2"/>
-						<option name="combatOffenseEffect" value="$TPC_SCOUT$" count="2"/>
-						<option name="combatDefenseEffect" value="$TPC_SCOUT$" count="1"/>
-						<option name="combatOffenseEffect" value="$TPC_WILD$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_WILD$" count="-1"/>
-						<option name="combatOffenseEffect" value="$TPC_HUNT$" count="-1"/>
-						<option name="combatDefenseEffect" value="$TPC_HUNT$" count="-2"/>
-						<option name="combatOffenseEffect" value="$TPC_WOODLAND$" count="1"/>
-						<option name="combatDefenseEffect" value="$TPC_WOODLAND$" count="0"/>
-						<option name="combatOffenseEffect" value="$TPC_CAVE$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_CAVE$" count="-2"/>
-						<option name="combatOffenseEffect" value="$TPC_FLY$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_FLY$" count="0"/>
-						
-						<option name="combatOffenseEffect" value="$TPC_IDK$" count="0"/>
-						<option name="combatDefenseEffect" value="$TPC_IDK$" count="0"/>
-					</attachment>
+					<!--TERRITORY EFFECTS-->
+                    <!--auto generated from a spreadsheet-->
+                    <attachment name="territoryEffectAttachment" attachTo="mountain" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="unitsNotAllowed" value="$MOUNTAIN_BLOCKED$"/>
+                        <option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
+                        <option name="combatDefenseEffect" value="winged_nazgul" count="4"/>
+                        <option name="combatDefenseEffect" value="elven_hunter:eagle:uruloke:ranger" count="3"/>
+                        <option name="combatDefenseEffect" value="dwarven_axeman:noldorin_warrior:dunlending_wildman:black_numenorean:crebain:raven:bat:swan_knight:warg_rider:werewolf:cold_drake:barrow_wight:wizard:nazgul" count="2"/>
+                        <option name="combatDefenseEffect" value="dwarven_halberdier:dwarven_pikeman:elven_warden:elven_archer:galadhrim_longbowman:halforc:uruk_warrior:white_wolf:hobbit_archer:goblin_shooter:bowman:barding_infantry:tower_guard:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:kings_company:raider:variag_raider:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:troll:olog_hai:giant_spider:bear:trollman:spearman:helming_warrior:goblin_stabber:riddermark_militia:man_at_arms:woodman:beorning_warrior:balchoth_tribesman:snaga_skirmisher:orc_marauder:spider:oathbreaker:balrog:scout:corsair:huorn:ent:dwarven_axethrower:pony_rider" count="1"/>
+                        <option name="combatDefenseEffect" value="uruk_pikeman" count="-1"/>
+                        <option name="combatDefenseEffect" value="oliphaunt" count="-2"/>
+                        <option name="combatOffenseEffect" value="eagle:uruloke:winged_nazgul" count="2"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:elven_hunter:dunlending_wildman:crebain:raven:bat:warg_rider:werewolf:cold_drake:barrow_wight:ranger" count="1"/>
+                        <option name="combatOffenseEffect" value="southron_cavalry:dunadan_guard" count="-1"/>
+                        <option name="combatOffenseEffect" value="uruk_pikeman" count="-2"/>
+                        <option name="combatOffenseEffect" value="oliphaunt" count="-3"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="hill" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="winged_nazgul" count="4"/>
+                        <option name="combatDefenseEffect" value="elven_hunter:eagle:uruloke:ranger" count="3"/>
+                        <option name="combatDefenseEffect" value="dwarven_axeman:noldorin_warrior:dunlending_wildman:black_numenorean:crebain:raven:bat:swan_knight:warg_rider:werewolf:cold_drake:barrow_wight:wizard:nazgul" count="2"/>
+                        <option name="combatDefenseEffect" value="dwarven_halberdier:dwarven_pikeman:elven_warden:elven_archer:galadhrim_longbowman:halforc:uruk_warrior:white_wolf:hobbit_archer:goblin_shooter:bowman:barding_infantry:tower_guard:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:kings_company:raider:variag_raider:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:troll:olog_hai:giant_spider:bear:trollman:spearman:helming_warrior:goblin_stabber:riddermark_militia:man_at_arms:woodman:beorning_warrior:balchoth_tribesman:snaga_skirmisher:orc_marauder:spider:oathbreaker:balrog:scout:corsair:huorn:ent:dwarven_axethrower:pony_rider" count="1"/>
+                        <option name="combatDefenseEffect" value="uruk_pikeman" count="-1"/>
+                        <option name="combatDefenseEffect" value="oliphaunt" count="-2"/>
+                        <option name="combatOffenseEffect" value="eagle:uruloke:winged_nazgul" count="2"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:elven_hunter:dunlending_wildman:crebain:raven:bat:warg_rider:werewolf:cold_drake:barrow_wight:ranger" count="1"/>
+                        <option name="combatOffenseEffect" value="southron_cavalry:dunadan_guard" count="-1"/>
+                        <option name="combatOffenseEffect" value="uruk_pikeman" count="-2"/>
+                        <option name="combatOffenseEffect" value="oliphaunt" count="-3"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="cave" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="balrog" count="4"/>
+                        <option name="combatDefenseEffect" value="dwarven_axeman:giant_spider:cold_drake:barrow_wight:spider" count="3"/>
+                        <option name="combatDefenseEffect" value="dwarven_halberdier:noldorin_warrior:elven_hunter:black_numenorean:tower_guard:bat:uruloke:bear:trollman:goblin_stabber:beorning_warrior:balchoth_tribesman:ranger:wizard:nazgul:pony_rider" count="2"/>
+                        <option name="combatDefenseEffect" value="dwarven_pikeman:elven_warden:dunlending_wildman:halforc:uruk_warrior:southron_cavalry:hobbit_archer:goblin_shooter:barding_infantry:troll:olog_hai:dunadan_guard:spearman:helming_warrior:riddermark_militia:man_at_arms:woodman:snaga_skirmisher:orc_marauder:oathbreaker:dwarven_axethrower" count="1"/>
+                        <option name="combatDefenseEffect" value="eagle:winged_nazgul:swan_knight:huorn" count="-1"/>
+                        <option name="combatDefenseEffect" value="oliphaunt" count="-2"/>
+                        <option name="combatOffenseEffect" value="balrog" count="2"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:bat:giant_spider:cold_drake:goblin_stabber:barrow_wight:spider" count="1"/>
+                        <option name="combatOffenseEffect" value="dwarven_pikeman:elven_warden:halforc:uruk_warrior:southron_cavalry:hobbit_archer:barding_infantry:crebain:raven:dunadan_guard:spearman:helming_warrior:riddermark_militia:man_at_arms:woodman:corsair:dwarven_axethrower" count="-1"/>
+                        <option name="combatOffenseEffect" value="elven_archer:galadhrim_longbowman:uruk_pikeman:white_wolf:bowman:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:kings_company:raider:variag_raider:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:werewolf:scout:huorn:ent" count="-2"/>
+                        <option name="combatOffenseEffect" value="eagle:winged_nazgul:swan_knight:oliphaunt" count="-3"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="forest" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="elven_hunter:ranger:ent" count="3"/>
+                        <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:elven_cavalry:bear:woodman:beorning_warrior:spider:wizard:nazgul:huorn" count="2"/>
+                        <option name="combatDefenseEffect" value="elven_archer:galadhrim_longbowman:uruk_warrior:hobbit_archer:rohirric_scout:easterling_cavalry:warg_scout:giant_spider:trollman:helming_warrior:balchoth_tribesman:barrow_wight:balrog:scout:pony_rider" count="1"/>
+                        <option name="combatDefenseEffect" value="uruk_pikeman:white_wolf:goblin_shooter:bowman:raven:bat:uruloke:winged_nazgul:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:raider:variag_raider:warg_rider:werewolf:cold_drake" count="-1"/>
+                        <option name="combatDefenseEffect" value="eagle" count="-2"/>
+                        <option name="combatDefenseEffect" value="oliphaunt" count="-3"/>
+                        <option name="combatOffenseEffect" value="huorn:ent" count="2"/>
+                        <option name="combatOffenseEffect" value="elven_warden:elven_hunter:elven_cavalry:bear:woodman:beorning_warrior:ranger:spider" count="1"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_halberdier:dwarven_pikeman:halforc:southron_cavalry:goblin_shooter:barding_infantry:tower_guard:raven:bat:dunadan_guard:spearman:riddermark_militia:man_at_arms:dwarven_axethrower" count="-1"/>
+                        <option name="combatOffenseEffect" value="uruk_pikeman:white_wolf:bowman:black_numenorean:uruloke:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:kings_company:raider:variag_raider:warg_rider:werewolf:cold_drake" count="-2"/>
+                        <option name="combatOffenseEffect" value="eagle:winged_nazgul:swan_knight:oliphaunt" count="-3"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="marsh" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="movementCostModifier" value="$ANY_LAND$" count="1"/>
+                        <option name="combatDefenseEffect" value="winged_nazgul" count="4"/>
+                        <option name="combatDefenseEffect" value="eagle" count="3"/>
+                        <option name="combatDefenseEffect" value="elven_archer:galadhrim_longbowman:elven_hunter:bowman:woodman:wizard:nazgul" count="2"/>
+                        <option name="combatDefenseEffect" value="goblin_shooter:crebain:raven:bat:uruloke:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:bear:trollman:balchoth_tribesman:barrow_wight:spider:balrog:scout:dwarven_axethrower:pony_rider" count="1"/>
+                        <option name="combatDefenseEffect" value="noldorin_warrior:uruk_pikeman:white_wolf:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:raider:variag_raider:warg_rider:werewolf:giant_spider:cold_drake:ent" count="-1"/>
+                        <option name="combatDefenseEffect" value="huorn" count="-2"/>
+                        <option name="combatDefenseEffect" value="oliphaunt" count="-3"/>
+                        <option name="combatOffenseEffect" value="eagle:winged_nazgul" count="2"/>
+                        <option name="combatOffenseEffect" value="elven_archer:galadhrim_longbowman:goblin_shooter:bowman:crebain:raven:bat:woodman" count="1"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_halberdier:dwarven_pikeman:elven_warden:halforc:uruk_warrior:southron_cavalry:hobbit_archer:barding_infantry:tower_guard:dunadan_guard:spearman:helming_warrior:riddermark_militia:man_at_arms:beorning_warrior" count="-1"/>
+                        <option name="combatOffenseEffect" value="uruk_pikeman:white_wolf:black_numenorean:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:kings_company:raider:variag_raider:warg_rider:werewolf:giant_spider:cold_drake:ranger:huorn:ent" count="-2"/>
+                        <option name="combatOffenseEffect" value="noldorin_warrior:swan_knight:oliphaunt" count="-3"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="plains" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="dwarven_pikeman:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:raider:variag_raider" count="2"/>
+                        <option name="combatDefenseEffect" value="elven_warden:noldorin_warrior:uruk_warrior:southron_cavalry:white_wolf:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:werewolf:bear:dunadan_guard" count="1"/>
+                        <option name="combatDefenseEffect" value="dwarven_axeman:dunlending_wildman:hobbit_archer:goblin_shooter:goblin_stabber:woodman:beorning_warrior:snaga_skirmisher:barrow_wight:dwarven_axethrower" count="-1"/>
+                        <option name="combatDefenseEffect" value="elven_hunter:troll:olog_hai:giant_spider:cold_drake:ranger:spider:huorn:ent" count="-2"/>
+                        <option name="combatOffenseEffect" value="dwarven_pikeman:eorling_rider:swan_knight:kings_company" count="4"/>
+                        <option name="combatOffenseEffect" value="elven_warden:noldorin_warrior:eotheod_cavalry:dunadan_lancer:chariot:wainrider_chieftain:raider:variag_raider:werewolf" count="3"/>
+                        <option name="combatOffenseEffect" value="dwarven_halberdier:galadhrim_longbowman:uruk_warrior:uruk_pikeman:southron_cavalry:white_wolf:black_numenorean:tower_guard:eagle:winged_nazgul:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:bear:dunadan_guard:wizard:nazgul:balrog" count="2"/>
+                        <option name="combatOffenseEffect" value="elven_archer:halforc:bowman:barding_infantry:crebain:raven:bat:uruloke:trollman:spearman:helming_warrior:riddermark_militia:man_at_arms:balchoth_tribesman:orc_marauder:oathbreaker:oliphaunt:scout:corsair:pony_rider" count="1"/>
+                        <option name="combatOffenseEffect" value="troll:olog_hai:cold_drake:huorn" count="-1"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="settlement" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="dwarven_halberdier:tower_guard" count="4"/>
+                        <option name="combatDefenseEffect" value="galadhrim_longbowman:uruk_pikeman" count="3"/>
+                        <option name="combatDefenseEffect" value="dwarven_pikeman:elven_warden:elven_archer:noldorin_warrior:bowman:black_numenorean:eagle:winged_nazgul:eorling_rider:swan_knight:kings_company:werewolf:ranger:wizard:nazgul:balrog:ent" count="2"/>
+                        <option name="combatDefenseEffect" value="dwarven_axeman:halforc:uruk_warrior:southron_cavalry:hobbit_archer:goblin_shooter:barding_infantry:raven:bat:uruloke:eotheod_cavalry:dunadan_lancer:chariot:wainrider_chieftain:raider:variag_raider:bear:cold_drake:dunadan_guard:trollman:spearman:helming_warrior:goblin_stabber:riddermark_militia:man_at_arms:woodman:beorning_warrior:balchoth_tribesman:orc_marauder:corsair:dwarven_axethrower:pony_rider" count="1"/>
+                        <option name="combatDefenseEffect" value="white_wolf:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:scout" count="-1"/>
+                        <option name="combatDefenseEffect" value="huorn" count="-2"/>
+                        <option name="combatOffenseEffect" value="dwarven_halberdier:tower_guard" count="2"/>
+                        <option name="combatOffenseEffect" value="elven_archer:galadhrim_longbowman:uruk_pikeman:bowman" count="1"/>
+                        <option name="combatOffenseEffect" value="dunlending_wildman:crebain:snaga_skirmisher:barrow_wight" count="-1"/>
+                        <option name="combatOffenseEffect" value="elven_hunter:white_wolf:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:giant_spider:spider:scout:huorn" count="-2"/>
+                    </attachment>
+                    <attachment name="territoryEffectAttachment" attachTo="river" javaClass="TerritoryEffectAttachment" type="territoryEffect">
+                        <option name="combatDefenseEffect" value="elven_hunter" count="2"/>
+                        <option name="combatDefenseEffect" value="elven_warden:elven_archer:galadhrim_longbowman:noldorin_warrior:dunlending_wildman:halforc:uruk_warrior:uruk_pikeman:southron_cavalry:white_wolf:goblin_shooter:bowman:barding_infantry:black_numenorean:tower_guard:eagle:crebain:raven:bat:uruloke:winged_nazgul:eotheod_cavalry:eorling_rider:dunadan_lancer:chariot:wainrider_chieftain:swan_knight:kings_company:raider:variag_raider:rohirric_scout:elven_cavalry:easterling_cavalry:warg_scout:warg_rider:werewolf:giant_spider:bear:cold_drake:dunadan_guard:trollman:spearman:helming_warrior:goblin_stabber:riddermark_militia:man_at_arms:woodman:beorning_warrior:balchoth_tribesman:snaga_skirmisher:orc_marauder:barrow_wight:ranger:spider:wizard:nazgul:balrog:scout:corsair:ent:dwarven_axethrower:pony_rider" count="1"/>
+                        <option name="combatOffenseEffect" value="elven_hunter" count="1"/>
+                        <option name="combatOffenseEffect" value="dwarven_axeman:dwarven_halberdier:dwarven_pikeman:hobbit_archer" count="-1"/>
+                    </attachment>
+
 					
 					<attachment name="territoryEffectAttachment" attachTo="major_river" javaClass="games.strategy.triplea.attachments.TerritoryEffectAttachment" type="territoryEffect">
 						<option name="unitsNotAllowed" value="settlement_terrain"/>

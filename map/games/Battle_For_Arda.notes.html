@@ -1,9 +1,9 @@
 <html>
-	<body align="center">
+	<body align="center" style="font-size:12px;000000">
 		<div style="text-align: center">
 			<table border="1" bgcolor="3D3D99" align="center">
 				<tr>
-					<th style="font-size:140%;000000">====================<br>Middle Earth<br>The Battle For Arda<br>version 3 (beta)<br>====================</th>
+					<th style="font-size:26px;000000">====================<br>Middle Earth<br>The Battle For Arda<br>version 3 (beta)<br>====================</th>
 				</tr>
 			</table>
 		</div>
@@ -68,141 +68,69 @@
 			<li><b>Battlements (penalty):</b> Takes away power from most enemy units, except: <i>flying</i> units, <i>siege engines</i>, <i>fortifications</i> and <i>ships</i>.</li>
 		</ul>
 		
-		<h2>Terrain Preference</h2>
-		<p>Units have a so-called "Terrain Preference Category", which determines how their power changes on terrain like <i>forest</i> or <i>settlements</i>. Effects from multiple terrain stack (so, for example, units in <i>Cerin Amroth</i> will have their power changed by bonuses or penalties from <i>forest</i>, <i>hills</i> and <i>settlement</i> at the same time). Terrain tends to favor the defender, except <i>plains</i>, which favors the attacker.</p>
-		<ul>
-			<li><b>Open</b> <i>(Prefers open terrain)</i>: Usually <i>cavalry</i>, they get a massive attack bonus on plains, but are bad in terrain where there is limited open space (<i>forest</i>, <i>caves</i>, <i>mountains</i>).</li>
-			<li><b>Wilderness</b> <i>(Prefers wilderness)</i>: Usually creatures, they get bonuses in the wilderness-related terrain (<i>mountains</i>, <i>hills</i>, <i>forest</i>, <i>marsh</i>), but get a severe penalty in the strategically important <i>settlements</i>.</li>
-			<li><b>Levy</b> <i>(Levy)</i>: Prefer to fight for their homes near their homes. Slightly disprefer wilderness-related terrain. </li>
-			<li><b>Woodland</b> <i>(Prefers woodlands)</i>: Usually Elves, they prefer <i>forest</i> over <i>mountains</i> or <i>caves</i>.</li>
-			<li><b>Dwarven</b> <i>(Prefers rocks)</i>: Dwarves get bonuses in <i>mountains</i>, <i>hills</i> and <i>caves</i>, but due their stature they are ill-suited to crossing <i>rivers</i> or <i>marshes</i>. They also dislike <i>forests</i>.</li>
-			<li><b>Ambusher</b> <i>(Ambusher)</i>: Large defensive bonuses on terrain with available cover.</li>
-			<li><b>Relentless</b> <i>(Relentless)</i>: They keep attacking, no matter how disadvantageous their position may seem. They get no attack penalties even on the hardest terrain; what's more, they get an attack bonus against <i>settlements</i>.</li>
-			<li><b>Unyielding</b> <i>(Unyielding)</i>: They will never let defensive positions fall to the hands of the enemy. Massive defensive bonus in <i>settlements</i>, smaller defensive bonus in several other terrain types.</li>
-			<li><b>Flying</b> <i>(Prefers open skies)</i>: Flying units can' fight effectively when there isn't enough room to fly: in <i>forests</i> and <i>caves</i>.</li>
-			<li><b>Fortification</b> <i>(Fortification)</i>: Defensive buildings are way more effective in <i>settlements</i>, <i>hills</i>, <i>mountains</i> and <i>caves</i>.</li>
-		</ul>
-		
-		<p>For the exact numbers involved, consult the table below.
-		
-		<table border="1"bgcolor="757780">
+		<h2>Tactics</h2>
+		<p>Most units have some level of tactics, which give them bonuses depending on terrain. Bonuses are defense only, except plains, where it's attack only.</p>
+		<table border="1" bgcolor="404040" style="font-size:16px;">
 		<tbody>
 		<tr>
 		<td>&nbsp;</td>
-		<td><b>Levy</b></td>
-		<td><b>Open</b></td>
-		<td><b>Wilderness</b></td>
-		<td><b>Woodland</b></td>
-		<td><b>Dwarven</b></td>
-		<td><b>Ambusher</b></td>
-		<td><b>Relentless</b></td>
-		<td><b>Unyielding</b></td>
-		<td><b>Flying</b></td>
-		<td><b>Fortification</b></td>
+		<td><img src="cave.png" width="64" height="64"/></td>
+		<td><img src="mountain.png" width="64" height="64"/><img src="hill.png" width="64" height="64"/></td>
+		<td><img src="forest.png" width="64" height="64"/></td>
+		<td><img src="marsh.png" width="64" height="64"/></td>
+		<td><img src="plains.png" width="64" height="64"/></td>
+		<td><img src="settlement.png" width="64" height="64"/></td>
+		<td><img src="river.png" width="64" height="64"/></td>
 		</tr>
 		<tr>
-		<td><b>Mountain</b></td>
-		<td>-1 | 0</td>
-		<td>-2 | -1</td>
-		<td>1 | 2</td>
-		<td>-2 | -1</td>
-		<td>1 | 2</td>
-		<td>0 | 2</td>
-		<td>0 | 0</td>
-		<td>0 | 2</td>
-		<td>1 | 1</td>
-		<td>0 | 3</td>
+		<td><p style="font-weight:bold;color:FFFFFF">Primitive</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">0</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">0</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">0</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">0</p></td>
 		</tr>
 		<tr>
-		<td><b>Hill</b></td>
-		<td>-1 | 0</td>
-		<td>-1 | 0</td>
-		<td>1 | 1</td>
-		<td>-1 | 0</td>
-		<td>1 | 2</td>
-		<td>0 | 2</td>
-		<td>0 | 0</td>
-		<td>0 | 1</td>
-		<td>1 | 1</td>
-		<td>0 | 3</td>
+		<td><p style="font-weight:bold;color:FFFFFF">Poor</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">0</p></td>
 		</tr>
 		<tr>
-		<td><b>Cave</b></td>
-		<td>-1 | 0</td>
-		<td>-2 | -1</td>
-		<td>-1 | 0</td>
-		<td>-2 | -1</td>
-		<td>1 | 2</td>
-		<td>0 | 2</td>
-		<td>0 | 0</td>
-		<td>0 | 1</td>
-		<td>-2 | -2</td>
-		<td>0 | 3</td>
+		<td><p style="font-weight:bold;color:FFFFFF">Average</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
 		</tr>
 		<tr>
-		<td><b>Marsh</b></td>
-		<td>-1 | 0</td>
-		<td>-1 | 0</td>
-		<td>1 | 1</td>
-		<td>0 | 1</td>
-		<td>-2 | -1</td>
-		<td>-1 | 0</td>
-		<td>0 | 0</td>
-		<td>-1 | 0</td>
-		<td>1 | 1</td>
-		<td>0 | 0</td>
+		<td><p style="font-weight:bold;color:FFFFFF">Good</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
 		</tr>
 		<tr>
-		<td><b>Forest</b></td>
-		<td>-1 | 0</td>
-		<td>-2 | -1</td>
-		<td>1 | 2</td>
-		<td>2 | 3</td>
-		<td>-2 | -1</td>
-		<td>0 | 2</td>
-		<td>0 | 0</td>
-		<td>-1 | 0</td>
-		<td>-2 | -2</td>
-		<td>0 | 0</td>
-		</tr>
-		<tr>
-		<td><b>River</b></td>
-		<td>0 | 1</td>
-		<td>-1 | 0</td>
-		<td>-1 | 0</td>
-		<td>-1 | 0</td>
-		<td>-2 | 0</td>
-		<td>-1 | 0</td>
-		<td>0 | 0</td>
-		<td>0 | 1</td>
-		<td>0 | 0</td>
-		<td>0 | 0</td>
-		</tr>
-		<tr>
-		<td><b>Settlement</b></td>
-		<td>0 | 1</td>
-		<td>-1 | 0</td>
-		<td>-2 | -2</td>
-		<td>0 | 1</td>
-		<td>0 | 1</td>
-		<td>-1 | 0</td>
-		<td>2 | 0</td>
-		<td>0 | 3</td>
-		<td>0 | 0</td>
-		<td>0 | 3</td>
-		</tr>
-		<tr>
-		<td><b>Plains</b></td>
-		<td>1 | 0</td>
-		<td>3 | 1</td>
-		<td>-1 | -1</td>
-		<td>0 | -1</td>
-		<td>0 | -1</td>
-		<td>0 | -1</td>
-		<td>0 | -1</td>
-		<td>0 | -1</td>
-		<td>0 | 0</td>
-		<td>0 |0</td>
+		<td><p style="font-weight:bold;color:FFFFFF">Excellent</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">2</p></td>
+		<td><p style="font-weight:bold;color:FFFFFF">1</p></td>
 		</tr>
 		</tbody>
 		</table>
