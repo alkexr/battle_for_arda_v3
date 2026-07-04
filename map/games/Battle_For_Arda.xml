@@ -737,10 +737,10 @@
 				<element name="4"/>               <element name="8"/>                  <element name="8"/>            <element name="8"/>  <element name="8"/>     <element name="8"/>            <element name="12"/>   <element name="20"/>     <element name="4"/>
 			</variable>
 			
-			<variable name="FORMATION.UNIT">
+			<variable name="SPEARWALL.UNIT">
 				<element name="spearman"/><element name="halforc"/><element name="orc_marauder"/><element name="goblin_stabber"/><element name="riddermark_militia"/><element name="uruk_pikeman"/><element name="dunadan_guard"/><element name="barding_infantry"/><element name="elven_warden"/><element name="dwarven_pikeman"/>
 			</variable>
-			<variable name="FORMATION.VALUE">
+			<variable name="SPEARWALL.VALUE">
 				<element name="4"/>      <element name="3"/>       <element name="3"/>           <element name="2"/>             <element name="4"/>                 <element name="6"/>           <element name="4"/>            <element name="2"/>               <element name="3"/>           <element name="6"/>
 			</variable>
 			
@@ -5068,19 +5068,19 @@
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					
-					<attachment foreach="$FORMATION.UNIT$:$FORMATION.VALUE$" name="supportAttachment_formation_@FORMATION.UNIT@" attachTo="@FORMATION.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
+					<attachment foreach="$SPEARWALL.UNIT$:$SPEARWALL.VALUE$" name="supportAttachment_spearwall_@SPEARWALL.UNIT@" attachTo="@SPEARWALL.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="enemy"/>
 						<option name="side" value="offence:defence"/>
 						<option name="dice" value="AAstrength"/>
-						<option name="bonus" value="-@FORMATION.VALUE@"/>
+						<option name="bonus" value="-@SPEARWALL.VALUE@"/>
 						<option name="number" value="1"/>
-						<option name="bonusType" value="formation"/>
+						<option name="bonusType" value="spearwall"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
 					
-					<attachment foreach="$SCOUTING.UNIT$:$SCOUTING.VALUE$" name="supportAttachment_formation_@SCOUTING.UNIT@" attachTo="@SCOUTING.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
+					<attachment foreach="$SCOUTING.UNIT$:$SCOUTING.VALUE$" name="supportAttachment_scouting_@SCOUTING.UNIT@" attachTo="@SCOUTING.UNIT@" javaClass="UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="$AMBUSH$"/>
 						<option name="faction" value="enemy"/>
 						<option name="side" value="offence"/>
@@ -11169,7 +11169,7 @@
 		<h1>Map options</h1>
 		<ul>
 			<li><b>Free For All:</b> (Default OFF) Game is free for all, every faction is at war with every other. Can lead to fun games against AI, but otherwise not recommended.</li>
-			<li><b>Fortification Protects Against Targeted Attacks:</b> (Default ON) If turned on, any fortification (<i>fortress</i>, <i>wall</i>, <i>ancient tower</i>, <i>ancient wall</i> and also <i>war wagon</i>) present in a battle will prevent enemy <i>charge</i>, <i>flank</i> and <i>trample</i> targeted attacks. Other types of targeted attacks still fire. (Including <i>formation</i>. This is due to the way the engine handles targeted attacks. It may be fixed in the future.)</li>
+			<li><b>Fortification Protects Against Targeted Attacks:</b> (Default ON) If turned on, any fortification (<i>fortress</i>, <i>wall</i>, <i>ancient tower</i>, <i>ancient wall</i> and also <i>war wagon</i>) present in a battle will prevent enemy <i>charge</i>, <i>flank</i> and <i>trample</i> targeted attacks. Other types of targeted attacks still fire. (Including <i>spearwall</i>. This is due to the way the engine handles targeted attacks. It may be fixed in the future.)</li>
 			<li><b>All Units Blitz:</b> (Default OFF) All mobile land combat units get the Blitz ability, meaning that they don't have to stop at the first conquered territory if taken without a battle.</li>
 			<li><b>Mountains Restrict Movement:</b> (Default ON) If turned off, then all units can enter <i>mountains</i>, whether or not they have the <i>mountaineer</i> ability.</li>
 			<li><b>Unlimited Unique Units:</b> (Default OFF) Controls whether or not <i>wizards</i>, <i>nazgûl</i>, <i>winged nazgûl</i>, <i>balrogs</i> and <i>oathbreakers</i> can be built - these units were in very limited supply in the lore.</li>			
@@ -11207,7 +11207,7 @@
 			<li><b>Charge:</b> Some cavalry units can perform a charge against enemy units with <i>infantry</i> type. Fires in the first battle round only, and only when attacking. Will not fire if enemy has <i>fortifications</i> present (unless the respective map option is turned off).</li>
 			<li><b>Flank:</b> Some units can try to outflank the battle line of the enemy, attacking the vulnerable <i>ranged infantry</i> and <i>siege engines</i> directly. Will not fire if enemy has <i>fortifications</i> present (unless the respective map option is turned off).</li>
 			<li><b>Trample:</b> Massive units enter the battlefield by simply trampling over the enemy army. Targets both <i>infantry</i> and <i>cavalry</i>, fires in the first battle round only, and only when attacking. Will not fire if enemy has <i>fortifications</i> present (unless the respective map option is turned off).</li>
-			<li><b>Formation:</b> Heavy infantry in closed formation (especially if armed with spears or pikes) can effectively stop cavalry charges. Targets are units performing a <i>charge</i> special attack. Fires in the first battle round only, and only when defending. At most 1 unit can fire per target (one charging cavalry can only try to get impaled on one spearwall at a time), so if you have more units with <i>formation</i> than there are enemy units with <i>charge</i>, only a part of your units will fire.</li>
+			<li><b>Spearwall:</b> Heavy infantry in closed spearwall (especially if armed with spears or pikes) can effectively stop cavalry charges. Targets are units performing a <i>charge</i> special attack. Fires in the first battle round only, and only when defending. At most 1 unit can fire per target (one charging cavalry can only try to get impaled on one spearwall at a time), so if you have more units with <i>spearwall</i> than there are enemy units with <i>charge</i>, only a part of your units will fire.</li>
 			<li><b>AntiAir:</b> Archers can try to shoot down attacking enemy air units. Only works when defending.</li>
 			<li><b>Siege:</b> Some units, like <i>siege engines</i> or <i>ents</i>, can rapidly dismantle defensive buildings: <i>walls</i> and <i>fortresses</i>. Ancient fortifications are, however, impregnable to anything the Third Age could come up with. Fires only when attacking, and in the first battle round only. Casualties die instantly, regardless of hitpoints. </li>
 		</ul>
