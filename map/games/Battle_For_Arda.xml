@@ -672,7 +672,6 @@
 				<element name="easterling_cavalry"/>
 			</variable>
 			<variable name="CHARGE_PLAINS">
-				<element name="pony_rider"/>
 				<element name="eotheod_cavalry"/>
 				<element name="eorling_rider"/>
 				<element name="dunadan_lancer"/>
@@ -680,7 +679,6 @@
 				<element name="wainrider_chieftain"/>
 				<element name="swan_knight"/>
 				<element name="kings_company"/>
-				<element name="olog_hai"/>
 				<element name="southron_cavalry"/>
 			</variable>
 			<variable name="CHARGE_HILL">
@@ -688,6 +686,7 @@
 				<element name="werewolf"/>
 				<element name="bear"/>
 				<element name="white_wolf"/>
+				<element name="olog_hai"/>
 			</variable>
 			<variable name="CHARGE">
 				<element name="$CHARGE_PLAINS$"/>
@@ -4080,15 +4079,6 @@
 						<option name="movement" value="3"/>
 						<option name="attack" value="2"/>
 						<option name="defense" value="1"/>
-						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
-						<option name="typeAA" value="charge"/>
-						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="2"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="true"/>
-						<option name="damageableAA" value="true"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="scout" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4144,7 +4134,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="6"/>
+						<option name="offensiveAttackAA" value="3"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4160,7 +4150,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="4"/>
+						<option name="offensiveAttackAA" value="1"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4176,7 +4166,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="8"/>
+						<option name="offensiveAttackAA" value="5"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4192,7 +4182,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="4"/>
+						<option name="offensiveAttackAA" value="1"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4208,7 +4198,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="6"/>
+						<option name="offensiveAttackAA" value="3"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4224,7 +4214,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="10"/>
+						<option name="offensiveAttackAA" value="7"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4240,7 +4230,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="8"/>
+						<option name="offensiveAttackAA" value="5"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -4256,7 +4246,7 @@
 						<option name="targetsAA" value="$MELEE_INFANTRY$:$RANGED_INFANTRY$:$OTHER_INFANTRY$"/>
 						<option name="typeAA" value="charge"/>
 						<option name="attackAA" value="0"/>
-						<option name="offensiveAttackAA" value="4"/>
+						<option name="offensiveAttackAA" value="3"/>
 						<option name="isAAforCombatOnly" value="true"/>
 						<option name="mayOverStackAA" value="true"/>
 						<option name="damageableAA" value="true"/>
@@ -5104,25 +5094,25 @@
 					
 					<!--Terrain Support-->
 					
-					<attachment name="supportAttachment_hill_terrain_charge" attachTo="hill_terrain" javaClass="UnitSupportAttachment" type="unitType">
-						<option name="unitType" value="$CHARGE$"/>
+					<attachment name="supportAttachment_hill_terrain_charge" attachTo="plains_terrain" javaClass="UnitSupportAttachment" type="unitType">
+						<option name="unitType" value="$CHARGE_PLAINS$"/>
 						<option name="faction" value="allied:enemy"/>
 						<option name="side" value="defence"/>
 						<option name="dice" value="AAstrength"/>
-						<option name="bonus" value="-1"/>
+						<option name="bonus" value="3"/>
 						<option name="number" value="9999"/>
-						<option name="bonusType" value="hill_terrain_charge"/>
+						<option name="bonusType" value="plains_terrain_charge"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
-					<attachment name="supportAttachment_mountain_terrain_charge" attachTo="mountain_terrain" javaClass="UnitSupportAttachment" type="unitType">
+					<attachment name="supportAttachment_hill_terrain_charge" attachTo="river_terrain" javaClass="UnitSupportAttachment" type="unitType">
 						<option name="unitType" value="$CHARGE$"/>
 						<option name="faction" value="allied:enemy"/>
 						<option name="side" value="defence"/>
 						<option name="dice" value="AAstrength"/>
 						<option name="bonus" value="-2"/>
 						<option name="number" value="9999"/>
-						<option name="bonusType" value="mountain_terrain_charge"/>
+						<option name="bonusType" value="river_terrain_charge"/>
 						<option name="impArtTech" value="false"/>
 						<option name="players" value="$ANY_PLAYER$"/>
 					</attachment>
