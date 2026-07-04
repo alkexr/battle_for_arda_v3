@@ -696,12 +696,6 @@
 			<variable name="TRAMPLE">
 				<element name="oliphaunt"/>
 			</variable>
-			<variable name="DUEL">
-				<element name="wizard"/>
-				<element name="nazgul"/>
-				<element name="winged_nazgul"/>
-				<element name="balrog"/>
-			</variable>
 			<variable name="AMBUSH">
 				<element name="beorning_warrior"/>
 				<element name="uruk_warrior"/>
@@ -4632,17 +4626,6 @@
 						<option name="defenseRolls" value="2"/>
 						
 						<option name="canEvade" value="true"/>
-						
-						<option name="targetsAA" value="$HERO$"/>
-						<option name="typeAA" value="duel"/>
-						<option name="attackAA" value="4"/>
-						<option name="offensiveAttackAA" value="0"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="true"/>
-						<option name="damageableAA" value="false"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
-						
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="nazgul" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4653,17 +4636,6 @@
 						<option name="defense" value="6"/>
 						
 						<option name="canEvade" value="true"/>
-						
-						<option name="targetsAA" value="$HERO$"/>
-						<option name="typeAA" value="duel"/>
-						<option name="attackAA" value="2"/>
-						<option name="offensiveAttackAA" value="0"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="true"/>
-						<option name="damageableAA" value="false"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
-						
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="winged_nazgul" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4679,17 +4651,6 @@
 						<option name="canAirBattle" value="true"/>
 						<option name="airDefense" value="3"/>
 						<option name="airAttack" value="3"/>
-						
-						<option name="targetsAA" value="$HERO$"/>
-						<option name="typeAA" value="duel"/>
-						<option name="attackAA" value="2"/>
-						<option name="offensiveAttackAA" value="0"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="true"/>
-						<option name="damageableAA" value="false"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
-						
 					</attachment>
 					
 					<attachment name="unitAttachment" attachTo="balrog" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -4703,17 +4664,6 @@
 						<option name="defenseRolls" value="3"/>
 						
 						<option name="canEvade" value="true"/>
-						
-						<option name="targetsAA" value="$HERO$"/>
-						<option name="typeAA" value="duel"/>
-						<option name="attackAA" value="3"/>
-						<option name="offensiveAttackAA" value="0"/>
-						<option name="isAAforCombatOnly" value="true"/>
-						<option name="mayOverStackAA" value="true"/>
-						<option name="damageableAA" value="false"/>
-						<option name="maxAAattacks" value="1"/>
-						<option name="maxRoundsAA" value="1"/>
-						
 					</attachment>
 					
 					
@@ -11270,7 +11220,6 @@
 			<li><b>Formation:</b> Heavy infantry in closed formation (especially if armed with spears or pikes) can effectively stop cavalry charges. Targets are units performing a <i>charge</i> special attack. Fires in the first battle round only, and only when defending. At most 1 unit can fire per target (one charging cavalry can only try to get impaled on one spearwall at a time), so if you have more units with <i>formation</i> than there are enemy units with <i>charge</i>, only a part of your units will fire.</li>
 			<li><b>AntiAir:</b> Archers can try to shoot down attacking enemy air units. Only works when defending.</li>
 			<li><b>Siege:</b> Some units, like <i>siege engines</i> or <i>ents</i>, can rapidly dismantle defensive buildings: <i>walls</i> and <i>fortresses</i>. Ancient fortifications are, however, impregnable to anything the Third Age could come up with. Fires only when attacking, and in the first battle round only. Casualties die instantly, regardless of hitpoints. </li>
-			<li><b>Duel:</b> Powerful beings, like Maiar or the Nazgûl, fight their own divine magic-duel during the battle. Targets are other units with <i>duel</i> targeted attack. Casualties die instantly, regardless of hitpoints. Watch out for this, your most powerful units can easily get killed by this ability.</li>
 		</ul>
 		
 		<h2>Support Types</h2>
