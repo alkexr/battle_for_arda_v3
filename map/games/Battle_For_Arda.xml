@@ -9569,6 +9569,7 @@
 			<unitPlacement unitType="wall" territory="Carach Angren" quantity="3" owner="Mordor"/>
 			<unitPlacement unitType="wall" territory="Caras Galadhon" quantity="4" owner="SilvanElves"/>
 			<unitPlacement unitType="wall" territory="Carn Dûm" quantity="7" owner="Angmar"/>
+			<unitPlacement unitType="wall" territory="Cerin Amroth" quantity="2" owner="SilvanElves"/>
 			<unitPlacement unitType="wall" territory="Cirith Ungol" quantity="3" owner="Mordor"/>
 			<unitPlacement unitType="wall" territory="Umbar" quantity="7" owner="Harad"/>
 			<unitPlacement unitType="wall" territory="Dale" quantity="5" owner="Northmen"/>
@@ -9742,7 +9743,7 @@
             <unitPlacement unitType="spearman" territory="Ethring" quantity="2" owner="Gondor"/>
             <unitPlacement unitType="dunadan_lancer" territory="Ethring" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="troll" territory="Ettendales" quantity="1" owner="OrcHolds"/>
-            <unitPlacement unitType="snaga_skirmisher" territory="Fanuidhol" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="snaga_skirmisher" territory="Gladden River" quantity="1" owner="Moria"/>
             <unitPlacement unitType="warg_scout" territory="Fanuidhol" quantity="1" owner="Moria"/>
             <unitPlacement unitType="trollman" territory="Far Harad" quantity="3" owner="Harad"/>
             <unitPlacement unitType="southron_cavalry" territory="Far Harad" quantity="4" owner="Harad"/>
@@ -9818,7 +9819,7 @@
             <unitPlacement unitType="man_at_arms" territory="Linhir" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="ranger" territory="Linhir" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="olog_hai" territory="Lithlad" quantity="2" owner="Mordor"/>
-            <unitPlacement unitType="orc_marauder" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
+            <unitPlacement unitType="orc_marauder" territory="Gladden River" quantity="1" owner="Moria"/>
             <unitPlacement unitType="warg_rider" territory="Loeg Ningloron" quantity="1" owner="Moria"/>
             <unitPlacement unitType="man_at_arms" territory="Lossarnach" quantity="1" owner="Gondor"/>
             <unitPlacement unitType="eotheod_cavalry" territory="Lower Langwell" quantity="1" owner="Northmen"/>
